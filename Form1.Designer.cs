@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             label1 = new Label();
-            textBox1 = new TextBox();
+            textusername = new TextBox();
             button1 = new Button();
             SuspendLayout();
             // 
@@ -47,14 +47,15 @@
             label1.Text = "username";
             label1.Click += label1_Click;
             // 
-            // textBox1
+            // textusername
             // 
-            textBox1.BackColor = SystemColors.InactiveCaption;
-            textBox1.Location = new Point(102, 264);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(146, 23);
-            textBox1.TabIndex = 1;
+            textusername.BackColor = SystemColors.InactiveCaption;
+            textusername.Location = new Point(102, 264);
+            textusername.Multiline = true;
+            textusername.Name = "textusername";
+            textusername.Size = new Size(146, 23);
+            textusername.TabIndex = 1;
+            textusername.TextChanged += textusername_TextChanged;
             // 
             // button1
             // 
@@ -66,6 +67,7 @@
             button1.TabIndex = 2;
             button1.Text = "Enter";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // Form1
             // 
@@ -76,7 +78,7 @@
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(350, 450);
             Controls.Add(button1);
-            Controls.Add(textBox1);
+            Controls.Add(textusername);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.Fixed3D;
             Name = "Form1";
@@ -89,7 +91,7 @@
         #endregion
 
         private Label label1;
-        private TextBox textBox1;
+        private TextBox textusername;
         private Button button1;
     }
 }

@@ -21,5 +21,25 @@ namespace MobileAppDesign
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(textusername.Text))
+            {
+                MessageBox.Show("Please enter your username first.", "Missing Username",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                textusername.Focus();
+                return;
+            }
+            HomePage home = new HomePage();
+            home.Show();
+            this.Hide();
+        }
+
+        private void textusername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

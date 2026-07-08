@@ -12,9 +12,11 @@ namespace MobileAppDesign
 {
     public partial class HomePage : Form
     {
-        public HomePage()
+        public HomePage(string username)
         {
             InitializeComponent();
+
+            lblWelcome.Text = "Welcome, " + username + "!";
         }
 
         private void button4_Click(object sender, EventArgs e)
