@@ -32,7 +32,7 @@ namespace MobileAppDesign
                 textusername.Focus();
                 return;
             }
-            HomePage home = new HomePage();
+           HomePage home = new HomePage();
             home.Show();
             this.Hide();
         }

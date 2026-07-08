@@ -12,14 +12,24 @@ namespace MobileAppDesign
 {
     public partial class HomePage : Form
     {
-        public HomePage(string username)
-        {
-            InitializeComponent();
 
-            lblWelcome.Text = "Welcome, " + username + "!";
-        }
 
         private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void HomePage_Load(object sender, EventArgs e)
         {
 
         }
