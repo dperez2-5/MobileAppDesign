@@ -43,9 +43,9 @@
             // 
             button2.BackColor = Color.MidnightBlue;
             button2.ForeColor = Color.Cornsilk;
-            button2.Location = new Point(0, 403);
+            button2.Location = new Point(-6, 403);
             button2.Name = "button2";
-            button2.Size = new Size(93, 50);
+            button2.Size = new Size(100, 50);
             button2.TabIndex = 1;
             button2.Text = "HOME";
             button2.UseVisualStyleBackColor = false;
@@ -76,18 +76,18 @@
             button4.Name = "button4";
             button4.Size = new Size(93, 50);
             button4.TabIndex = 9;
-            button4.Text = "HOME";
+            button4.Text = "USER";
             button4.UseVisualStyleBackColor = false;
             // 
             // button6
             // 
             button6.BackColor = Color.MidnightBlue;
             button6.ForeColor = Color.Cornsilk;
-            button6.Location = new Point(180, 403);
+            button6.Location = new Point(178, 403);
             button6.Name = "button6";
             button6.Size = new Size(93, 50);
             button6.TabIndex = 10;
-            button6.Text = "HOME";
+            button6.Text = "GOALS";
             button6.UseVisualStyleBackColor = false;
             // 
             // button7
@@ -98,7 +98,7 @@
             button7.Name = "button7";
             button7.Size = new Size(93, 50);
             button7.TabIndex = 11;
-            button7.Text = "HOME";
+            button7.Text = "SPENDING";
             button7.UseVisualStyleBackColor = false;
             // 
             // HomePage
