@@ -79,7 +79,9 @@ namespace MobileAppDesign
 
         private void button7_Click(object sender, EventArgs e)
         {
-
+            SpendingPage spendingPage = new SpendingPage();
+            spendingPage.Show();  
+            this.Hide();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -159,7 +161,9 @@ namespace MobileAppDesign
 
         private void label10_Click(object sender, EventArgs e)
         {
-
+            HomePage home = new HomePage();
+            home.Show();
+            this.Hide();
         }
     }
 }
