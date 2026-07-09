@@ -61,7 +61,7 @@
             // 
             button1.BackColor = Color.LightSteelBlue;
             button1.ForeColor = SystemColors.ActiveCaptionText;
-            button1.Location = new Point(133, 330);
+            button1.Location = new Point(131, 310);
             button1.Name = "button1";
             button1.Size = new Size(89, 27);
             button1.TabIndex = 2;

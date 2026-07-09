@@ -35,7 +35,14 @@
             button6 = new Button();
             button4 = new Button();
             button2 = new Button();
+            label3 = new Label();
+            dataGridView1 = new DataGridView();
+            button1 = new Button();
+            button3 = new Button();
+            textBox1 = new TextBox();
+            label4 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -118,11 +125,81 @@
             button2.Text = "HOME";
             button2.UseVisualStyleBackColor = false;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Verdana", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(12, 74);
+            label3.Name = "label3";
+            label3.Size = new Size(130, 16);
+            label3.TabIndex = 17;
+            label3.Text = "EXPENSE HISTORY";
+            label3.Click += label3_Click_1;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.BackgroundColor = Color.LightSteelBlue;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(12, 103);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(329, 263);
+            dataGridView1.TabIndex = 18;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.Red;
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(49, 372);
+            button1.Name = "button1";
+            button1.Size = new Size(119, 23);
+            button1.TabIndex = 19;
+            button1.Text = "Delete Selected";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // button3
+            // 
+            button3.BackColor = SystemColors.ControlDark;
+            button3.ForeColor = Color.Black;
+            button3.Location = new Point(192, 372);
+            button3.Name = "button3";
+            button3.Size = new Size(110, 23);
+            button3.TabIndex = 20;
+            button3.Text = "Clear All";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
+            // 
+            // textBox1
+            // 
+            textBox1.BackColor = Color.LightSteelBlue;
+            textBox1.Location = new Point(241, 44);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(100, 23);
+            textBox1.TabIndex = 21;
+            textBox1.TextChanged += textBox1_TextChanged;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Verdana", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.Location = new Point(149, 48);
+            label4.Name = "label4";
+            label4.Size = new Size(86, 13);
+            label4.TabIndex = 22;
+            label4.Text = "Total Expense";
+            label4.Click += label4_Click_1;
+            // 
             // SpendingPage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(353, 450);
+            Controls.Add(label4);
+            Controls.Add(textBox1);
+            Controls.Add(button3);
+            Controls.Add(button1);
+            Controls.Add(dataGridView1);
+            Controls.Add(label3);
             Controls.Add(button7);
             Controls.Add(button6);
             Controls.Add(button4);
@@ -134,6 +211,7 @@
             Text = "SpendingPage";
             Load += SpendingPage_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -147,5 +225,11 @@
         private Button button6;
         private Button button4;
         private Button button2;
+        private Label label3;
+        private DataGridView dataGridView1;
+        private Button button1;
+        private Button button3;
+        private TextBox textBox1;
+        private Label label4;
     }
 }

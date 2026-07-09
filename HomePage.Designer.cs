@@ -245,7 +245,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Food", "Transportation", "School Expense", "Bill (House)", "Others" });
+            comboBox1.Items.AddRange(new object[] { "Food", "Transportation", "School Expense", "Bill (House)", "Savings Goal", "Others" });
             comboBox1.Location = new Point(182, 106);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(121, 23);
