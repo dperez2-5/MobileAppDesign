@@ -71,5 +71,10 @@ namespace MobileAppDesign
         {
 
         }
+
+        private void btnSpending_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
