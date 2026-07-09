@@ -32,12 +32,17 @@ namespace MobileAppDesign
                 textusername.Focus();
                 return;
             }
-           HomePage home = new HomePage();
+            HomePage home = new HomePage();
             home.Show();
             this.Hide();
         }
 
         private void textusername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
