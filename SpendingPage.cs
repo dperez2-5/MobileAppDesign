@@ -101,5 +101,12 @@ namespace MobileAppDesign
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            HomePage home = new HomePage();
+            home.Show();
+            this.Hide();
+        }
     }
 }

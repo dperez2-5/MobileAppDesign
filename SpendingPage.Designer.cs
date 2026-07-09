@@ -124,6 +124,7 @@
             button2.TabIndex = 12;
             button2.Text = "HOME";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // label3
             // 

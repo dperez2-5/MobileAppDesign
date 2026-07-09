@@ -40,7 +40,7 @@
             label1.BackColor = Color.LightSteelBlue;
             label1.Font = new Font("Source Code Pro", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.ActiveCaptionText;
-            label1.Location = new Point(184, 275);
+            label1.Location = new Point(392, 273);
             label1.Name = "label1";
             label1.Size = new Size(64, 18);
             label1.TabIndex = 0;
@@ -50,7 +50,7 @@
             // textusername
             // 
             textusername.BackColor = SystemColors.InactiveCaption;
-            textusername.Location = new Point(102, 249);
+            textusername.Location = new Point(310, 247);
             textusername.Multiline = true;
             textusername.Name = "textusername";
             textusername.Size = new Size(146, 23);
@@ -61,7 +61,7 @@
             // 
             button1.BackColor = Color.LightSteelBlue;
             button1.ForeColor = SystemColors.ActiveCaptionText;
-            button1.Location = new Point(131, 310);
+            button1.Location = new Point(339, 308);
             button1.Name = "button1";
             button1.Size = new Size(89, 27);
             button1.TabIndex = 2;
@@ -73,9 +73,10 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(201, 219, 231);
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(350, 450);
+            ClientSize = new Size(760, 450);
             Controls.Add(button1);
             Controls.Add(textusername);
             Controls.Add(label1);
