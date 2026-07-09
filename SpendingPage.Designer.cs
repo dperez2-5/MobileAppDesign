@@ -48,9 +48,9 @@
             // pictureBox1
             // 
             pictureBox1.BackColor = Color.LightSteelBlue;
-            pictureBox1.Location = new Point(-5, -12);
+            pictureBox1.Location = new Point(-5, -2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(356, 44);
+            pictureBox1.Size = new Size(356, 34);
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
@@ -140,7 +140,7 @@
             // 
             dataGridView1.BackgroundColor = Color.LightSteelBlue;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 103);
+            dataGridView1.Location = new Point(12, 93);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(329, 263);
             dataGridView1.TabIndex = 18;
@@ -149,9 +149,9 @@
             // 
             button1.BackColor = Color.Red;
             button1.ForeColor = Color.White;
-            button1.Location = new Point(49, 372);
+            button1.Location = new Point(51, 373);
             button1.Name = "button1";
-            button1.Size = new Size(119, 23);
+            button1.Size = new Size(119, 33);
             button1.TabIndex = 19;
             button1.Text = "Delete Selected";
             button1.UseVisualStyleBackColor = false;
@@ -161,9 +161,9 @@
             // 
             button3.BackColor = SystemColors.ControlDark;
             button3.ForeColor = Color.Black;
-            button3.Location = new Point(192, 372);
+            button3.Location = new Point(190, 373);
             button3.Name = "button3";
-            button3.Size = new Size(110, 23);
+            button3.Size = new Size(110, 33);
             button3.TabIndex = 20;
             button3.Text = "Clear All";
             button3.UseVisualStyleBackColor = false;
