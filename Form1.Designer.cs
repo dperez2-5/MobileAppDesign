@@ -29,70 +29,302 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            label1 = new Label();
             textusername = new TextBox();
             button1 = new Button();
+            pictureBox1 = new PictureBox();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            linkLabel1 = new LinkLabel();
+            linkLabel2 = new LinkLabel();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
+            label9 = new Label();
+            label10 = new Label();
+            label11 = new Label();
+            pictureBox2 = new PictureBox();
+            pictureBox3 = new PictureBox();
+            pictureBox4 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.LightSteelBlue;
-            label1.Font = new Font("Source Code Pro", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.ForeColor = SystemColors.ActiveCaptionText;
-            label1.Location = new Point(392, 273);
-            label1.Name = "label1";
-            label1.Size = new Size(64, 18);
-            label1.TabIndex = 0;
-            label1.Text = "username";
-            label1.Click += label1_Click;
             // 
             // textusername
             // 
-            textusername.BackColor = SystemColors.InactiveCaption;
-            textusername.Location = new Point(310, 247);
+            textusername.BackColor = Color.White;
+            textusername.Location = new Point(1046, 354);
             textusername.Multiline = true;
             textusername.Name = "textusername";
-            textusername.Size = new Size(146, 23);
+            textusername.Size = new Size(300, 50);
             textusername.TabIndex = 1;
+            textusername.Text = "(username)";
+            textusername.TextAlign = HorizontalAlignment.Center;
             textusername.TextChanged += textusername_TextChanged;
             // 
             // button1
             // 
-            button1.BackColor = Color.LightSteelBlue;
+            button1.BackColor = Color.White;
+            button1.BackgroundImageLayout = ImageLayout.None;
             button1.ForeColor = SystemColors.ActiveCaptionText;
-            button1.Location = new Point(339, 308);
+            button1.Location = new Point(1046, 411);
             button1.Name = "button1";
-            button1.Size = new Size(89, 27);
+            button1.Size = new Size(300, 50);
             button1.TabIndex = 2;
-            button1.Text = "Enter";
+            button1.Text = "Login to PesoWise";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(973, -62);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(524, 921);
+            pictureBox1.TabIndex = 3;
+            pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.White;
+            label1.Font = new Font("Segoe UI Black", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(1046, 235);
+            label1.Name = "label1";
+            label1.Size = new Size(190, 40);
+            label1.TabIndex = 4;
+            label1.Text = "Get Started!";
+            label1.Click += label1_Click_1;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.White;
+            label2.Font = new Font("Segoe UI Historic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(1046, 275);
+            label2.Name = "label2";
+            label2.Size = new Size(259, 42);
+            label2.TabIndex = 5;
+            label2.Text = "Join thousands of students manage \r\ntheir money wisely.";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.White;
+            label3.Font = new Font("Segoe UI Historic", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(1095, 501);
+            label3.Name = "label3";
+            label3.Size = new Size(210, 13);
+            label3.TabIndex = 6;
+            label3.Text = "By continuing, you agree to PesoWise's";
+            label3.Click += label3_Click;
+            // 
+            // linkLabel1
+            // 
+            linkLabel1.AutoSize = true;
+            linkLabel1.BackColor = Color.White;
+            linkLabel1.Font = new Font("Segoe UI Historic", 8.25F);
+            linkLabel1.LinkColor = Color.Black;
+            linkLabel1.Location = new Point(1105, 514);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(88, 13);
+            linkLabel1.TabIndex = 7;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Terms of Service";
+            // 
+            // linkLabel2
+            // 
+            linkLabel2.AutoSize = true;
+            linkLabel2.BackColor = Color.White;
+            linkLabel2.Font = new Font("Segoe UI Historic", 8.25F);
+            linkLabel2.LinkColor = Color.Black;
+            linkLabel2.Location = new Point(1212, 514);
+            linkLabel2.Name = "linkLabel2";
+            linkLabel2.Size = new Size(73, 13);
+            linkLabel2.TabIndex = 8;
+            linkLabel2.TabStop = true;
+            linkLabel2.Text = "Privacy Policy";
+            linkLabel2.LinkClicked += linkLabel2_LinkClicked;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.White;
+            label4.Font = new Font("Segoe UI Historic", 8.25F);
+            label4.Location = new Point(1189, 514);
+            label4.Name = "label4";
+            label4.Size = new Size(27, 13);
+            label4.TabIndex = 9;
+            label4.Text = "and";
+            label4.Click += label4_Click;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI Black", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(85, 161);
+            label5.Name = "label5";
+            label5.Size = new Size(675, 258);
+            label5.TabIndex = 10;
+            label5.Text = "Every choice \r\ncounts toward your \r\nfuture.";
+            label5.Click += label5_Click;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.Location = new Point(107, 419);
+            label6.Name = "label6";
+            label6.Size = new Size(508, 42);
+            label6.TabIndex = 11;
+            label6.Text = "The best companion for students to track spending, build savings habits,\r\n and achieve financial independence at early age.";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.Location = new Point(148, 514);
+            label7.Name = "label7";
+            label7.Size = new Size(161, 30);
+            label7.TabIndex = 12;
+            label7.Text = "Smart Tracking";
+            label7.Click += label7_Click;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(155, 553);
+            label8.Name = "label8";
+            label8.Size = new Size(411, 15);
+            label8.TabIndex = 13;
+            label8.Text = "Categorize every peso and see exactly where your allowance goes each week.";
+            label8.Click += label8_Click;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.Location = new Point(148, 626);
+            label9.Name = "label9";
+            label9.Size = new Size(144, 30);
+            label9.TabIndex = 14;
+            label9.Text = "Goal Focused";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(155, 665);
+            label10.Name = "label10";
+            label10.Size = new Size(460, 15);
+            label10.TabIndex = 15;
+            label10.Text = "Set savings targets for gadgets, leisure, or emergencies and watch your progress grow.";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Segoe UI Variable Display", 30F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.Location = new Point(412, 72);
+            label11.Name = "label11";
+            label11.Size = new Size(203, 53);
+            label11.TabIndex = 16;
+            label11.Text = "PesoWise";
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(330, 63);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(76, 71);
+            pictureBox2.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox2.TabIndex = 17;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(107, 626);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(35, 45);
+            pictureBox3.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox3.TabIndex = 18;
+            pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(107, 514);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(35, 45);
+            pictureBox4.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox4.TabIndex = 19;
+            pictureBox4.TabStop = false;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(201, 219, 231);
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackColor = Color.LightSteelBlue;
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(760, 450);
-            Controls.Add(button1);
-            Controls.Add(textusername);
+            ClientSize = new Size(1420, 857);
+            Controls.Add(pictureBox4);
+            Controls.Add(pictureBox3);
+            Controls.Add(pictureBox2);
+            Controls.Add(label11);
+            Controls.Add(label10);
+            Controls.Add(label9);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(linkLabel2);
+            Controls.Add(linkLabel1);
+            Controls.Add(label3);
+            Controls.Add(label2);
             Controls.Add(label1);
+            Controls.Add(textusername);
+            Controls.Add(button1);
+            Controls.Add(pictureBox1);
+            DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.Fixed3D;
             Name = "Form1";
             RightToLeftLayout = true;
             Text = "Form1";
             Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Label label1;
         private TextBox textusername;
         private Button button1;
+        private PictureBox pictureBox1;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private LinkLabel linkLabel1;
+        private LinkLabel linkLabel2;
+        private Label label4;
+        private Label label5;
+        private Label label6;
+        private Label label7;
+        private Label label8;
+        private Label label9;
+        private Label label10;
+        private Label label11;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox4;
     }
 }

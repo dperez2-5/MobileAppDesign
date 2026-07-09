@@ -80,7 +80,7 @@ namespace MobileAppDesign
         private void button7_Click(object sender, EventArgs e)
         {
             SpendingPage spendingPage = new SpendingPage();
-            spendingPage.Show();  
+            spendingPage.Show();
             this.Hide();
         }
 
@@ -164,6 +164,16 @@ namespace MobileAppDesign
             HomePage home = new HomePage();
             home.Show();
             this.Hide();
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void progressBar1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
