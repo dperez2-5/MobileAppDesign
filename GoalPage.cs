@@ -21,5 +21,10 @@ namespace MobileAppDesign
         {
 
         }
+
+        private void foreverProgressBar1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

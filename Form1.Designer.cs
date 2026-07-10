@@ -199,7 +199,7 @@
             label8.AutoSize = true;
             label8.Location = new Point(155, 553);
             label8.Name = "label8";
-            label8.Size = new Size(411, 15);
+            label8.Size = new Size(412, 15);
             label8.TabIndex = 13;
             label8.Text = "Categorize every peso and see exactly where your allowance goes each week.";
             label8.Click += label8_Click;
@@ -226,10 +226,10 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI Variable Display", 30F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.Font = new Font("Microsoft Sans Serif", 30F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label11.Location = new Point(412, 72);
             label11.Name = "label11";
-            label11.Size = new Size(203, 53);
+            label11.Size = new Size(209, 46);
             label11.TabIndex = 16;
             label11.Text = "PesoWise";
             // 
@@ -272,7 +272,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightSteelBlue;
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(1420, 857);
+            ClientSize = new Size(1366, 745);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);

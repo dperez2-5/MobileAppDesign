@@ -58,11 +58,11 @@
             groupBox2 = new GroupBox();
             groupBox3 = new GroupBox();
             groupBox4 = new GroupBox();
-            label3 = new Label();
             progressBar1 = new ProgressBar();
+            label3 = new Label();
             groupBox5 = new GroupBox();
-            label9 = new Label();
             textBox5 = new TextBox();
+            label9 = new Label();
             label14 = new Label();
             button3 = new Button();
             button5 = new Button();
@@ -160,9 +160,9 @@
             groupBox1.Controls.Add(label6);
             groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(label4);
-            groupBox1.Location = new Point(1078, 579);
+            groupBox1.Location = new Point(1024, 487);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(324, 270);
+            groupBox1.Size = new Size(334, 259);
             groupBox1.TabIndex = 20;
             groupBox1.TabStop = false;
             groupBox1.Enter += groupBox1_Enter;
@@ -349,6 +349,7 @@
             pictureBox3.Size = new Size(1201, 313);
             pictureBox3.TabIndex = 31;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // groupBox2
             // 
@@ -380,6 +381,15 @@
             groupBox4.TabIndex = 34;
             groupBox4.TabStop = false;
             // 
+            // progressBar1
+            // 
+            progressBar1.ForeColor = SystemColors.GradientActiveCaption;
+            progressBar1.Location = new Point(34, 201);
+            progressBar1.Name = "progressBar1";
+            progressBar1.Size = new Size(553, 46);
+            progressBar1.TabIndex = 1;
+            progressBar1.Click += progressBar1_Click_1;
+            // 
             // label3
             // 
             label3.AutoSize = true;
@@ -389,15 +399,6 @@
             label3.Size = new Size(62, 32);
             label3.TabIndex = 0;
             label3.Text = "Goal";
-            // 
-            // progressBar1
-            // 
-            progressBar1.ForeColor = SystemColors.GradientActiveCaption;
-            progressBar1.Location = new Point(34, 201);
-            progressBar1.Name = "progressBar1";
-            progressBar1.Size = new Size(553, 46);
-            progressBar1.TabIndex = 1;
-            progressBar1.Click += progressBar1_Click_1;
             // 
             // groupBox5
             // 
@@ -409,6 +410,13 @@
             groupBox5.TabIndex = 35;
             groupBox5.TabStop = false;
             // 
+            // textBox5
+            // 
+            textBox5.Location = new Point(61, 49);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(135, 23);
+            textBox5.TabIndex = 37;
+            // 
             // label9
             // 
             label9.AutoSize = true;
@@ -418,13 +426,6 @@
             label9.Size = new Size(131, 18);
             label9.TabIndex = 36;
             label9.Text = "Total Expenses";
-            // 
-            // textBox5
-            // 
-            textBox5.Location = new Point(61, 49);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(135, 23);
-            textBox5.TabIndex = 37;
             // 
             // label14
             // 
@@ -440,14 +441,14 @@
             // 
             button3.Location = new Point(1048, 373);
             button3.Name = "button3";
-            button3.Size = new Size(171, 31);
+            button3.Size = new Size(171, 23);
             button3.TabIndex = 37;
             button3.Text = "add allowance";
             button3.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            button5.Location = new Point(1048, 436);
+            button5.Location = new Point(1048, 413);
             button5.Name = "button5";
             button5.Size = new Size(171, 23);
             button5.TabIndex = 38;
@@ -456,9 +457,9 @@
             // 
             // button8
             // 
-            button8.Location = new Point(1052, 496);
+            button8.Location = new Point(1048, 448);
             button8.Name = "button8";
-            button8.Size = new Size(167, 23);
+            button8.Size = new Size(171, 23);
             button8.TabIndex = 39;
             button8.Text = "set new goal";
             button8.UseVisualStyleBackColor = true;
@@ -470,7 +471,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(1424, 861);
+            ClientSize = new Size(1370, 749);
             Controls.Add(button8);
             Controls.Add(button5);
             Controls.Add(button3);
