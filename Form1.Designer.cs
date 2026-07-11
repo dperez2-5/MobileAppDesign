@@ -56,11 +56,11 @@
             // 
             // textusername
             // 
-            textusername.BackColor = Color.White;
-            textusername.Location = new Point(1046, 354);
+            textusername.BackColor = Color.LightSteelBlue;
+            textusername.Location = new Point(1064, 366);
             textusername.Multiline = true;
             textusername.Name = "textusername";
-            textusername.Size = new Size(300, 50);
+            textusername.Size = new Size(268, 38);
             textusername.TabIndex = 1;
             textusername.Text = "(username)";
             textusername.TextAlign = HorizontalAlignment.Center;
@@ -68,12 +68,12 @@
             // 
             // button1
             // 
-            button1.BackColor = Color.White;
+            button1.BackColor = SystemColors.ActiveCaption;
             button1.BackgroundImageLayout = ImageLayout.None;
             button1.ForeColor = SystemColors.ActiveCaptionText;
-            button1.Location = new Point(1046, 411);
+            button1.Location = new Point(1046, 419);
             button1.Name = "button1";
-            button1.Size = new Size(300, 50);
+            button1.Size = new Size(300, 42);
             button1.TabIndex = 2;
             button1.Text = "Login to PesoWise";
             button1.UseVisualStyleBackColor = false;
@@ -166,7 +166,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI Black", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(85, 161);
+            label5.Location = new Point(84, 146);
             label5.Name = "label5";
             label5.Size = new Size(675, 258);
             label5.TabIndex = 10;
@@ -199,7 +199,7 @@
             label8.AutoSize = true;
             label8.Location = new Point(155, 553);
             label8.Name = "label8";
-            label8.Size = new Size(411, 15);
+            label8.Size = new Size(412, 15);
             label8.TabIndex = 13;
             label8.Text = "Categorize every peso and see exactly where your allowance goes each week.";
             label8.Click += label8_Click;
@@ -226,10 +226,10 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI Variable Display", 30F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.Location = new Point(412, 72);
+            label11.Font = new Font("Berlin Sans FB", 30F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.Location = new Point(412, 68);
             label11.Name = "label11";
-            label11.Size = new Size(203, 53);
+            label11.Size = new Size(194, 50);
             label11.TabIndex = 16;
             label11.Text = "PesoWise";
             // 
@@ -237,9 +237,9 @@
             // 
             pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(330, 63);
+            pictureBox2.Location = new Point(360, 53);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(76, 71);
+            pictureBox2.Size = new Size(58, 65);
             pictureBox2.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox2.TabIndex = 17;
             pictureBox2.TabStop = false;
@@ -272,7 +272,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightSteelBlue;
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(1420, 857);
+            ClientSize = new Size(1366, 745);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);

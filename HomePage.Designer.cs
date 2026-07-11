@@ -33,19 +33,8 @@
             button4 = new Button();
             button6 = new Button();
             button7 = new Button();
-            label2 = new Label();
-            textBox1 = new TextBox();
-            groupBox1 = new GroupBox();
-            button1 = new Button();
-            label8 = new Label();
-            comboBox1 = new ComboBox();
-            dateTimePicker1 = new DateTimePicker();
-            textBox4 = new TextBox();
-            textBox3 = new TextBox();
-            label7 = new Label();
-            label6 = new Label();
-            label5 = new Label();
-            label4 = new Label();
+            lblAllowance = new Label();
+            txtBalance = new TextBox();
             textBox2 = new TextBox();
             label10 = new Label();
             pictureBox2 = new PictureBox();
@@ -56,18 +45,25 @@
             label1 = new Label();
             pictureBox3 = new PictureBox();
             groupBox2 = new GroupBox();
+            txtAddAllowance = new TextBox();
+            btnAddAllowance = new Button();
             groupBox3 = new GroupBox();
             groupBox4 = new GroupBox();
+            circleProgressBar1 = new ReaLTaiizor.Controls.CircleProgressBar();
             label3 = new Label();
-            progressBar1 = new ProgressBar();
             groupBox5 = new GroupBox();
+            txtTotalExpenses = new TextBox();
             label9 = new Label();
-            textBox5 = new TextBox();
-            label14 = new Label();
-            button3 = new Button();
-            button5 = new Button();
-            button8 = new Button();
-            groupBox1.SuspendLayout();
+            dateTimePicker2 = new DateTimePicker();
+            groupBox1 = new GroupBox();
+            txtAmount = new TextBox();
+            txtDescription = new TextBox();
+            cmbCategory = new ComboBox();
+            label7 = new Label();
+            label6 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            btnAddExpense = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -75,6 +71,7 @@
             groupBox3.SuspendLayout();
             groupBox4.SuspendLayout();
             groupBox5.SuspendLayout();
+            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // button2
@@ -115,6 +112,7 @@
             button6.TabIndex = 10;
             button6.Text = "GOALS";
             button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // button7
             // 
@@ -129,153 +127,41 @@
             button7.UseVisualStyleBackColor = false;
             button7.Click += button7_Click;
             // 
-            // label2
+            // lblAllowance
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(6, 19);
-            label2.Name = "label2";
-            label2.Size = new Size(155, 18);
-            label2.TabIndex = 17;
-            label2.Text = "Weekly Allowance";
-            label2.Click += label2_Click;
+            lblAllowance.AutoSize = true;
+            lblAllowance.Font = new Font("Berlin Sans FB", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblAllowance.Location = new Point(6, 19);
+            lblAllowance.Name = "lblAllowance";
+            lblAllowance.Size = new Size(157, 21);
+            lblAllowance.TabIndex = 17;
+            lblAllowance.Text = "Weekly Allowance";
+            lblAllowance.Click += label2_Click;
             // 
-            // textBox1
+            // txtBalance
             // 
-            textBox1.Location = new Point(73, 49);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(155, 23);
-            textBox1.TabIndex = 18;
-            textBox1.TextChanged += textBox1_TextChanged;
-            // 
-            // groupBox1
-            // 
-            groupBox1.Controls.Add(button1);
-            groupBox1.Controls.Add(label8);
-            groupBox1.Controls.Add(comboBox1);
-            groupBox1.Controls.Add(dateTimePicker1);
-            groupBox1.Controls.Add(textBox4);
-            groupBox1.Controls.Add(textBox3);
-            groupBox1.Controls.Add(label7);
-            groupBox1.Controls.Add(label6);
-            groupBox1.Controls.Add(label5);
-            groupBox1.Controls.Add(label4);
-            groupBox1.Location = new Point(1078, 579);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(324, 270);
-            groupBox1.TabIndex = 20;
-            groupBox1.TabStop = false;
-            groupBox1.Enter += groupBox1_Enter;
-            // 
-            // button1
-            // 
-            button1.Font = new Font("Verdana", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(118, 231);
-            button1.Name = "button1";
-            button1.Size = new Size(68, 24);
-            button1.TabIndex = 22;
-            button1.Text = "+ Add";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Verdana", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.Location = new Point(6, 28);
-            label8.Name = "label8";
-            label8.Size = new Size(119, 13);
-            label8.TabIndex = 21;
-            label8.Text = "ADD NEW EXPENSE";
-            label8.Click += label8_Click;
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Food", "Transportation", "School Expense", "Bill (House)", "Savings Goal", "Others" });
-            comboBox1.Location = new Point(182, 106);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 9;
-            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
-            // 
-            // dateTimePicker1
-            // 
-            dateTimePicker1.Location = new Point(128, 57);
-            dateTimePicker1.Margin = new Padding(1);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(190, 23);
-            dateTimePicker1.TabIndex = 8;
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(182, 147);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(121, 23);
-            textBox4.TabIndex = 6;
-            textBox4.TextChanged += textBox4_TextChanged;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(182, 190);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(121, 23);
-            textBox3.TabIndex = 5;
-            textBox3.TextChanged += textBox3_TextChanged;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(47, 198);
-            label7.Name = "label7";
-            label7.Size = new Size(54, 15);
-            label7.TabIndex = 4;
-            label7.Text = "Amount:";
-            label7.Click += label7_Click;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(43, 155);
-            label6.Name = "label6";
-            label6.Size = new Size(70, 15);
-            label6.TabIndex = 3;
-            label6.Text = "Description:";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(43, 109);
-            label5.Name = "label5";
-            label5.Size = new Size(58, 15);
-            label5.TabIndex = 2;
-            label5.Text = "Category:";
-            label5.Click += label5_Click;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(47, 65);
-            label4.Name = "label4";
-            label4.Size = new Size(34, 15);
-            label4.TabIndex = 0;
-            label4.Text = "Date:";
-            label4.Click += label4_Click;
+            txtBalance.Location = new Point(35, 53);
+            txtBalance.Name = "txtBalance";
+            txtBalance.ReadOnly = true;
+            txtBalance.Size = new Size(97, 23);
+            txtBalance.TabIndex = 18;
+            txtBalance.Text = "0";
+            txtBalance.TextChanged += textBox1_TextChanged;
             // 
             // textBox2
             // 
             textBox2.Location = new Point(75, 49);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(135, 23);
+            textBox2.Size = new Size(183, 23);
             textBox2.TabIndex = 22;
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label10.Font = new Font("Berlin Sans FB", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label10.Location = new Point(6, 19);
             label10.Name = "label10";
-            label10.Size = new Size(138, 18);
+            label10.Size = new Size(139, 21);
             label10.TabIndex = 21;
             label10.Text = "Current Balance";
             label10.Click += label10_Click;
@@ -293,10 +179,10 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 12F, FontStyle.Italic);
-            label11.Location = new Point(27, 145);
+            label11.Font = new Font("Berlin Sans FB Demi", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label11.Location = new Point(27, 164);
             label11.Name = "label11";
-            label11.Size = new Size(88, 21);
+            label11.Size = new Size(87, 18);
             label11.TabIndex = 25;
             label11.Text = "Main Menu";
             // 
@@ -313,19 +199,19 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label13.Location = new Point(141, 76);
+            label13.Font = new Font("Berlin Sans FB", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label13.Location = new Point(138, 77);
             label13.Name = "label13";
-            label13.Size = new Size(101, 30);
+            label13.Size = new Size(104, 26);
             label13.TabIndex = 27;
             label13.Text = "PesoWise";
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(65, 55);
+            pictureBox1.Location = new Point(74, 55);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(70, 70);
+            pictureBox1.Size = new Size(61, 65);
             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox1.TabIndex = 28;
             pictureBox1.TabStop = false;
@@ -333,10 +219,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Berlin Sans FB Demi", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label1.Location = new Point(332, 55);
             label1.Name = "label1";
-            label1.Size = new Size(842, 32);
+            label1.Size = new Size(853, 27);
             label1.TabIndex = 29;
             label1.Text = "Good Morning, User(i code ra nato ang unsa na user i butang kay mu display)";
             // 
@@ -352,19 +238,42 @@
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(label2);
-            groupBox2.Controls.Add(textBox1);
-            groupBox2.Location = new Point(358, 174);
+            groupBox2.BackColor = Color.LightSteelBlue;
+            groupBox2.Controls.Add(txtAddAllowance);
+            groupBox2.Controls.Add(btnAddAllowance);
+            groupBox2.Controls.Add(lblAllowance);
+            groupBox2.Controls.Add(txtBalance);
+            groupBox2.Location = new Point(332, 174);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(320, 105);
             groupBox2.TabIndex = 32;
             groupBox2.TabStop = false;
             // 
+            // txtAddAllowance
+            // 
+            txtAddAllowance.Location = new Point(176, 19);
+            txtAddAllowance.Name = "txtAddAllowance";
+            txtAddAllowance.Size = new Size(118, 23);
+            txtAddAllowance.TabIndex = 20;
+            txtAddAllowance.TextChanged += textBox7_TextChanged;
+            // 
+            // btnAddAllowance
+            // 
+            btnAddAllowance.Font = new Font("Berlin Sans FB", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAddAllowance.Location = new Point(143, 49);
+            btnAddAllowance.Name = "btnAddAllowance";
+            btnAddAllowance.Size = new Size(96, 33);
+            btnAddAllowance.TabIndex = 19;
+            btnAddAllowance.Text = "add allowance";
+            btnAddAllowance.UseVisualStyleBackColor = true;
+            btnAddAllowance.Click += button1_Click_1;
+            // 
             // groupBox3
             // 
+            groupBox3.BackColor = Color.LightSteelBlue;
             groupBox3.Controls.Add(label10);
             groupBox3.Controls.Add(textBox2);
-            groupBox3.Location = new Point(698, 174);
+            groupBox3.Location = new Point(678, 174);
             groupBox3.Name = "groupBox3";
             groupBox3.Size = new Size(320, 105);
             groupBox3.TabIndex = 33;
@@ -372,96 +281,169 @@
             // 
             // groupBox4
             // 
-            groupBox4.Controls.Add(progressBar1);
+            groupBox4.BackColor = Color.LightSteelBlue;
+            groupBox4.Controls.Add(circleProgressBar1);
             groupBox4.Controls.Add(label3);
-            groupBox4.Location = new Point(358, 330);
+            groupBox4.Location = new Point(891, 324);
             groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(660, 290);
+            groupBox4.Size = new Size(243, 173);
             groupBox4.TabIndex = 34;
             groupBox4.TabStop = false;
+            // 
+            // circleProgressBar1
+            // 
+            circleProgressBar1.Font = new Font("Segoe UI", 15F);
+            circleProgressBar1.Location = new Point(68, -3);
+            circleProgressBar1.Maximum = 100L;
+            circleProgressBar1.MinimumSize = new Size(100, 100);
+            circleProgressBar1.Name = "circleProgressBar1";
+            circleProgressBar1.PercentColor = Color.White;
+            circleProgressBar1.ProgressColor1 = Color.FromArgb(128, 128, 255);
+            circleProgressBar1.ProgressColor2 = Color.RoyalBlue;
+            circleProgressBar1.ProgressShape = ReaLTaiizor.Controls.CircleProgressBar._ProgressShape.Round;
+            circleProgressBar1.Size = new Size(175, 175);
+            circleProgressBar1.TabIndex = 42;
+            circleProgressBar1.Text = "circleProgressBar1";
+            circleProgressBar1.Value = 59L;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(6, 19);
+            label3.Font = new Font("Berlin Sans FB", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(8, 7);
             label3.Name = "label3";
-            label3.Size = new Size(62, 32);
+            label3.Size = new Size(58, 26);
             label3.TabIndex = 0;
             label3.Text = "Goal";
             // 
-            // progressBar1
-            // 
-            progressBar1.ForeColor = SystemColors.GradientActiveCaption;
-            progressBar1.Location = new Point(34, 201);
-            progressBar1.Name = "progressBar1";
-            progressBar1.Size = new Size(553, 46);
-            progressBar1.TabIndex = 1;
-            progressBar1.Click += progressBar1_Click_1;
-            // 
             // groupBox5
             // 
-            groupBox5.Controls.Add(textBox5);
+            groupBox5.BackColor = Color.LightSteelBlue;
+            groupBox5.Controls.Add(txtTotalExpenses);
             groupBox5.Controls.Add(label9);
-            groupBox5.Location = new Point(1038, 174);
+            groupBox5.Location = new Point(1025, 174);
             groupBox5.Name = "groupBox5";
             groupBox5.Size = new Size(320, 105);
             groupBox5.TabIndex = 35;
             groupBox5.TabStop = false;
             // 
+            // txtTotalExpenses
+            // 
+            txtTotalExpenses.Location = new Point(61, 49);
+            txtTotalExpenses.Name = "txtTotalExpenses";
+            txtTotalExpenses.ReadOnly = true;
+            txtTotalExpenses.Size = new Size(200, 23);
+            txtTotalExpenses.TabIndex = 37;
+            txtTotalExpenses.Text = "0.00";
+            // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Font = new Font("Verdana", 12F);
+            label9.Font = new Font("Berlin Sans FB", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label9.Location = new Point(10, 19);
             label9.Name = "label9";
-            label9.Size = new Size(131, 18);
+            label9.Size = new Size(126, 21);
             label9.TabIndex = 36;
             label9.Text = "Total Expenses";
             // 
-            // textBox5
+            // dateTimePicker2
             // 
-            textBox5.Location = new Point(61, 49);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(135, 23);
-            textBox5.TabIndex = 37;
+            dateTimePicker2.CalendarMonthBackground = Color.LightSteelBlue;
+            dateTimePicker2.CalendarTitleBackColor = Color.LightSteelBlue;
+            dateTimePicker2.CalendarTrailingForeColor = Color.LightSteelBlue;
+            dateTimePicker2.Font = new Font("Berlin Sans FB", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dateTimePicker2.Location = new Point(98, 41);
+            dateTimePicker2.Name = "dateTimePicker2";
+            dateTimePicker2.Size = new Size(200, 21);
+            dateTimePicker2.TabIndex = 40;
             // 
-            // label14
+            // groupBox1
             // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label14.Location = new Point(1045, 341);
-            label14.Name = "label14";
-            label14.Size = new Size(104, 21);
-            label14.TabIndex = 36;
-            label14.Text = "Action Center";
+            groupBox1.BackColor = Color.LightSteelBlue;
+            groupBox1.Controls.Add(btnAddExpense);
+            groupBox1.Controls.Add(txtAmount);
+            groupBox1.Controls.Add(txtDescription);
+            groupBox1.Controls.Add(cmbCategory);
+            groupBox1.Controls.Add(label7);
+            groupBox1.Controls.Add(label6);
+            groupBox1.Controls.Add(dateTimePicker2);
+            groupBox1.Controls.Add(label5);
+            groupBox1.Controls.Add(label4);
+            groupBox1.Font = new Font("Berlin Sans FB", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            groupBox1.Location = new Point(467, 324);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(315, 311);
+            groupBox1.TabIndex = 41;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "ADD NEW EXPENSE";
             // 
-            // button3
+            // txtAmount
             // 
-            button3.Location = new Point(1048, 373);
-            button3.Name = "button3";
-            button3.Size = new Size(171, 31);
-            button3.TabIndex = 37;
-            button3.Text = "add allowance";
-            button3.UseVisualStyleBackColor = true;
+            txtAmount.Location = new Point(129, 255);
+            txtAmount.Name = "txtAmount";
+            txtAmount.Size = new Size(122, 24);
+            txtAmount.TabIndex = 43;
             // 
-            // button5
+            // txtDescription
             // 
-            button5.Location = new Point(1048, 436);
-            button5.Name = "button5";
-            button5.Size = new Size(171, 23);
-            button5.TabIndex = 38;
-            button5.Text = "add expense";
-            button5.UseVisualStyleBackColor = true;
+            txtDescription.Location = new Point(129, 175);
+            txtDescription.Name = "txtDescription";
+            txtDescription.Size = new Size(122, 24);
+            txtDescription.TabIndex = 42;
             // 
-            // button8
+            // cmbCategory
             // 
-            button8.Location = new Point(1052, 496);
-            button8.Name = "button8";
-            button8.Size = new Size(167, 23);
-            button8.TabIndex = 39;
-            button8.Text = "set new goal";
-            button8.UseVisualStyleBackColor = true;
+            cmbCategory.FormattingEnabled = true;
+            cmbCategory.Items.AddRange(new object[] { "Food", "Transportation", "School Expense", "Bills (House)", "Others" });
+            cmbCategory.Location = new Point(129, 104);
+            cmbCategory.Name = "cmbCategory";
+            cmbCategory.Size = new Size(122, 25);
+            cmbCategory.TabIndex = 41;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(41, 112);
+            label7.Name = "label7";
+            label7.Size = new Size(69, 17);
+            label7.TabIndex = 3;
+            label7.Text = "Category:";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(41, 182);
+            label6.Name = "label6";
+            label6.Size = new Size(79, 17);
+            label6.TabIndex = 2;
+            label6.Text = "Description:";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(40, 256);
+            label5.Name = "label5";
+            label5.Size = new Size(64, 17);
+            label5.TabIndex = 1;
+            label5.Text = "Amount:";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(41, 45);
+            label4.Name = "label4";
+            label4.Size = new Size(42, 17);
+            label4.TabIndex = 0;
+            label4.Text = "Date:";
+            // 
+            // btnAddExpense
+            // 
+            btnAddExpense.Location = new Point(129, 285);
+            btnAddExpense.Name = "btnAddExpense";
+            btnAddExpense.Size = new Size(122, 23);
+            btnAddExpense.TabIndex = 42;
+            btnAddExpense.Text = "Add Expense";
+            btnAddExpense.UseVisualStyleBackColor = true;
             // 
             // HomePage
             // 
@@ -470,11 +452,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(1424, 861);
-            Controls.Add(button8);
-            Controls.Add(button5);
-            Controls.Add(button3);
-            Controls.Add(label14);
+            ClientSize = new Size(1370, 749);
+            Controls.Add(groupBox1);
             Controls.Add(groupBox5);
             Controls.Add(groupBox4);
             Controls.Add(groupBox3);
@@ -484,7 +463,6 @@
             Controls.Add(label13);
             Controls.Add(label12);
             Controls.Add(label11);
-            Controls.Add(groupBox1);
             Controls.Add(button7);
             Controls.Add(button6);
             Controls.Add(button4);
@@ -492,10 +470,8 @@
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox3);
             Name = "HomePage";
-            Text = "HomePage";
+            Text = "0";
             Load += HomePage_Load;
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -507,6 +483,8 @@
             groupBox4.PerformLayout();
             groupBox5.ResumeLayout(false);
             groupBox5.PerformLayout();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -517,19 +495,18 @@
         private Button button4;
         private Button button6;
         private Button button7;
-        private Label label2;
-        private TextBox textBox1;
+        private Label lblAllowance;
+        private TextBox txtBalance;
         private GroupBox groupBox1;
         private Label label4;
         private Label label7;
         private Label label6;
         private Label label5;
-        private TextBox textBox4;
-        private TextBox textBox3;
+        private TextBox txtDescription;
         private DateTimePicker dateTimePicker1;
-        private ComboBox comboBox1;
+        private ComboBox cmbCategory;
         private Label label8;
-        private Button button1;
+        private Button btnAddAllowance;
         private TextBox textBox2;
         private Label label10;
         private PictureBox pictureBox2;
@@ -541,14 +518,14 @@
         private GroupBox groupBox2;
         private GroupBox groupBox3;
         private GroupBox groupBox4;
-        private ProgressBar progressBar1;
         private Label label3;
         private GroupBox groupBox5;
-        private TextBox textBox5;
+        private TextBox txtTotalExpenses;
         private Label label9;
-        private Label label14;
-        private Button button3;
-        private Button button5;
-        private Button button8;
+        private DateTimePicker dateTimePicker2;
+        private TextBox txtAmount;
+        private ReaLTaiizor.Controls.CircleProgressBar circleProgressBar1;
+        private TextBox txtAddAllowance;
+        private Button btnAddExpense;
     }
 }
