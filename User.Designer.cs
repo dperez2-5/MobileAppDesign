@@ -39,9 +39,24 @@
             button2 = new Button();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
+            label14 = new Label();
+            label2 = new Label();
+            label1 = new Label();
+            label3 = new Label();
+            pictureBox4 = new PictureBox();
+            label4 = new Label();
+            label5 = new Label();
+            button1 = new Button();
+            button3 = new Button();
+            button5 = new Button();
+            pictureBox5 = new PictureBox();
+            pictureBox6 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -163,12 +178,166 @@
             pictureBox3.TabIndex = 51;
             pictureBox3.TabStop = false;
             // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(126, 218);
+            label14.Name = "label14";
+            label14.Size = new Size(151, 25);
+            label14.TabIndex = 63;
+            label14.Text = "Allowance Tracker";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.Gray;
+            label2.Location = new Point(454, 109);
+            label2.Name = "label2";
+            label2.Size = new Size(373, 30);
+            label2.TabIndex = 62;
+            label2.Text = "Let's make today a smart money day!";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.White;
+            label1.Font = new Font("Segoe UI", 22F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.CornflowerBlue;
+            label1.Location = new Point(92, 158);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(221, 60);
+            label1.TabIndex = 58;
+            label1.Text = "PesoWise";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 22F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(435, 32);
+            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(1532, 60);
+            label3.TabIndex = 60;
+            label3.Text = "Good Day, User(i code ra nato ang unsa na user i butang kay mu display)";
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(130, 34);
+            pictureBox4.Margin = new Padding(4, 5, 4, 5);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(147, 136);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 59;
+            pictureBox4.TabStop = false;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.White;
+            label4.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Location = new Point(143, 694);
+            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(90, 28);
+            label4.TabIndex = 57;
+            label4.Text = "Account";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.White;
+            label5.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(143, 289);
+            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(120, 28);
+            label5.TabIndex = 56;
+            label5.Text = "Main Menu";
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.White;
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.CornflowerBlue;
+            button1.Location = new Point(37, 407);
+            button1.Margin = new Padding(4, 5, 4, 5);
+            button1.Name = "button1";
+            button1.Size = new Size(307, 58);
+            button1.TabIndex = 54;
+            button1.Text = "💳 SPENDING";
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.White;
+            button3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button3.ForeColor = Color.CornflowerBlue;
+            button3.Location = new Point(37, 492);
+            button3.Margin = new Padding(4, 5, 4, 5);
+            button3.Name = "button3";
+            button3.Size = new Size(307, 58);
+            button3.TabIndex = 53;
+            button3.Text = "🎯GOALS";
+            button3.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            button5.BackColor = Color.CornflowerBlue;
+            button5.BackgroundImageLayout = ImageLayout.Center;
+            button5.FlatStyle = FlatStyle.Flat;
+            button5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button5.ForeColor = Color.White;
+            button5.Location = new Point(37, 322);
+            button5.Margin = new Padding(4, 5, 4, 5);
+            button5.Name = "button5";
+            button5.Size = new Size(307, 58);
+            button5.TabIndex = 52;
+            button5.Text = "🏠 HOME";
+            button5.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.BackColor = Color.White;
+            pictureBox5.Location = new Point(-6, -23);
+            pictureBox5.Margin = new Padding(4, 5, 4, 5);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Padding = new Padding(15);
+            pictureBox5.Size = new Size(423, 1500);
+            pictureBox5.TabIndex = 55;
+            pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.BackColor = Color.AliceBlue;
+            pictureBox6.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox6.Location = new Point(321, -290);
+            pictureBox6.Margin = new Padding(4, 5, 4, 5);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(1715, 520);
+            pictureBox6.TabIndex = 61;
+            pictureBox6.TabStop = false;
+            // 
             // User
             // 
             AcceptButton = button4;
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1924, 1170);
+            Controls.Add(label14);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(label3);
+            Controls.Add(pictureBox4);
+            Controls.Add(label4);
+            Controls.Add(label5);
+            Controls.Add(button1);
+            Controls.Add(button3);
+            Controls.Add(button5);
+            Controls.Add(pictureBox5);
+            Controls.Add(pictureBox6);
             Controls.Add(pictureBox1);
             Controls.Add(label13);
             Controls.Add(label12);
@@ -184,6 +353,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -200,5 +372,17 @@
         private Button button2;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
+        private Label label14;
+        private Label label2;
+        private Label label1;
+        private Label label3;
+        private PictureBox pictureBox4;
+        private Label label4;
+        private Label label5;
+        private Button button1;
+        private Button button3;
+        private Button button5;
+        private PictureBox pictureBox5;
+        private PictureBox pictureBox6;
     }
 }

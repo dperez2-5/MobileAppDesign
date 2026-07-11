@@ -43,24 +43,39 @@
             cyberTextBox1 = new ReaLTaiizor.Controls.CyberTextBox();
             textBoxEdit1 = new ReaLTaiizor.Controls.TextBoxEdit();
             groupBox1 = new GroupBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
             dateTimePicker1 = new DateTimePicker();
+            textBox3 = new TextBox();
+            textBox2 = new TextBox();
+            textBox1 = new TextBox();
+            label4 = new Label();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
+            label14 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            pictureBox4 = new PictureBox();
+            label8 = new Label();
+            label9 = new Label();
+            button1 = new Button();
+            button3 = new Button();
+            button5 = new Button();
+            pictureBox5 = new PictureBox();
+            pictureBox6 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(109, 94);
+            pictureBox1.Location = new Point(106, 97);
             pictureBox1.Margin = new Padding(4, 5, 4, 5);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(87, 108);
@@ -72,7 +87,7 @@
             // 
             label13.AutoSize = true;
             label13.Font = new Font("Berlin Sans FB", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label13.Location = new Point(200, 130);
+            label13.Location = new Point(197, 133);
             label13.Margin = new Padding(4, 0, 4, 0);
             label13.Name = "label13";
             label13.Size = new Size(158, 40);
@@ -83,7 +98,7 @@
             // 
             label12.AutoSize = true;
             label12.Font = new Font("Segoe UI", 12F, FontStyle.Italic);
-            label12.Location = new Point(42, 657);
+            label12.Location = new Point(39, 660);
             label12.Margin = new Padding(4, 0, 4, 0);
             label12.Name = "label12";
             label12.Size = new Size(96, 32);
@@ -94,7 +109,7 @@
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Berlin Sans FB Demi", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label11.Location = new Point(42, 275);
+            label11.Location = new Point(39, 278);
             label11.Margin = new Padding(4, 0, 4, 0);
             label11.Name = "label11";
             label11.Size = new Size(134, 27);
@@ -106,7 +121,7 @@
             button7.BackColor = Color.White;
             button7.Font = new Font("Verdana", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button7.ForeColor = Color.Black;
-            button7.Location = new Point(42, 409);
+            button7.Location = new Point(39, 412);
             button7.Margin = new Padding(4, 5, 4, 5);
             button7.Name = "button7";
             button7.Size = new Size(307, 58);
@@ -119,7 +134,7 @@
             button6.BackColor = Color.White;
             button6.Font = new Font("Verdana", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button6.ForeColor = Color.Black;
-            button6.Location = new Point(42, 494);
+            button6.Location = new Point(39, 497);
             button6.Margin = new Padding(4, 5, 4, 5);
             button6.Name = "button6";
             button6.Size = new Size(307, 58);
@@ -132,7 +147,7 @@
             button4.BackColor = Color.White;
             button4.Font = new Font("Verdana", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button4.ForeColor = Color.Black;
-            button4.Location = new Point(42, 729);
+            button4.Location = new Point(39, 732);
             button4.Margin = new Padding(4, 5, 4, 5);
             button4.Name = "button4";
             button4.Size = new Size(307, 58);
@@ -146,7 +161,7 @@
             button2.BackgroundImageLayout = ImageLayout.Center;
             button2.Font = new Font("Verdana", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.Black;
-            button2.Location = new Point(42, 327);
+            button2.Location = new Point(39, 330);
             button2.Margin = new Padding(4, 5, 4, 5);
             button2.Name = "button2";
             button2.Size = new Size(307, 58);
@@ -158,7 +173,7 @@
             // 
             pictureBox2.BackColor = Color.White;
             pictureBox2.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox2.Location = new Point(-1, -21);
+            pictureBox2.Location = new Point(-4, -18);
             pictureBox2.Margin = new Padding(4, 5, 4, 5);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(423, 1500);
@@ -169,7 +184,7 @@
             // 
             pictureBox3.BackColor = Color.White;
             pictureBox3.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox3.Location = new Point(326, -288);
+            pictureBox3.Location = new Point(323, -285);
             pictureBox3.Margin = new Padding(4, 5, 4, 5);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(1715, 520);
@@ -229,7 +244,7 @@
             textBoxEdit1.Font = new Font("Berlin Sans FB", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
             textBoxEdit1.ForeColor = Color.White;
             textBoxEdit1.Image = null;
-            textBoxEdit1.Location = new Point(453, 264);
+            textBoxEdit1.Location = new Point(450, 267);
             textBoxEdit1.MaxLength = 32767;
             textBoxEdit1.Multiline = false;
             textBoxEdit1.Name = "textBoxEdit1";
@@ -256,35 +271,36 @@
             groupBox1.TabIndex = 58;
             groupBox1.TabStop = false;
             // 
-            // label1
+            // dateTimePicker1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Berlin Sans FB", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(99, 88);
-            label1.Name = "label1";
-            label1.Size = new Size(145, 26);
-            label1.TabIndex = 0;
-            label1.Text = "Current Goal:";
+            dateTimePicker1.Location = new Point(339, 478);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(300, 31);
+            dateTimePicker1.TabIndex = 7;
             // 
-            // label2
+            // textBox3
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Berlin Sans FB", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(107, 483);
-            label2.Name = "label2";
-            label2.Size = new Size(137, 26);
-            label2.TabIndex = 1;
-            label2.Text = "Target Date:";
+            textBox3.Font = new Font("Berlin Sans FB", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox3.Location = new Point(358, 342);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(229, 34);
+            textBox3.TabIndex = 6;
             // 
-            // label3
+            // textBox2
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Berlin Sans FB", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(102, 342);
-            label3.Name = "label3";
-            label3.Size = new Size(167, 26);
-            label3.TabIndex = 2;
-            label3.Text = "Saved Amount:";
+            textBox2.Font = new Font("Berlin Sans FB", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox2.Location = new Point(358, 209);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(229, 34);
+            textBox2.TabIndex = 5;
+            // 
+            // textBox1
+            // 
+            textBox1.Font = new Font("Berlin Sans FB", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox1.Location = new Point(358, 83);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(229, 34);
+            textBox1.TabIndex = 4;
             // 
             // label4
             // 
@@ -296,36 +312,177 @@
             label4.TabIndex = 3;
             label4.Text = "Target Amount:";
             // 
-            // textBox1
+            // label3
             // 
-            textBox1.Font = new Font("Berlin Sans FB", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(358, 83);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(229, 34);
-            textBox1.TabIndex = 4;
+            label3.AutoSize = true;
+            label3.Font = new Font("Berlin Sans FB", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(102, 342);
+            label3.Name = "label3";
+            label3.Size = new Size(167, 26);
+            label3.TabIndex = 2;
+            label3.Text = "Saved Amount:";
             // 
-            // textBox2
+            // label2
             // 
-            textBox2.Font = new Font("Berlin Sans FB", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(358, 209);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(229, 34);
-            textBox2.TabIndex = 5;
+            label2.AutoSize = true;
+            label2.Font = new Font("Berlin Sans FB", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(107, 483);
+            label2.Name = "label2";
+            label2.Size = new Size(137, 26);
+            label2.TabIndex = 1;
+            label2.Text = "Target Date:";
             // 
-            // textBox3
+            // label1
             // 
-            textBox3.Font = new Font("Berlin Sans FB", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox3.Location = new Point(358, 342);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(229, 34);
-            textBox3.TabIndex = 6;
+            label1.AutoSize = true;
+            label1.Font = new Font("Berlin Sans FB", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(99, 88);
+            label1.Name = "label1";
+            label1.Size = new Size(145, 26);
+            label1.TabIndex = 0;
+            label1.Text = "Current Goal:";
             // 
-            // dateTimePicker1
+            // label14
             // 
-            dateTimePicker1.Location = new Point(339, 478);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(300, 31);
-            dateTimePicker1.TabIndex = 7;
+            label14.AutoSize = true;
+            label14.Location = new Point(128, 223);
+            label14.Name = "label14";
+            label14.Size = new Size(151, 25);
+            label14.TabIndex = 70;
+            label14.Text = "Allowance Tracker";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.ForeColor = Color.Gray;
+            label5.Location = new Point(456, 114);
+            label5.Name = "label5";
+            label5.Size = new Size(373, 30);
+            label5.TabIndex = 69;
+            label5.Text = "Let's make today a smart money day!";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.White;
+            label6.Font = new Font("Segoe UI", 22F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.CornflowerBlue;
+            label6.Location = new Point(94, 163);
+            label6.Margin = new Padding(4, 0, 4, 0);
+            label6.Name = "label6";
+            label6.Size = new Size(221, 60);
+            label6.TabIndex = 65;
+            label6.Text = "PesoWise";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 22F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.Location = new Point(437, 37);
+            label7.Margin = new Padding(4, 0, 4, 0);
+            label7.Name = "label7";
+            label7.Size = new Size(1532, 60);
+            label7.TabIndex = 67;
+            label7.Text = "Good Day, User(i code ra nato ang unsa na user i butang kay mu display)";
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(132, 39);
+            pictureBox4.Margin = new Padding(4, 5, 4, 5);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(147, 136);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 66;
+            pictureBox4.TabStop = false;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.BackColor = Color.White;
+            label8.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.Location = new Point(145, 699);
+            label8.Margin = new Padding(4, 0, 4, 0);
+            label8.Name = "label8";
+            label8.Size = new Size(90, 28);
+            label8.TabIndex = 64;
+            label8.Text = "Account";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.BackColor = Color.White;
+            label9.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.Location = new Point(145, 294);
+            label9.Margin = new Padding(4, 0, 4, 0);
+            label9.Name = "label9";
+            label9.Size = new Size(120, 28);
+            label9.TabIndex = 63;
+            label9.Text = "Main Menu";
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.White;
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.CornflowerBlue;
+            button1.Location = new Point(39, 412);
+            button1.Margin = new Padding(4, 5, 4, 5);
+            button1.Name = "button1";
+            button1.Size = new Size(307, 58);
+            button1.TabIndex = 61;
+            button1.Text = "💳 SPENDING";
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.CornflowerBlue;
+            button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button3.ForeColor = Color.White;
+            button3.Location = new Point(39, 497);
+            button3.Margin = new Padding(4, 5, 4, 5);
+            button3.Name = "button3";
+            button3.Size = new Size(307, 58);
+            button3.TabIndex = 60;
+            button3.Text = "🎯GOALS";
+            button3.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            button5.BackColor = Color.White;
+            button5.BackgroundImageLayout = ImageLayout.Center;
+            button5.FlatStyle = FlatStyle.Flat;
+            button5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button5.ForeColor = Color.CornflowerBlue;
+            button5.Location = new Point(39, 327);
+            button5.Margin = new Padding(4, 5, 4, 5);
+            button5.Name = "button5";
+            button5.Size = new Size(307, 58);
+            button5.TabIndex = 59;
+            button5.Text = "🏠 HOME";
+            button5.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.BackColor = Color.White;
+            pictureBox5.Location = new Point(-4, -18);
+            pictureBox5.Margin = new Padding(4, 5, 4, 5);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Padding = new Padding(15);
+            pictureBox5.Size = new Size(423, 1500);
+            pictureBox5.TabIndex = 62;
+            pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.BackColor = Color.AliceBlue;
+            pictureBox6.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox6.Location = new Point(323, -285);
+            pictureBox6.Margin = new Padding(4, 5, 4, 5);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(1715, 520);
+            pictureBox6.TabIndex = 68;
+            pictureBox6.TabStop = false;
             // 
             // GoalPage
             // 
@@ -333,6 +490,18 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1924, 1170);
+            Controls.Add(label14);
+            Controls.Add(label5);
+            Controls.Add(label6);
+            Controls.Add(label7);
+            Controls.Add(pictureBox4);
+            Controls.Add(label8);
+            Controls.Add(label9);
+            Controls.Add(button1);
+            Controls.Add(button3);
+            Controls.Add(button5);
+            Controls.Add(pictureBox5);
+            Controls.Add(pictureBox6);
             Controls.Add(groupBox1);
             Controls.Add(textBoxEdit1);
             Controls.Add(cyberTextBox1);
@@ -355,6 +524,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -383,5 +555,17 @@
         private DateTimePicker dateTimePicker1;
         private TextBox textBox3;
         private TextBox textBox2;
+        private Label label14;
+        private Label label5;
+        private Label label6;
+        private Label label7;
+        private PictureBox pictureBox4;
+        private Label label8;
+        private Label label9;
+        private Button button1;
+        private Button button3;
+        private Button button5;
+        private PictureBox pictureBox5;
+        private PictureBox pictureBox6;
     }
 }

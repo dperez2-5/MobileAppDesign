@@ -91,7 +91,7 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(39, 322);
+            button2.Location = new Point(43, 324);
             button2.Margin = new Padding(4, 5, 4, 5);
             button2.Name = "button2";
             button2.Size = new Size(307, 58);
@@ -103,23 +103,23 @@
             // button4
             // 
             button4.BackColor = Color.White;
-            button4.Font = new Font("Verdana", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button4.ForeColor = Color.Black;
-            button4.Location = new Point(39, 727);
+            button4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button4.ForeColor = Color.CornflowerBlue;
+            button4.Location = new Point(43, 729);
             button4.Margin = new Padding(4, 5, 4, 5);
             button4.Name = "button4";
             button4.Size = new Size(307, 58);
             button4.TabIndex = 9;
-            button4.Text = "USER";
+            button4.Text = "👤USER";
             button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click_1;
             // 
             // button6
             // 
             button6.BackColor = Color.White;
-            button6.Font = new Font("Berlin Sans FB", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button6.ForeColor = Color.CornflowerBlue;
-            button6.Location = new Point(39, 492);
+            button6.Location = new Point(43, 494);
             button6.Margin = new Padding(4, 5, 4, 5);
             button6.Name = "button6";
             button6.Size = new Size(307, 58);
@@ -131,9 +131,9 @@
             // button7
             // 
             button7.BackColor = Color.White;
-            button7.Font = new Font("Berlin Sans FB", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button7.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button7.ForeColor = Color.CornflowerBlue;
-            button7.Location = new Point(39, 407);
+            button7.Location = new Point(43, 409);
             button7.Margin = new Padding(4, 5, 4, 5);
             button7.Name = "button7";
             button7.Size = new Size(307, 58);
@@ -188,7 +188,7 @@
             // pictureBox2
             // 
             pictureBox2.BackColor = Color.White;
-            pictureBox2.Location = new Point(-4, -23);
+            pictureBox2.Location = new Point(0, -21);
             pictureBox2.Margin = new Padding(4, 5, 4, 5);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Padding = new Padding(15);
@@ -202,7 +202,7 @@
             label11.AutoSize = true;
             label11.BackColor = Color.White;
             label11.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.Location = new Point(145, 289);
+            label11.Location = new Point(149, 291);
             label11.Margin = new Padding(4, 0, 4, 0);
             label11.Name = "label11";
             label11.Size = new Size(120, 28);
@@ -214,7 +214,7 @@
             label12.AutoSize = true;
             label12.BackColor = Color.White;
             label12.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label12.Location = new Point(145, 694);
+            label12.Location = new Point(149, 696);
             label12.Margin = new Padding(4, 0, 4, 0);
             label12.Name = "label12";
             label12.Size = new Size(90, 28);
@@ -227,7 +227,7 @@
             label13.BackColor = Color.White;
             label13.Font = new Font("Segoe UI", 22F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label13.ForeColor = Color.CornflowerBlue;
-            label13.Location = new Point(94, 158);
+            label13.Location = new Point(98, 160);
             label13.Margin = new Padding(4, 0, 4, 0);
             label13.Name = "label13";
             label13.Size = new Size(221, 60);
@@ -237,7 +237,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(132, 34);
+            pictureBox1.Location = new Point(136, 36);
             pictureBox1.Margin = new Padding(4, 5, 4, 5);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(147, 136);
@@ -252,16 +252,16 @@
             label1.Location = new Point(441, 34);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(1635, 60);
+            label1.Size = new Size(1532, 60);
             label1.TabIndex = 29;
-            label1.Text = "Good Morning, User(i code ra nato ang unsa na user i butang kay mu display)";
+            label1.Text = "Good Day, User(i code ra nato ang unsa na user i butang kay mu display)";
             label1.Click += label1_Click_1;
             // 
             // pictureBox3
             // 
             pictureBox3.BackColor = Color.AliceBlue;
             pictureBox3.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox3.Location = new Point(323, -290);
+            pictureBox3.Location = new Point(327, -288);
             pictureBox3.Margin = new Padding(4, 5, 4, 5);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(1715, 520);
@@ -560,7 +560,7 @@
             // label14
             // 
             label14.AutoSize = true;
-            label14.Location = new Point(128, 218);
+            label14.Location = new Point(132, 220);
             label14.Name = "label14";
             label14.Size = new Size(151, 25);
             label14.TabIndex = 45;
