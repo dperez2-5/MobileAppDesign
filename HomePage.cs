@@ -12,7 +12,7 @@ namespace MobileAppDesign
 {
     public partial class HomePage : Form
     {
-       
+
         public HomePage()
         {
             InitializeComponent();
@@ -221,6 +221,16 @@ namespace MobileAppDesign
         }
 
         private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
         {
 
         }
