@@ -351,6 +351,7 @@
             circleProgressBar1.TabIndex = 42;
             circleProgressBar1.Text = "circleProgressBar1";
             circleProgressBar1.Value = 59L;
+            circleProgressBar1.Click += circleProgressBar1_Click;
             // 
             // pictureBox8
             // 

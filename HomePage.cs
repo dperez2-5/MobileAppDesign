@@ -40,6 +40,7 @@ namespace MobileAppDesign
 
             // Input textbox
             txtAddAllowance.Clear();
+            UpdateGoalProgress();
         }
 
 
@@ -78,6 +79,8 @@ namespace MobileAppDesign
             GoalPage goal = new GoalPage();
             goal.Show();
             this.Hide();
+
+            UpdateGoalProgress();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -158,6 +161,44 @@ namespace MobileAppDesign
             txtAmount.Clear();
 
             txtDescription.Focus();
+        }
+
+        private void circleProgressBar1_Click(object sender, EventArgs e)
+        {
+            if (GoalPage.TargetAmount == 0)
+            {
+                circleProgressBar1.Value = 0;
+                circleProgressBar1.Text = "0%";
+                return;
+            }
+
+            int percent = (int)((GoalPage.SavedAmount / GoalPage.TargetAmount) * 100);
+
+            if (percent > 100)
+                percent = 100;
+
+            circleProgressBar1.Value = percent;
+            circleProgressBar1.Text = percent + "%";
+        }
+        private void UpdateGoalProgress()
+        {
+            if (GoalPage.TargetAmount <= 0)
+            {
+                circleProgressBar1.Value = 0;
+                circleProgressBar1.Text = "0%";
+                return;
+            }
+
+            int percent = (int)((GoalPage.SavedAmount / GoalPage.TargetAmount) * 100);
+
+            if (percent > 100)
+                percent = 100;
+
+            if (percent < 0)
+                percent = 0;
+
+            circleProgressBar1.Value = percent;
+            circleProgressBar1.Text = percent + "%";
         }
     }
 }
