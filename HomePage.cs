@@ -13,60 +13,36 @@ namespace MobileAppDesign
     public partial class HomePage : Form
     {
 
+        double totalAllowance = 0;
+        double totalExpenses = 0;
+        double currentBalance = 0;
+
         public HomePage()
         {
             InitializeComponent();
+
+            // Categories
+            cmbCategory.Items.Add("Food");
+            cmbCategory.Items.Add("Transportation");
+            cmbCategory.Items.Add("School Expense");
+            cmbCategory.Items.Add("Bills (House)");
+            cmbCategory.Items.Add("Others");
+
+            // Initial Values
+            txtBalance.Text = "0.00";
+            txtCurrentBalance.Text = "0.00";
+            txtTotalExpenses.Text = "0.00";
+
+            // Display only
+            txtBalance.ReadOnly = true;
+            txtCurrentBalance.ReadOnly = true;
+            txtTotalExpenses.ReadOnly = true;
+
+            // Input textbox
+            txtAddAllowance.Clear();
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void HomePage_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void progressBar1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void numericUpDown1_ValueChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void button4_Click_1(object sender, EventArgs e)
         {
@@ -87,80 +63,6 @@ namespace MobileAppDesign
             this.Hide();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void label10_Click(object sender, EventArgs e)
         {
@@ -169,15 +71,7 @@ namespace MobileAppDesign
             this.Hide();
         }
 
-        private void label9_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void progressBar1_Click_1(object sender, EventArgs e)
-        {
-
-        }
 
         private void button6_Click(object sender, EventArgs e)
         {
@@ -188,51 +82,82 @@ namespace MobileAppDesign
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            double balance = 0;
             double amount;
 
-            //Check if input is a valid number
-            if (double.TryParse(txtAddAllowance.Text, out amount))
+            if (!double.TryParse(txtAddAllowance.Text, out amount))
             {
-                //Do not allow negative values
-                if (amount < 0)
-                {
-                    MessageBox.Show("Please enter a positive amount.");
-                    return;
-                }
-
-                //Add to remaining balance
-                balance += amount;
-
-                //Display new balance
-                txtBalance.Text = balance.ToString("0.00");
-
-                //Reset input textbox to 0
-                txtAddAllowance.Text = "0";
-
-                //Cursor returns to textbox
-                txtAddAllowance.Focus();
-                txtAddAllowance.SelectAll();
+                MessageBox.Show("Please enter a valid allowance amount.");
+                return;
             }
-            else
+
+            if (amount <= 0)
             {
-                MessageBox.Show("Please enter a valid number.");
+                MessageBox.Show("Allowance must be greater than zero.");
+                return;
             }
+
+            // Update values
+            totalAllowance += amount;
+            currentBalance += amount;
+
+            // Display
+            txtBalance.Text = totalAllowance.ToString("0.00");
+            txtCurrentBalance.Text = currentBalance.ToString("0.00");
+
+            // Reset
+            txtAddAllowance.Clear();
+            txtAddAllowance.Focus();
+
         }
 
-        private void textBox7_TextChanged(object sender, EventArgs e)
+        private void btnAddExpense_Click(object sender, EventArgs e)
         {
+            if (cmbCategory.SelectedIndex == -1)
+            {
+                MessageBox.Show("Please select a category.");
+                return;
+            }
 
-        }
+            if (string.IsNullOrWhiteSpace(txtDescription.Text))
+            {
+                MessageBox.Show("Please enter a description.");
+                return;
+            }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
+            double amount;
 
-        }
+            if (!double.TryParse(txtAmount.Text, out amount))
+            {
+                MessageBox.Show("Please enter a valid amount.");
+                return;
+            }
 
-        private void label1_Click_1(object sender, EventArgs e)
-        {
+            if (amount <= 0)
+            {
+                MessageBox.Show("Amount must be greater than zero.");
+                return;
+            }
 
+            if (amount > currentBalance)
+            {
+                MessageBox.Show("Insufficient balance.");
+                return;
+            }
+
+            // Update totals
+            totalExpenses += amount;
+            currentBalance -= amount;
+
+            // Display
+            txtTotalExpenses.Text = totalExpenses.ToString("0.00");
+            txtCurrentBalance.Text = currentBalance.ToString("0.00");
+
+            // Reset fields
+            cmbCategory.SelectedIndex = -1;
+            txtDescription.Clear();
+            txtAmount.Clear();
+
+            txtDescription.Focus();
         }
     }
 }
