@@ -71,9 +71,9 @@
             button1.BackColor = SystemColors.ActiveCaption;
             button1.BackgroundImageLayout = ImageLayout.None;
             button1.ForeColor = SystemColors.ActiveCaptionText;
-            button1.Location = new Point(1046, 419);
+            button1.Location = new Point(1064, 419);
             button1.Name = "button1";
-            button1.Size = new Size(300, 42);
+            button1.Size = new Size(268, 42);
             button1.TabIndex = 2;
             button1.Text = "Login to PesoWise";
             button1.UseVisualStyleBackColor = false;
@@ -116,7 +116,7 @@
             label3.AutoSize = true;
             label3.BackColor = Color.White;
             label3.Font = new Font("Segoe UI Historic", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(1095, 501);
+            label3.Location = new Point(1095, 477);
             label3.Name = "label3";
             label3.Size = new Size(210, 13);
             label3.TabIndex = 6;
@@ -129,7 +129,7 @@
             linkLabel2.BackColor = Color.White;
             linkLabel2.Font = new Font("Segoe UI Historic", 8.25F);
             linkLabel2.LinkColor = Color.Black;
-            linkLabel2.Location = new Point(1212, 514);
+            linkLabel2.Location = new Point(1212, 490);
             linkLabel2.Name = "linkLabel2";
             linkLabel2.Size = new Size(73, 13);
             linkLabel2.TabIndex = 8;
@@ -142,7 +142,7 @@
             label4.AutoSize = true;
             label4.BackColor = Color.White;
             label4.Font = new Font("Segoe UI Historic", 8.25F);
-            label4.Location = new Point(1189, 514);
+            label4.Location = new Point(1189, 490);
             label4.Name = "label4";
             label4.Size = new Size(27, 13);
             label4.TabIndex = 9;
@@ -259,7 +259,7 @@
             linkLabel1.BackColor = Color.White;
             linkLabel1.Font = new Font("Segoe UI Historic", 8.25F);
             linkLabel1.LinkColor = Color.Black;
-            linkLabel1.Location = new Point(1105, 514);
+            linkLabel1.Location = new Point(1105, 490);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(88, 13);
             linkLabel1.TabIndex = 7;

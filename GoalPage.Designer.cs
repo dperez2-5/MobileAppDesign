@@ -57,14 +57,12 @@
             label6 = new Label();
             label7 = new Label();
             pictureBox4 = new PictureBox();
-            label8 = new Label();
             label9 = new Label();
             button1 = new Button();
             button3 = new Button();
             pictureBox5 = new PictureBox();
             pictureBox6 = new PictureBox();
             button5 = new Button();
-            button8 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -442,17 +440,6 @@
             pictureBox4.TabIndex = 66;
             pictureBox4.TabStop = false;
             // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.BackColor = Color.White;
-            label8.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(100, 417);
-            label8.Name = "label8";
-            label8.Size = new Size(63, 19);
-            label8.TabIndex = 64;
-            label8.Text = "Account";
-            // 
             // label9
             // 
             label9.AutoSize = true;
@@ -520,18 +507,7 @@
             button5.TabIndex = 71;
             button5.Text = "🏠HOME";
             button5.UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            button8.BackColor = Color.White;
-            button8.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button8.ForeColor = Color.CornflowerBlue;
-            button8.Location = new Point(25, 437);
-            button8.Name = "button8";
-            button8.Size = new Size(215, 35);
-            button8.TabIndex = 72;
-            button8.Text = "👤USER";
-            button8.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click_1;
             // 
             // GoalPage
             // 
@@ -539,14 +515,12 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1347, 702);
-            Controls.Add(button8);
             Controls.Add(button5);
             Controls.Add(label14);
             Controls.Add(label5);
             Controls.Add(label6);
             Controls.Add(label7);
             Controls.Add(pictureBox4);
-            Controls.Add(label8);
             Controls.Add(label9);
             Controls.Add(button1);
             Controls.Add(button3);
@@ -609,7 +583,6 @@
         private Label label6;
         private Label label7;
         private PictureBox pictureBox4;
-        private Label label8;
         private Label label9;
         private Button button1;
         private Button button3;
@@ -617,6 +590,5 @@
         private PictureBox pictureBox6;
         private ReaLTaiizor.Controls.CyberButton btnSaveGoal;
         private Button button5;
-        private Button button8;
     }
 }

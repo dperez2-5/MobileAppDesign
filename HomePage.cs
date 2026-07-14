@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.ApplicationServices;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,17 +11,22 @@ using System.Windows.Forms;
 
 namespace MobileAppDesign
 {
+ 
     public partial class HomePage : Form
     {
-
+        private string username;
         double totalAllowance = 0;
         double totalExpenses = 0;
         double currentBalance = 0;
+        private string? user;
 
         public HomePage()
         {
             InitializeComponent();
 
+            username = user;
+
+            lblWelcome.Text = "Good Day, " + user + "!";
             // Categories
             cmbCategory.Items.Add("Food");
             cmbCategory.Items.Add("Transportation");

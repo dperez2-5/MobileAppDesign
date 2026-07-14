@@ -17,8 +17,8 @@ namespace MobileAppDesign
             InitializeComponent();
         }
 
-      
-      
+
+
 
         private void button2_Click_1(object sender, EventArgs e)
         {
@@ -32,6 +32,13 @@ namespace MobileAppDesign
             GoalPage goal = new GoalPage();
             goal.Show();
             this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            HomePage home = new HomePage();
+            home.Show();
+            this.Close();
         }
     }
 }

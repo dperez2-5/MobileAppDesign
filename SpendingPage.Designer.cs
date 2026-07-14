@@ -38,14 +38,12 @@
             label13 = new Label();
             label1 = new Label();
             pictureBox1 = new PictureBox();
-            label12 = new Label();
             label11 = new Label();
             button7 = new Button();
             button6 = new Button();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
             button2 = new Button();
-            button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -156,17 +154,6 @@
             pictureBox1.TabIndex = 68;
             pictureBox1.TabStop = false;
             // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.BackColor = Color.White;
-            label12.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label12.Location = new Point(99, 416);
-            label12.Name = "label12";
-            label12.Size = new Size(63, 19);
-            label12.TabIndex = 66;
-            label12.Text = "Account";
-            // 
             // label11
             // 
             label11.AutoSize = true;
@@ -234,18 +221,7 @@
             button2.TabIndex = 73;
             button2.Text = "🏠HOME";
             button2.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            button4.BackColor = Color.White;
-            button4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button4.ForeColor = Color.CornflowerBlue;
-            button4.Location = new Point(25, 438);
-            button4.Name = "button4";
-            button4.Size = new Size(215, 35);
-            button4.TabIndex = 74;
-            button4.Text = "👤USER";
-            button4.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // SpendingPage
             // 
@@ -253,14 +229,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.AliceBlue;
             ClientSize = new Size(1370, 749);
-            Controls.Add(button4);
             Controls.Add(button2);
             Controls.Add(label14);
             Controls.Add(label2);
             Controls.Add(label13);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
-            Controls.Add(label12);
             Controls.Add(label11);
             Controls.Add(button7);
             Controls.Add(button6);
@@ -290,13 +264,11 @@
         private Label label13;
         private Label label1;
         private PictureBox pictureBox1;
-        private Label label12;
         private Label label11;
         private Button button7;
         private Button button6;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private Button button2;
-        private Button button4;
     }
 }

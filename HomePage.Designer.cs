@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePage));
             button2 = new Button();
-            button4 = new Button();
             button6 = new Button();
             button7 = new Button();
             lblAllowance = new Label();
@@ -39,10 +38,9 @@
             label10 = new Label();
             pictureBox2 = new PictureBox();
             label11 = new Label();
-            label12 = new Label();
             label13 = new Label();
             pictureBox1 = new PictureBox();
-            label1 = new Label();
+            lblWelcome = new Label();
             pictureBox3 = new PictureBox();
             groupBox2 = new GroupBox();
             txtAddAllowance = new TextBox();
@@ -97,19 +95,6 @@
             button2.TabIndex = 1;
             button2.Text = "🏠HOME";
             button2.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            button4.BackColor = Color.White;
-            button4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button4.ForeColor = Color.CornflowerBlue;
-            button4.Location = new Point(30, 437);
-            button4.Name = "button4";
-            button4.Size = new Size(215, 35);
-            button4.TabIndex = 9;
-            button4.Text = "👤USER";
-            button4.UseVisualStyleBackColor = false;
-            button4.Click += button4_Click_1;
             // 
             // button6
             // 
@@ -195,17 +180,6 @@
             label11.TabIndex = 25;
             label11.Text = "Main Menu";
             // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.BackColor = Color.White;
-            label12.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label12.Location = new Point(104, 418);
-            label12.Name = "label12";
-            label12.Size = new Size(63, 19);
-            label12.TabIndex = 26;
-            label12.Text = "Account";
-            // 
             // label13
             // 
             label13.AutoSize = true;
@@ -228,15 +202,14 @@
             pictureBox1.TabIndex = 28;
             pictureBox1.TabStop = false;
             // 
-            // label1
+            // lblWelcome
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 22F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(309, 20);
-            label1.Name = "label1";
-            label1.Size = new Size(1036, 41);
-            label1.TabIndex = 29;
-            label1.Text = "Good Day, User(i code ra nato ang unsa na user i butang kay mu display)";
+            lblWelcome.AutoSize = true;
+            lblWelcome.Font = new Font("Segoe UI", 22F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblWelcome.Location = new Point(309, 20);
+            lblWelcome.Name = "lblWelcome";
+            lblWelcome.Size = new Size(0, 41);
+            lblWelcome.TabIndex = 29;
             // 
             // pictureBox3
             // 
@@ -539,18 +512,16 @@
             Controls.Add(label14);
             Controls.Add(label2);
             Controls.Add(label13);
-            Controls.Add(label1);
+            Controls.Add(lblWelcome);
             Controls.Add(groupBox1);
             Controls.Add(groupBox5);
             Controls.Add(groupBox4);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
             Controls.Add(pictureBox1);
-            Controls.Add(label12);
             Controls.Add(label11);
             Controls.Add(button7);
             Controls.Add(button6);
-            Controls.Add(button4);
             Controls.Add(button2);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox3);
@@ -580,7 +551,6 @@
         #endregion
         private Button button2;
         private PictureBox pictureBox1;
-        private Button button4;
         private Button button6;
         private Button button7;
         private Label lblAllowance;
@@ -599,9 +569,8 @@
         private Label label10;
         private PictureBox pictureBox2;
         private Label label11;
-        private Label label12;
         private Label label13;
-        private Label label1;
+        private Label lblWelcome;
         private PictureBox pictureBox3;
         private GroupBox groupBox2;
         private GroupBox groupBox3;
