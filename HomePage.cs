@@ -161,6 +161,14 @@ namespace MobileAppDesign
             txtTotalExpenses.Text = totalExpenses.ToString("0.00");
             txtCurrentBalance.Text = currentBalance.ToString("0.00");
 
+            // Add to shared expense list (NEW)
+            ExpenseManager.AddExpense(new Expense
+            {
+                Date = DateTime.Now,
+                Category = cmbCategory.Text,
+                Description = txtDescription.Text,
+                Amount = amount
+            });
             // Reset fields
             cmbCategory.SelectedIndex = -1;
             txtDescription.Clear();

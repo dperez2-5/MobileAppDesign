@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SpendingPage));
-            dataGridView1 = new DataGridView();
+            dgvExpensesHistory = new DataGridView();
             button1 = new Button();
             button3 = new Button();
             label5 = new Label();
@@ -44,27 +44,28 @@
             pictureBox3 = new PictureBox();
             button2 = new Button();
             label3 = new Label();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvExpensesHistory).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // dgvExpensesHistory
             // 
-            dataGridView1.BackgroundColor = Color.LightSteelBlue;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(333, 195);
-            dataGridView1.Margin = new Padding(2);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(979, 334);
-            dataGridView1.TabIndex = 42;
+            dgvExpensesHistory.BackgroundColor = Color.LightSteelBlue;
+            dgvExpensesHistory.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvExpensesHistory.Location = new Point(333, 195);
+            dgvExpensesHistory.Margin = new Padding(2);
+            dgvExpensesHistory.Name = "dgvExpensesHistory";
+            dgvExpensesHistory.RowHeadersWidth = 62;
+            dgvExpensesHistory.Size = new Size(979, 334);
+            dgvExpensesHistory.TabIndex = 42;
+            dgvExpensesHistory.CellContentClick += dataGridView1_CellContentClick;
             // 
             // button1
             // 
             button1.BackColor = SystemColors.ControlDarkDark;
-            button1.Font = new Font("Berlin Sans FB", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.White;
             button1.Location = new Point(1187, 590);
             button1.Margin = new Padding(2);
@@ -73,11 +74,12 @@
             button1.TabIndex = 46;
             button1.Text = "Clear All";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button3
             // 
             button3.BackColor = Color.FromArgb(192, 0, 0);
-            button3.Font = new Font("Berlin Sans FB", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button3.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button3.ForeColor = Color.White;
             button3.Location = new Point(1187, 544);
             button3.Margin = new Padding(2);
@@ -86,6 +88,7 @@
             button3.TabIndex = 47;
             button3.Text = "Delete Selected";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // label5
             // 
@@ -106,7 +109,7 @@
             label14.Location = new Point(87, 131);
             label14.Margin = new Padding(2, 0, 2, 0);
             label14.Name = "label14";
-            label14.Size = new Size(102, 15);
+            label14.Size = new Size(103, 15);
             label14.TabIndex = 72;
             label14.Text = "Allowance Tracker";
             // 
@@ -243,10 +246,10 @@
             Controls.Add(label5);
             Controls.Add(button3);
             Controls.Add(button1);
-            Controls.Add(dataGridView1);
+            Controls.Add(dgvExpensesHistory);
             Name = "SpendingPage";
             Text = "SpendingPage";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvExpensesHistory).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -255,7 +258,7 @@
         }
 
         #endregion
-        private DataGridView dataGridView1;
+        private DataGridView dgvExpensesHistory;
         private Button button1;
         private Button button3;
         private Label label5;

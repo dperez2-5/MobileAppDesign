@@ -374,7 +374,7 @@
             label14.Location = new Point(88, 132);
             label14.Margin = new Padding(2, 0, 2, 0);
             label14.Name = "label14";
-            label14.Size = new Size(102, 15);
+            label14.Size = new Size(103, 15);
             label14.TabIndex = 70;
             label14.Text = "Allowance Tracker";
             // 
@@ -506,7 +506,7 @@
             AcceptButton = button6;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1347, 702);
+            ClientSize = new Size(1370, 749);
             Controls.Add(label10);
             Controls.Add(label8);
             Controls.Add(button5);
