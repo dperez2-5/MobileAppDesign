@@ -41,7 +41,6 @@
             pictureBox3 = new PictureBox();
             circleProgressBar1 = new ReaLTaiizor.Controls.CircleProgressBar();
             cyberTextBox1 = new ReaLTaiizor.Controls.CyberTextBox();
-            textBoxEdit1 = new ReaLTaiizor.Controls.TextBoxEdit();
             groupBox1 = new GroupBox();
             btnSaveGoal = new ReaLTaiizor.Controls.CyberButton();
             dtpTargetDate = new DateTimePicker();
@@ -53,7 +52,6 @@
             label2 = new Label();
             label1 = new Label();
             label14 = new Label();
-            label5 = new Label();
             label6 = new Label();
             label7 = new Label();
             pictureBox4 = new PictureBox();
@@ -63,6 +61,8 @@
             pictureBox5 = new PictureBox();
             pictureBox6 = new PictureBox();
             button5 = new Button();
+            label8 = new Label();
+            label10 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -183,15 +183,15 @@
             // 
             // circleProgressBar1
             // 
-            circleProgressBar1.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            circleProgressBar1.Font = new Font("Swis721 Ex BT", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             circleProgressBar1.Location = new Point(1003, 222);
             circleProgressBar1.Margin = new Padding(2);
             circleProgressBar1.Maximum = 100L;
             circleProgressBar1.MinimumSize = new Size(70, 60);
             circleProgressBar1.Name = "circleProgressBar1";
-            circleProgressBar1.PercentColor = Color.SteelBlue;
-            circleProgressBar1.ProgressColor1 = Color.RoyalBlue;
-            circleProgressBar1.ProgressColor2 = Color.CornflowerBlue;
+            circleProgressBar1.PercentColor = Color.White;
+            circleProgressBar1.ProgressColor1 = Color.MidnightBlue;
+            circleProgressBar1.ProgressColor2 = Color.FromArgb(128, 255, 255);
             circleProgressBar1.ProgressShape = ReaLTaiizor.Controls.CircleProgressBar._ProgressShape.Round;
             circleProgressBar1.Size = new Size(205, 205);
             circleProgressBar1.TabIndex = 53;
@@ -228,24 +228,6 @@
             cyberTextBox1.TextButton = "Cyber Text";
             cyberTextBox1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             cyberTextBox1.Timer_RGB = 300;
-            // 
-            // textBoxEdit1
-            // 
-            textBoxEdit1.BackColor = Color.Transparent;
-            textBoxEdit1.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBoxEdit1.ForeColor = Color.White;
-            textBoxEdit1.Image = null;
-            textBoxEdit1.Location = new Point(315, 160);
-            textBoxEdit1.Margin = new Padding(2);
-            textBoxEdit1.MaxLength = 32767;
-            textBoxEdit1.Multiline = false;
-            textBoxEdit1.Name = "textBoxEdit1";
-            textBoxEdit1.ReadOnly = false;
-            textBoxEdit1.Size = new Size(234, 48);
-            textBoxEdit1.TabIndex = 57;
-            textBoxEdit1.Text = "Goal Saving Tracker";
-            textBoxEdit1.TextAlignment = HorizontalAlignment.Left;
-            textBoxEdit1.UseSystemPasswordChar = false;
             // 
             // groupBox1
             // 
@@ -396,18 +378,6 @@
             label14.TabIndex = 70;
             label14.Text = "Allowance Tracker";
             // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.Gray;
-            label5.Location = new Point(319, 68);
-            label5.Margin = new Padding(2, 0, 2, 0);
-            label5.Name = "label5";
-            label5.Size = new Size(254, 20);
-            label5.TabIndex = 69;
-            label5.Text = "Let's make today a smart money day!";
-            // 
             // label6
             // 
             label6.AutoSize = true;
@@ -509,15 +479,38 @@
             button5.UseVisualStyleBackColor = false;
             button5.Click += button5_Click_1;
             // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Sylfaen", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.Location = new Point(335, 155);
+            label8.Name = "label8";
+            label8.Size = new Size(305, 42);
+            label8.TabIndex = 72;
+            label8.Text = "Goal Saving Tracker";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("SimSun-ExtB", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label10.ForeColor = Color.Black;
+            label10.Location = new Point(324, 84);
+            label10.Margin = new Padding(2, 0, 2, 0);
+            label10.Name = "label10";
+            label10.Size = new Size(322, 16);
+            label10.TabIndex = 73;
+            label10.Text = "Let's make today a smart money day!";
+            // 
             // GoalPage
             // 
             AcceptButton = button6;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1347, 702);
+            Controls.Add(label10);
+            Controls.Add(label8);
             Controls.Add(button5);
             Controls.Add(label14);
-            Controls.Add(label5);
             Controls.Add(label6);
             Controls.Add(label7);
             Controls.Add(pictureBox4);
@@ -527,7 +520,6 @@
             Controls.Add(pictureBox5);
             Controls.Add(pictureBox6);
             Controls.Add(groupBox1);
-            Controls.Add(textBoxEdit1);
             Controls.Add(cyberTextBox1);
             Controls.Add(circleProgressBar1);
             Controls.Add(pictureBox1);
@@ -568,7 +560,6 @@
         private PictureBox pictureBox3;
         private ReaLTaiizor.Controls.CircleProgressBar circleProgressBar1;
         private ReaLTaiizor.Controls.CyberTextBox cyberTextBox1;
-        private ReaLTaiizor.Controls.TextBoxEdit textBoxEdit1;
         private GroupBox groupBox1;
         private TextBox txtGoal;
         private Label label4;
@@ -579,7 +570,6 @@
         private TextBox txtSavedAmount;
         private TextBox txtTargetAmount;
         private Label label14;
-        private Label label5;
         private Label label6;
         private Label label7;
         private PictureBox pictureBox4;
@@ -590,5 +580,7 @@
         private PictureBox pictureBox6;
         private ReaLTaiizor.Controls.CyberButton btnSaveGoal;
         private Button button5;
+        private Label label8;
+        private Label label10;
     }
 }

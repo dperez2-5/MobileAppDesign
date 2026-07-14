@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace MobileAppDesign
 {
- 
+
     public partial class HomePage : Form
     {
         private string username;
@@ -205,6 +205,16 @@ namespace MobileAppDesign
 
             circleProgressBar1.Value = percent;
             circleProgressBar1.Text = percent + "%";
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

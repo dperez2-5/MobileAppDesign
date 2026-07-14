@@ -48,10 +48,6 @@
             btnAddAllowance = new Button();
             groupBox3 = new GroupBox();
             pictureBox6 = new PictureBox();
-            groupBox4 = new GroupBox();
-            label3 = new Label();
-            circleProgressBar1 = new ReaLTaiizor.Controls.CircleProgressBar();
-            pictureBox8 = new PictureBox();
             groupBox5 = new GroupBox();
             label9 = new Label();
             txtTotalExpenses = new TextBox();
@@ -68,6 +64,9 @@
             label4 = new Label();
             label2 = new Label();
             label14 = new Label();
+            circleProgressBar1 = new ReaLTaiizor.Controls.CircleProgressBar();
+            label3 = new Label();
+            groupBox4 = new GroupBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -75,11 +74,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             groupBox1.SuspendLayout();
+            groupBox4.SuspendLayout();
             SuspendLayout();
             // 
             // button2
@@ -220,6 +218,7 @@
             pictureBox3.Size = new Size(1201, 313);
             pictureBox3.TabIndex = 31;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // groupBox2
             // 
@@ -286,56 +285,6 @@
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox6.TabIndex = 23;
             pictureBox6.TabStop = false;
-            // 
-            // groupBox4
-            // 
-            groupBox4.BackColor = Color.LightCyan;
-            groupBox4.Controls.Add(label3);
-            groupBox4.Controls.Add(circleProgressBar1);
-            groupBox4.Controls.Add(pictureBox8);
-            groupBox4.Location = new Point(891, 324);
-            groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(295, 222);
-            groupBox4.TabIndex = 34;
-            groupBox4.TabStop = false;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(5, 8);
-            label3.Name = "label3";
-            label3.Size = new Size(90, 29);
-            label3.TabIndex = 0;
-            label3.Text = "🎯Goal";
-            // 
-            // circleProgressBar1
-            // 
-            circleProgressBar1.Font = new Font("Segoe UI", 15F);
-            circleProgressBar1.Location = new Point(80, 8);
-            circleProgressBar1.Maximum = 100L;
-            circleProgressBar1.MinimumSize = new Size(100, 100);
-            circleProgressBar1.Name = "circleProgressBar1";
-            circleProgressBar1.PercentColor = Color.White;
-            circleProgressBar1.ProgressColor1 = Color.FromArgb(128, 128, 255);
-            circleProgressBar1.ProgressColor2 = Color.RoyalBlue;
-            circleProgressBar1.ProgressShape = ReaLTaiizor.Controls.CircleProgressBar._ProgressShape.Round;
-            circleProgressBar1.Size = new Size(211, 211);
-            circleProgressBar1.TabIndex = 42;
-            circleProgressBar1.Text = "circleProgressBar1";
-            circleProgressBar1.Value = 59L;
-            circleProgressBar1.Click += circleProgressBar1_Click;
-            // 
-            // pictureBox8
-            // 
-            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
-            pictureBox8.Location = new Point(5, 33);
-            pictureBox8.Margin = new Padding(2);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(80, 71);
-            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox8.TabIndex = 43;
-            pictureBox8.TabStop = false;
             // 
             // groupBox5
             // 
@@ -405,7 +354,7 @@
             groupBox1.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             groupBox1.Location = new Point(467, 324);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(315, 304);
+            groupBox1.Size = new Size(326, 317);
             groupBox1.TabIndex = 41;
             groupBox1.TabStop = false;
             groupBox1.Text = "📝 ADD NEW EXPENSE";
@@ -482,14 +431,15 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.Gray;
+            label2.Font = new Font("SimSun-ExtB", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.Black;
             label2.Location = new Point(322, 67);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(254, 20);
+            label2.Size = new Size(322, 16);
             label2.TabIndex = 44;
             label2.Text = "Let's make today a smart money day!";
+            label2.Click += label2_Click;
             // 
             // label14
             // 
@@ -500,6 +450,44 @@
             label14.Size = new Size(102, 15);
             label14.TabIndex = 45;
             label14.Text = "Allowance Tracker";
+            // 
+            // circleProgressBar1
+            // 
+            circleProgressBar1.Font = new Font("Swis721 Ex BT", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            circleProgressBar1.Location = new Point(101, 22);
+            circleProgressBar1.Maximum = 100L;
+            circleProgressBar1.MinimumSize = new Size(100, 100);
+            circleProgressBar1.Name = "circleProgressBar1";
+            circleProgressBar1.PercentColor = Color.White;
+            circleProgressBar1.ProgressColor1 = Color.MidnightBlue;
+            circleProgressBar1.ProgressColor2 = Color.FromArgb(128, 255, 255);
+            circleProgressBar1.ProgressShape = ReaLTaiizor.Controls.CircleProgressBar._ProgressShape.Round;
+            circleProgressBar1.Size = new Size(263, 263);
+            circleProgressBar1.TabIndex = 42;
+            circleProgressBar1.Text = "circleProgressBar1";
+            circleProgressBar1.Value = 80L;
+            circleProgressBar1.Click += circleProgressBar1_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(5, 8);
+            label3.Name = "label3";
+            label3.Size = new Size(90, 29);
+            label3.TabIndex = 0;
+            label3.Text = "🎯Goal";
+            // 
+            // groupBox4
+            // 
+            groupBox4.BackColor = Color.LightCyan;
+            groupBox4.Controls.Add(label3);
+            groupBox4.Controls.Add(circleProgressBar1);
+            groupBox4.Location = new Point(878, 324);
+            groupBox4.Name = "groupBox4";
+            groupBox4.Size = new Size(447, 317);
+            groupBox4.TabIndex = 34;
+            groupBox4.TabStop = false;
             // 
             // HomePage
             // 
@@ -536,14 +524,13 @@
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            groupBox4.ResumeLayout(false);
-            groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             groupBox5.ResumeLayout(false);
             groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            groupBox4.ResumeLayout(false);
+            groupBox4.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -574,23 +561,22 @@
         private PictureBox pictureBox3;
         private GroupBox groupBox2;
         private GroupBox groupBox3;
-        private GroupBox groupBox4;
-        private Label label3;
         private GroupBox groupBox5;
         private TextBox txtTotalExpenses;
         private Label label9;
         private DateTimePicker dateTimePicker2;
         private TextBox txtAmount;
-        private ReaLTaiizor.Controls.CircleProgressBar circleProgressBar1;
         private TextBox txtAddAllowance;
         private Button btnAddExpense;
         private PictureBox pictureBox5;
         private PictureBox pictureBox6;
         private PictureBox pictureBox7;
-        private PictureBox pictureBox8;
         private PictureBox pictureBox9;
         private TextBox textBox1;
         private Label label2;
         private Label label14;
+        private ReaLTaiizor.Controls.CircleProgressBar circleProgressBar1;
+        private Label label3;
+        private GroupBox groupBox4;
     }
 }

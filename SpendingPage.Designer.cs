@@ -34,7 +34,6 @@
             button3 = new Button();
             label5 = new Label();
             label14 = new Label();
-            label2 = new Label();
             label13 = new Label();
             label1 = new Label();
             pictureBox1 = new PictureBox();
@@ -44,6 +43,7 @@
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
             button2 = new Button();
+            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -109,18 +109,6 @@
             label14.Size = new Size(102, 15);
             label14.TabIndex = 72;
             label14.Text = "Allowance Tracker";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.Gray;
-            label2.Location = new Point(320, 67);
-            label2.Margin = new Padding(2, 0, 2, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(254, 20);
-            label2.TabIndex = 71;
-            label2.Text = "Let's make today a smart money day!";
             // 
             // label13
             // 
@@ -223,15 +211,27 @@
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("SimSun-ExtB", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(319, 73);
+            label3.Margin = new Padding(2, 0, 2, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(322, 16);
+            label3.TabIndex = 74;
+            label3.Text = "Let's make today a smart money day!";
+            // 
             // SpendingPage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.AliceBlue;
             ClientSize = new Size(1370, 749);
+            Controls.Add(label3);
             Controls.Add(button2);
             Controls.Add(label14);
-            Controls.Add(label2);
             Controls.Add(label13);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
@@ -260,7 +260,6 @@
         private Button button3;
         private Label label5;
         private Label label14;
-        private Label label2;
         private Label label13;
         private Label label1;
         private PictureBox pictureBox1;
@@ -270,5 +269,6 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private Button button2;
+        private Label label3;
     }
 }
