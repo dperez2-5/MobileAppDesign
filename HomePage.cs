@@ -89,7 +89,7 @@ namespace MobileAppDesign
 
             if (!double.TryParse(txtAddAllowance.Text, out amount))
             {
-                MessageBox.Show("Please enter a valid allowance amount.");
+                MessageBox.Show("Please enter numerical value.");
                 return;
             }
 

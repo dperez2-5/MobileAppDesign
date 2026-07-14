@@ -242,7 +242,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.AliceBlue;
-            ClientSize = new Size(1157, 558);
+            ClientSize = new Size(1370, 749);
             Controls.Add(label14);
             Controls.Add(label2);
             Controls.Add(label13);

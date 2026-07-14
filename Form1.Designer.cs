@@ -35,7 +35,6 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            linkLabel1 = new LinkLabel();
             linkLabel2 = new LinkLabel();
             label4 = new Label();
             label5 = new Label();
@@ -48,6 +47,7 @@
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
+            linkLabel1 = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -60,9 +60,9 @@
             textusername.Location = new Point(1064, 366);
             textusername.Multiline = true;
             textusername.Name = "textusername";
+            textusername.PlaceholderText = "username";
             textusername.Size = new Size(268, 38);
             textusername.TabIndex = 1;
-            textusername.Text = "(username)";
             textusername.TextAlign = HorizontalAlignment.Center;
             textusername.TextChanged += textusername_TextChanged;
             // 
@@ -122,19 +122,6 @@
             label3.TabIndex = 6;
             label3.Text = "By continuing, you agree to PesoWise's";
             label3.Click += label3_Click;
-            // 
-            // linkLabel1
-            // 
-            linkLabel1.AutoSize = true;
-            linkLabel1.BackColor = Color.White;
-            linkLabel1.Font = new Font("Segoe UI Historic", 8.25F);
-            linkLabel1.LinkColor = Color.Black;
-            linkLabel1.Location = new Point(1105, 514);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(88, 13);
-            linkLabel1.TabIndex = 7;
-            linkLabel1.TabStop = true;
-            linkLabel1.Text = "Terms of Service";
             // 
             // linkLabel2
             // 
@@ -266,6 +253,19 @@
             pictureBox4.TabIndex = 19;
             pictureBox4.TabStop = false;
             // 
+            // linkLabel1
+            // 
+            linkLabel1.AutoSize = true;
+            linkLabel1.BackColor = Color.White;
+            linkLabel1.Font = new Font("Segoe UI Historic", 8.25F);
+            linkLabel1.LinkColor = Color.Black;
+            linkLabel1.Location = new Point(1105, 514);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(88, 13);
+            linkLabel1.TabIndex = 7;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Terms of Service";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -313,7 +313,6 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private LinkLabel linkLabel1;
         private LinkLabel linkLabel2;
         private Label label4;
         private Label label5;
@@ -326,5 +325,6 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
+        private LinkLabel linkLabel1;
     }
 }
