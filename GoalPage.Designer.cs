@@ -43,6 +43,7 @@
             cyberTextBox1 = new ReaLTaiizor.Controls.CyberTextBox();
             textBoxEdit1 = new ReaLTaiizor.Controls.TextBoxEdit();
             groupBox1 = new GroupBox();
+            btnSaveGoal = new ReaLTaiizor.Controls.CyberButton();
             dtpTargetDate = new DateTimePicker();
             txtSavedAmount = new TextBox();
             txtTargetAmount = new TextBox();
@@ -63,7 +64,6 @@
             button5 = new Button();
             pictureBox5 = new PictureBox();
             pictureBox6 = new PictureBox();
-            btnSaveGoal = new ReaLTaiizor.Controls.CyberButton();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -186,7 +186,7 @@
             // 
             circleProgressBar1.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
             circleProgressBar1.Location = new Point(1003, 222);
-            circleProgressBar1.Margin = new Padding(2, 2, 2, 2);
+            circleProgressBar1.Margin = new Padding(2);
             circleProgressBar1.Maximum = 100L;
             circleProgressBar1.MinimumSize = new Size(70, 60);
             circleProgressBar1.Name = "circleProgressBar1";
@@ -237,7 +237,7 @@
             textBoxEdit1.ForeColor = Color.White;
             textBoxEdit1.Image = null;
             textBoxEdit1.Location = new Point(315, 160);
-            textBoxEdit1.Margin = new Padding(2, 2, 2, 2);
+            textBoxEdit1.Margin = new Padding(2);
             textBoxEdit1.MaxLength = 32767;
             textBoxEdit1.Multiline = false;
             textBoxEdit1.Name = "textBoxEdit1";
@@ -260,17 +260,58 @@
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
             groupBox1.Location = new Point(473, 222);
-            groupBox1.Margin = new Padding(2, 2, 2, 2);
+            groupBox1.Margin = new Padding(2);
             groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(2, 2, 2, 2);
+            groupBox1.Padding = new Padding(2);
             groupBox1.Size = new Size(452, 355);
             groupBox1.TabIndex = 58;
             groupBox1.TabStop = false;
             // 
+            // btnSaveGoal
+            // 
+            btnSaveGoal.Alpha = 20;
+            btnSaveGoal.BackColor = Color.Transparent;
+            btnSaveGoal.Background = true;
+            btnSaveGoal.Background_WidthPen = 4F;
+            btnSaveGoal.BackgroundPen = true;
+            btnSaveGoal.ColorBackground = Color.Black;
+            btnSaveGoal.ColorBackground_1 = Color.FromArgb(37, 52, 68);
+            btnSaveGoal.ColorBackground_2 = Color.FromArgb(41, 63, 86);
+            btnSaveGoal.ColorBackground_Pen = Color.FromArgb(192, 255, 255);
+            btnSaveGoal.ColorLighting = Color.FromArgb(29, 200, 238);
+            btnSaveGoal.ColorPen_1 = Color.FromArgb(37, 52, 68);
+            btnSaveGoal.ColorPen_2 = Color.FromArgb(41, 63, 86);
+            btnSaveGoal.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
+            btnSaveGoal.Effect_1 = true;
+            btnSaveGoal.Effect_1_ColorBackground = Color.FromArgb(29, 200, 238);
+            btnSaveGoal.Effect_1_Transparency = 25;
+            btnSaveGoal.Effect_2 = true;
+            btnSaveGoal.Effect_2_ColorBackground = Color.White;
+            btnSaveGoal.Effect_2_Transparency = 20;
+            btnSaveGoal.Font = new Font("Arial", 11F);
+            btnSaveGoal.ForeColor = Color.FromArgb(245, 245, 245);
+            btnSaveGoal.Lighting = false;
+            btnSaveGoal.LinearGradient_Background = false;
+            btnSaveGoal.LinearGradientPen = false;
+            btnSaveGoal.Location = new Point(294, 283);
+            btnSaveGoal.Name = "btnSaveGoal";
+            btnSaveGoal.PenWidth = 15;
+            btnSaveGoal.Rounding = true;
+            btnSaveGoal.RoundingInt = 70;
+            btnSaveGoal.Size = new Size(119, 30);
+            btnSaveGoal.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            btnSaveGoal.TabIndex = 9;
+            btnSaveGoal.Tag = "Cyber";
+            btnSaveGoal.TextButton = "Save Goal";
+            btnSaveGoal.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
+            btnSaveGoal.Timer_Effect_1 = 5;
+            btnSaveGoal.Timer_RGB = 300;
+            btnSaveGoal.Click += btnSaveGoal_Click;
+            // 
             // dtpTargetDate
             // 
             dtpTargetDate.Location = new Point(202, 230);
-            dtpTargetDate.Margin = new Padding(2, 2, 2, 2);
+            dtpTargetDate.Margin = new Padding(2);
             dtpTargetDate.Name = "dtpTargetDate";
             dtpTargetDate.Size = new Size(211, 23);
             dtpTargetDate.TabIndex = 7;
@@ -279,7 +320,7 @@
             // 
             txtSavedAmount.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtSavedAmount.Location = new Point(251, 169);
-            txtSavedAmount.Margin = new Padding(2, 2, 2, 2);
+            txtSavedAmount.Margin = new Padding(2);
             txtSavedAmount.Name = "txtSavedAmount";
             txtSavedAmount.Size = new Size(162, 26);
             txtSavedAmount.TabIndex = 6;
@@ -288,7 +329,7 @@
             // 
             txtTargetAmount.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtTargetAmount.Location = new Point(251, 108);
-            txtTargetAmount.Margin = new Padding(2, 2, 2, 2);
+            txtTargetAmount.Margin = new Padding(2);
             txtTargetAmount.Name = "txtTargetAmount";
             txtTargetAmount.Size = new Size(162, 26);
             txtTargetAmount.TabIndex = 5;
@@ -297,7 +338,7 @@
             // 
             txtGoal.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtGoal.Location = new Point(251, 50);
-            txtGoal.Margin = new Padding(2, 2, 2, 2);
+            txtGoal.Margin = new Padding(2);
             txtGoal.Name = "txtGoal";
             txtGoal.Size = new Size(162, 26);
             txtGoal.TabIndex = 4;
@@ -352,7 +393,7 @@
             label14.Location = new Point(90, 134);
             label14.Margin = new Padding(2, 0, 2, 0);
             label14.Name = "label14";
-            label14.Size = new Size(103, 15);
+            label14.Size = new Size(102, 15);
             label14.TabIndex = 70;
             label14.Text = "Allowance Tracker";
             // 
@@ -433,6 +474,7 @@
             button1.TabIndex = 61;
             button1.Text = "💳 SPENDING";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button3
             // 
@@ -459,6 +501,7 @@
             button5.TabIndex = 59;
             button5.Text = "🏠 HOME";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // pictureBox5
             // 
@@ -479,47 +522,6 @@
             pictureBox6.Size = new Size(1201, 313);
             pictureBox6.TabIndex = 68;
             pictureBox6.TabStop = false;
-            // 
-            // btnSaveGoal
-            // 
-            btnSaveGoal.Alpha = 20;
-            btnSaveGoal.BackColor = Color.Transparent;
-            btnSaveGoal.Background = true;
-            btnSaveGoal.Background_WidthPen = 4F;
-            btnSaveGoal.BackgroundPen = true;
-            btnSaveGoal.ColorBackground = Color.Black;
-            btnSaveGoal.ColorBackground_1 = Color.FromArgb(37, 52, 68);
-            btnSaveGoal.ColorBackground_2 = Color.FromArgb(41, 63, 86);
-            btnSaveGoal.ColorBackground_Pen = Color.FromArgb(192, 255, 255);
-            btnSaveGoal.ColorLighting = Color.FromArgb(29, 200, 238);
-            btnSaveGoal.ColorPen_1 = Color.FromArgb(37, 52, 68);
-            btnSaveGoal.ColorPen_2 = Color.FromArgb(41, 63, 86);
-            btnSaveGoal.CyberButtonStyle = ReaLTaiizor.Enum.Cyber.StateStyle.Custom;
-            btnSaveGoal.Effect_1 = true;
-            btnSaveGoal.Effect_1_ColorBackground = Color.FromArgb(29, 200, 238);
-            btnSaveGoal.Effect_1_Transparency = 25;
-            btnSaveGoal.Effect_2 = true;
-            btnSaveGoal.Effect_2_ColorBackground = Color.White;
-            btnSaveGoal.Effect_2_Transparency = 20;
-            btnSaveGoal.Font = new Font("Arial", 11F);
-            btnSaveGoal.ForeColor = Color.FromArgb(245, 245, 245);
-            btnSaveGoal.Lighting = false;
-            btnSaveGoal.LinearGradient_Background = false;
-            btnSaveGoal.LinearGradientPen = false;
-            btnSaveGoal.Location = new Point(294, 283);
-            btnSaveGoal.Name = "btnSaveGoal";
-            btnSaveGoal.PenWidth = 15;
-            btnSaveGoal.Rounding = true;
-            btnSaveGoal.RoundingInt = 70;
-            btnSaveGoal.Size = new Size(119, 30);
-            btnSaveGoal.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            btnSaveGoal.TabIndex = 9;
-            btnSaveGoal.Tag = "Cyber";
-            btnSaveGoal.TextButton = "Save Goal";
-            btnSaveGoal.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
-            btnSaveGoal.Timer_Effect_1 = 5;
-            btnSaveGoal.Timer_RGB = 300;
-            btnSaveGoal.Click += btnSaveGoal_Click;
             // 
             // GoalPage
             // 

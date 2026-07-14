@@ -69,5 +69,19 @@ namespace MobileAppDesign
 
             MessageBox.Show("Goal Saved!");
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            HomePage home = new HomePage();
+            home.Show();
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SpendingPage spending = new SpendingPage();
+            spending.Show();
+            this.Close();
+        }
     }
 }
