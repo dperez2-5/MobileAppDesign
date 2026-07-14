@@ -42,9 +42,10 @@
             label11 = new Label();
             button7 = new Button();
             button6 = new Button();
-            button2 = new Button();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
+            button2 = new Button();
+            button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -104,7 +105,7 @@
             // label14
             // 
             label14.AutoSize = true;
-            label14.Location = new Point(90, 133);
+            label14.Location = new Point(87, 131);
             label14.Margin = new Padding(2, 0, 2, 0);
             label14.Name = "label14";
             label14.Size = new Size(102, 15);
@@ -129,7 +130,7 @@
             label13.BackColor = Color.White;
             label13.Font = new Font("Segoe UI", 22F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label13.ForeColor = Color.CornflowerBlue;
-            label13.Location = new Point(66, 97);
+            label13.Location = new Point(63, 95);
             label13.Name = "label13";
             label13.Size = new Size(150, 41);
             label13.TabIndex = 67;
@@ -148,7 +149,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(93, 22);
+            pictureBox1.Location = new Point(90, 20);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(103, 82);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -160,7 +161,7 @@
             label12.AutoSize = true;
             label12.BackColor = Color.White;
             label12.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label12.Location = new Point(102, 418);
+            label12.Location = new Point(99, 416);
             label12.Name = "label12";
             label12.Size = new Size(63, 19);
             label12.TabIndex = 66;
@@ -171,7 +172,7 @@
             label11.AutoSize = true;
             label11.BackColor = Color.White;
             label11.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.Location = new Point(102, 175);
+            label11.Location = new Point(99, 173);
             label11.Name = "label11";
             label11.Size = new Size(83, 19);
             label11.TabIndex = 65;
@@ -182,7 +183,7 @@
             button7.BackColor = Color.CornflowerBlue;
             button7.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button7.ForeColor = Color.White;
-            button7.Location = new Point(28, 246);
+            button7.Location = new Point(25, 244);
             button7.Name = "button7";
             button7.Size = new Size(215, 35);
             button7.TabIndex = 63;
@@ -194,7 +195,7 @@
             button6.BackColor = Color.White;
             button6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button6.ForeColor = Color.CornflowerBlue;
-            button6.Location = new Point(28, 297);
+            button6.Location = new Point(25, 295);
             button6.Name = "button6";
             button6.Size = new Size(215, 35);
             button6.TabIndex = 62;
@@ -202,25 +203,10 @@
             button6.UseVisualStyleBackColor = false;
             button6.Click += button6_Click;
             // 
-            // button2
-            // 
-            button2.BackColor = Color.White;
-            button2.BackgroundImageLayout = ImageLayout.Center;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.CornflowerBlue;
-            button2.Location = new Point(28, 195);
-            button2.Name = "button2";
-            button2.Size = new Size(215, 35);
-            button2.TabIndex = 61;
-            button2.Text = "🏠 HOME";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click_1;
-            // 
             // pictureBox2
             // 
             pictureBox2.BackColor = Color.White;
-            pictureBox2.Location = new Point(-2, -12);
+            pictureBox2.Location = new Point(-5, -14);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Padding = new Padding(10, 9, 10, 9);
             pictureBox2.Size = new Size(296, 900);
@@ -231,11 +217,35 @@
             // 
             pictureBox3.BackColor = Color.AliceBlue;
             pictureBox3.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox3.Location = new Point(227, -172);
+            pictureBox3.Location = new Point(224, -174);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(1201, 313);
             pictureBox3.TabIndex = 70;
             pictureBox3.TabStop = false;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.White;
+            button2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.CornflowerBlue;
+            button2.Location = new Point(25, 195);
+            button2.Name = "button2";
+            button2.Size = new Size(215, 35);
+            button2.TabIndex = 73;
+            button2.Text = "🏠HOME";
+            button2.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            button4.BackColor = Color.White;
+            button4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button4.ForeColor = Color.CornflowerBlue;
+            button4.Location = new Point(25, 438);
+            button4.Name = "button4";
+            button4.Size = new Size(215, 35);
+            button4.TabIndex = 74;
+            button4.Text = "👤USER";
+            button4.UseVisualStyleBackColor = false;
             // 
             // SpendingPage
             // 
@@ -243,6 +253,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.AliceBlue;
             ClientSize = new Size(1370, 749);
+            Controls.Add(button4);
+            Controls.Add(button2);
             Controls.Add(label14);
             Controls.Add(label2);
             Controls.Add(label13);
@@ -252,7 +264,6 @@
             Controls.Add(label11);
             Controls.Add(button7);
             Controls.Add(button6);
-            Controls.Add(button2);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox3);
             Controls.Add(label5);
@@ -283,8 +294,9 @@
         private Label label11;
         private Button button7;
         private Button button6;
-        private Button button2;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
+        private Button button2;
+        private Button button4;
     }
 }

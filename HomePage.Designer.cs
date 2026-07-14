@@ -95,7 +95,7 @@
             button2.Name = "button2";
             button2.Size = new Size(215, 35);
             button2.TabIndex = 1;
-            button2.Text = "🏠 HOME";
+            button2.Text = "🏠HOME";
             button2.UseVisualStyleBackColor = false;
             // 
             // button4
@@ -493,7 +493,7 @@
             label5.AutoSize = true;
             label5.Location = new Point(33, 215);
             label5.Name = "label5";
-            label5.Size = new Size(81, 18);
+            label5.Size = new Size(78, 18);
             label5.TabIndex = 1;
             label5.Text = "💰Amount:";
             // 
@@ -502,7 +502,7 @@
             label4.AutoSize = true;
             label4.Location = new Point(24, 46);
             label4.Name = "label4";
-            label4.Size = new Size(61, 18);
+            label4.Size = new Size(59, 18);
             label4.TabIndex = 0;
             label4.Text = "🗓️Date:";
             // 
@@ -524,7 +524,7 @@
             label14.Location = new Point(92, 132);
             label14.Margin = new Padding(2, 0, 2, 0);
             label14.Name = "label14";
-            label14.Size = new Size(103, 15);
+            label14.Size = new Size(102, 15);
             label14.TabIndex = 45;
             label14.Text = "Allowance Tracker";
             // 
@@ -535,7 +535,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.AliceBlue;
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(1424, 861);
+            ClientSize = new Size(1370, 749);
             Controls.Add(label14);
             Controls.Add(label2);
             Controls.Add(label13);

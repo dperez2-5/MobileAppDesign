@@ -61,9 +61,10 @@
             label9 = new Label();
             button1 = new Button();
             button3 = new Button();
-            button5 = new Button();
             pictureBox5 = new PictureBox();
             pictureBox6 = new PictureBox();
+            button5 = new Button();
+            button8 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -76,7 +77,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(74, 58);
+            pictureBox1.Location = new Point(72, 56);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(61, 65);
             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
@@ -87,7 +88,7 @@
             // 
             label13.AutoSize = true;
             label13.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label13.Location = new Point(138, 80);
+            label13.Location = new Point(136, 78);
             label13.Name = "label13";
             label13.Size = new Size(117, 25);
             label13.TabIndex = 49;
@@ -97,7 +98,7 @@
             // 
             label12.AutoSize = true;
             label12.Font = new Font("Segoe UI", 12F, FontStyle.Italic);
-            label12.Location = new Point(27, 396);
+            label12.Location = new Point(25, 394);
             label12.Name = "label12";
             label12.Size = new Size(66, 21);
             label12.TabIndex = 48;
@@ -107,7 +108,7 @@
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label11.Location = new Point(27, 167);
+            label11.Location = new Point(25, 165);
             label11.Name = "label11";
             label11.Size = new Size(96, 20);
             label11.TabIndex = 47;
@@ -118,7 +119,7 @@
             button7.BackColor = Color.White;
             button7.Font = new Font("Verdana", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button7.ForeColor = Color.Black;
-            button7.Location = new Point(27, 247);
+            button7.Location = new Point(25, 245);
             button7.Name = "button7";
             button7.Size = new Size(215, 35);
             button7.TabIndex = 45;
@@ -130,7 +131,7 @@
             button6.BackColor = Color.White;
             button6.Font = new Font("Verdana", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button6.ForeColor = Color.Black;
-            button6.Location = new Point(27, 298);
+            button6.Location = new Point(25, 296);
             button6.Name = "button6";
             button6.Size = new Size(215, 35);
             button6.TabIndex = 44;
@@ -142,7 +143,7 @@
             button4.BackColor = Color.White;
             button4.Font = new Font("Verdana", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button4.ForeColor = Color.Black;
-            button4.Location = new Point(27, 439);
+            button4.Location = new Point(25, 437);
             button4.Name = "button4";
             button4.Size = new Size(215, 35);
             button4.TabIndex = 43;
@@ -155,7 +156,7 @@
             button2.BackgroundImageLayout = ImageLayout.Center;
             button2.Font = new Font("Verdana", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.Black;
-            button2.Location = new Point(27, 198);
+            button2.Location = new Point(25, 196);
             button2.Name = "button2";
             button2.Size = new Size(215, 35);
             button2.TabIndex = 42;
@@ -166,7 +167,7 @@
             // 
             pictureBox2.BackColor = Color.White;
             pictureBox2.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox2.Location = new Point(-3, -11);
+            pictureBox2.Location = new Point(-5, -13);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(297, 901);
             pictureBox2.TabIndex = 46;
@@ -176,7 +177,7 @@
             // 
             pictureBox3.BackColor = Color.White;
             pictureBox3.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox3.Location = new Point(226, -171);
+            pictureBox3.Location = new Point(224, -173);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(1201, 313);
             pictureBox3.TabIndex = 51;
@@ -390,7 +391,7 @@
             // label14
             // 
             label14.AutoSize = true;
-            label14.Location = new Point(90, 134);
+            label14.Location = new Point(88, 132);
             label14.Margin = new Padding(2, 0, 2, 0);
             label14.Name = "label14";
             label14.Size = new Size(102, 15);
@@ -415,7 +416,7 @@
             label6.BackColor = Color.White;
             label6.Font = new Font("Segoe UI", 22F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.CornflowerBlue;
-            label6.Location = new Point(66, 98);
+            label6.Location = new Point(64, 96);
             label6.Name = "label6";
             label6.Size = new Size(150, 41);
             label6.TabIndex = 65;
@@ -434,7 +435,7 @@
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(92, 23);
+            pictureBox4.Location = new Point(90, 21);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(103, 82);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -446,7 +447,7 @@
             label8.AutoSize = true;
             label8.BackColor = Color.White;
             label8.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(102, 419);
+            label8.Location = new Point(100, 417);
             label8.Name = "label8";
             label8.Size = new Size(63, 19);
             label8.TabIndex = 64;
@@ -457,7 +458,7 @@
             label9.AutoSize = true;
             label9.BackColor = Color.White;
             label9.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(102, 176);
+            label9.Location = new Point(100, 174);
             label9.Name = "label9";
             label9.Size = new Size(83, 19);
             label9.TabIndex = 63;
@@ -468,7 +469,7 @@
             button1.BackColor = Color.White;
             button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.CornflowerBlue;
-            button1.Location = new Point(27, 247);
+            button1.Location = new Point(25, 243);
             button1.Name = "button1";
             button1.Size = new Size(215, 35);
             button1.TabIndex = 61;
@@ -481,32 +482,17 @@
             button3.BackColor = Color.CornflowerBlue;
             button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button3.ForeColor = Color.White;
-            button3.Location = new Point(27, 298);
+            button3.Location = new Point(25, 296);
             button3.Name = "button3";
             button3.Size = new Size(215, 35);
             button3.TabIndex = 60;
             button3.Text = "🎯GOALS";
             button3.UseVisualStyleBackColor = false;
             // 
-            // button5
-            // 
-            button5.BackColor = Color.White;
-            button5.BackgroundImageLayout = ImageLayout.Center;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button5.ForeColor = Color.CornflowerBlue;
-            button5.Location = new Point(27, 196);
-            button5.Name = "button5";
-            button5.Size = new Size(215, 35);
-            button5.TabIndex = 59;
-            button5.Text = "🏠 HOME";
-            button5.UseVisualStyleBackColor = false;
-            button5.Click += button5_Click;
-            // 
             // pictureBox5
             // 
             pictureBox5.BackColor = Color.White;
-            pictureBox5.Location = new Point(-3, -11);
+            pictureBox5.Location = new Point(-5, -13);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Padding = new Padding(10, 9, 10, 9);
             pictureBox5.Size = new Size(296, 900);
@@ -517,11 +503,35 @@
             // 
             pictureBox6.BackColor = Color.AliceBlue;
             pictureBox6.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox6.Location = new Point(226, -171);
+            pictureBox6.Location = new Point(224, -173);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(1201, 313);
             pictureBox6.TabIndex = 68;
             pictureBox6.TabStop = false;
+            // 
+            // button5
+            // 
+            button5.BackColor = Color.White;
+            button5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button5.ForeColor = Color.CornflowerBlue;
+            button5.Location = new Point(25, 194);
+            button5.Name = "button5";
+            button5.Size = new Size(215, 35);
+            button5.TabIndex = 71;
+            button5.Text = "🏠HOME";
+            button5.UseVisualStyleBackColor = false;
+            // 
+            // button8
+            // 
+            button8.BackColor = Color.White;
+            button8.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button8.ForeColor = Color.CornflowerBlue;
+            button8.Location = new Point(25, 437);
+            button8.Name = "button8";
+            button8.Size = new Size(215, 35);
+            button8.TabIndex = 72;
+            button8.Text = "👤USER";
+            button8.UseVisualStyleBackColor = false;
             // 
             // GoalPage
             // 
@@ -529,6 +539,8 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1347, 702);
+            Controls.Add(button8);
+            Controls.Add(button5);
             Controls.Add(label14);
             Controls.Add(label5);
             Controls.Add(label6);
@@ -538,7 +550,6 @@
             Controls.Add(label9);
             Controls.Add(button1);
             Controls.Add(button3);
-            Controls.Add(button5);
             Controls.Add(pictureBox5);
             Controls.Add(pictureBox6);
             Controls.Add(groupBox1);
@@ -602,9 +613,10 @@
         private Label label9;
         private Button button1;
         private Button button3;
-        private Button button5;
         private PictureBox pictureBox5;
         private PictureBox pictureBox6;
         private ReaLTaiizor.Controls.CyberButton btnSaveGoal;
+        private Button button5;
+        private Button button8;
     }
 }
