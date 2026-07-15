@@ -58,13 +58,11 @@
             // 
             textusername.BackColor = Color.LightSteelBlue;
             textusername.Location = new Point(1064, 366);
-            textusername.Multiline = true;
             textusername.Name = "textusername";
             textusername.PlaceholderText = "username";
-            textusername.Size = new Size(268, 38);
+            textusername.Size = new Size(268, 23);
             textusername.TabIndex = 1;
             textusername.TextAlign = HorizontalAlignment.Center;
-            textusername.TextChanged += textusername_TextChanged;
             // 
             // button1
             // 
@@ -98,7 +96,6 @@
             label1.Size = new Size(190, 40);
             label1.TabIndex = 4;
             label1.Text = "Get Started!";
-            label1.Click += label1_Click_1;
             // 
             // label2
             // 
@@ -121,7 +118,6 @@
             label3.Size = new Size(210, 13);
             label3.TabIndex = 6;
             label3.Text = "By continuing, you agree to PesoWise's";
-            label3.Click += label3_Click;
             // 
             // linkLabel2
             // 
@@ -135,7 +131,6 @@
             linkLabel2.TabIndex = 8;
             linkLabel2.TabStop = true;
             linkLabel2.Text = "Privacy Policy";
-            linkLabel2.LinkClicked += linkLabel2_LinkClicked;
             // 
             // label4
             // 
@@ -147,7 +142,6 @@
             label4.Size = new Size(27, 13);
             label4.TabIndex = 9;
             label4.Text = "and";
-            label4.Click += label4_Click;
             // 
             // label5
             // 
@@ -158,7 +152,6 @@
             label5.Size = new Size(675, 258);
             label5.TabIndex = 10;
             label5.Text = "Every choice \r\ncounts toward your \r\nfuture.";
-            label5.Click += label5_Click;
             // 
             // label6
             // 
@@ -179,17 +172,15 @@
             label7.Size = new Size(161, 30);
             label7.TabIndex = 12;
             label7.Text = "Smart Tracking";
-            label7.Click += label7_Click;
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Location = new Point(155, 553);
             label8.Name = "label8";
-            label8.Size = new Size(412, 15);
+            label8.Size = new Size(411, 15);
             label8.TabIndex = 13;
             label8.Text = "Categorize every peso and see exactly where your allowance goes each week.";
-            label8.Click += label8_Click;
             // 
             // label9
             // 
@@ -268,6 +259,7 @@
             // 
             // Form1
             // 
+            AcceptButton = button1;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightSteelBlue;
@@ -296,6 +288,7 @@
             FormBorderStyle = FormBorderStyle.Fixed3D;
             Name = "Form1";
             RightToLeftLayout = true;
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

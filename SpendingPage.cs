@@ -15,8 +15,23 @@ namespace MobileAppDesign
         public SpendingPage()
         {
             InitializeComponent();
-        }
+            dgvExpensesHistory.DataSource = ExpenseManager.Expenses;
+            lblWelcome.Text = "Good Day, " + AppData.Username + "!";
 
+            FormatGrid();
+        }
+        private void FormatGrid()
+        {
+            // Forces columns to fill the empty space evenly
+            dgvExpensesHistory.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            // Prevents the user from typing directly into the grid or adding blank rows
+            dgvExpensesHistory.AllowUserToAddRows = false;
+            dgvExpensesHistory.ReadOnly = true;
+
+            // Ensures clicking a cell selects the whole row for easy deletion
+            dgvExpensesHistory.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+        }
 
         private void button2_Click_1(object sender, EventArgs e)
         {
@@ -46,32 +61,42 @@ namespace MobileAppDesign
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (dgvExpensesHistory.CurrentRow == null)
+
+            // Ensure the user actually selected a row
+            if (dgvExpensesHistory.SelectedRows.Count > 0)
             {
-                MessageBox.Show("Please select a row to delete.");
-                return;
+                // Grab the specific Expense object attached to the selected row
+                var selectedRow = dgvExpensesHistory.SelectedRows[0];
+                var expenseToDelete = (Expense)selectedRow.DataBoundItem;
+
+                // REMOVED: AppData.CurrentBalance += expenseToDelete.Amount;
+                // We no longer touch the AppData totals here.
+
+                // Remove it from the list (the grid will update automatically)
+                ExpenseManager.Expenses.Remove(expenseToDelete);
             }
-
-            Expense selected = (Expense)dgvExpensesHistory.CurrentRow.DataBoundItem;
-
-            DialogResult confirm = MessageBox.Show(
-                "Delete this expense?", "Confirm", MessageBoxButtons.YesNo);
-
-            if (confirm == DialogResult.Yes)
+            else
             {
-                ExpenseManager.RemoveExpense(selected);
+                MessageBox.Show("Please select an expense to delete.");
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DialogResult confirm = MessageBox.Show(
-            "Clear all expenses?", "Confirm", MessageBoxButtons.YesNo);
+            // Confirm with the user before wiping data
+            DialogResult result = MessageBox.Show("Are you sure you want to delete all expense history?", "Confirm Clear", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
-            if (confirm == DialogResult.Yes)
+            if (result == DialogResult.Yes)
             {
-                ExpenseManager.ClearAll();
+                // 1. Wipe the list
+                ExpenseManager.Expenses.Clear();
+
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

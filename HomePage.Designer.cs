@@ -67,6 +67,7 @@
             circleProgressBar1 = new ReaLTaiizor.Controls.CircleProgressBar();
             label3 = new Label();
             groupBox4 = new GroupBox();
+            lblGoalName = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -415,7 +416,7 @@
             label5.AutoSize = true;
             label5.Location = new Point(33, 215);
             label5.Name = "label5";
-            label5.Size = new Size(78, 18);
+            label5.Size = new Size(81, 18);
             label5.TabIndex = 1;
             label5.Text = "💰Amount:";
             // 
@@ -424,7 +425,7 @@
             label4.AutoSize = true;
             label4.Location = new Point(24, 46);
             label4.Name = "label4";
-            label4.Size = new Size(59, 18);
+            label4.Size = new Size(61, 18);
             label4.TabIndex = 0;
             label4.Text = "🗓️Date:";
             // 
@@ -447,14 +448,14 @@
             label14.Location = new Point(92, 132);
             label14.Margin = new Padding(2, 0, 2, 0);
             label14.Name = "label14";
-            label14.Size = new Size(102, 15);
+            label14.Size = new Size(103, 15);
             label14.TabIndex = 45;
             label14.Text = "Allowance Tracker";
             // 
             // circleProgressBar1
             // 
-            circleProgressBar1.Font = new Font("Swis721 Ex BT", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            circleProgressBar1.Location = new Point(101, 22);
+            circleProgressBar1.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            circleProgressBar1.Location = new Point(103, 54);
             circleProgressBar1.Maximum = 100L;
             circleProgressBar1.MinimumSize = new Size(100, 100);
             circleProgressBar1.Name = "circleProgressBar1";
@@ -481,6 +482,7 @@
             // groupBox4
             // 
             groupBox4.BackColor = Color.LightCyan;
+            groupBox4.Controls.Add(lblGoalName);
             groupBox4.Controls.Add(label3);
             groupBox4.Controls.Add(circleProgressBar1);
             groupBox4.Location = new Point(878, 324);
@@ -488,6 +490,17 @@
             groupBox4.Size = new Size(447, 317);
             groupBox4.TabIndex = 34;
             groupBox4.TabStop = false;
+            // 
+            // lblGoalName
+            // 
+            lblGoalName.AutoSize = true;
+            lblGoalName.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblGoalName.Location = new Point(193, 12);
+            lblGoalName.Name = "lblGoalName";
+            lblGoalName.Size = new Size(124, 25);
+            lblGoalName.TabIndex = 46;
+            lblGoalName.Text = "lblGoalName";
+            lblGoalName.Click += label1_Click;
             // 
             // HomePage
             // 
@@ -514,6 +527,7 @@
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox3);
             Name = "HomePage";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "0";
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -578,5 +592,6 @@
         private ReaLTaiizor.Controls.CircleProgressBar circleProgressBar1;
         private Label label3;
         private GroupBox groupBox4;
+        private Label lblGoalName;
     }
 }

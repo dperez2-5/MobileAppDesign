@@ -35,7 +35,7 @@
             label5 = new Label();
             label14 = new Label();
             label13 = new Label();
-            label1 = new Label();
+            lblWelcome = new Label();
             pictureBox1 = new PictureBox();
             label11 = new Label();
             button7 = new Button();
@@ -125,15 +125,16 @@
             label13.TabIndex = 67;
             label13.Text = "PesoWise";
             // 
-            // label1
+            // lblWelcome
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 22F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(307, 21);
-            label1.Name = "label1";
-            label1.Size = new Size(1036, 41);
-            label1.TabIndex = 69;
-            label1.Text = "Good Day, User(i code ra nato ang unsa na user i butang kay mu display)";
+            lblWelcome.AutoSize = true;
+            lblWelcome.Font = new Font("Segoe UI", 22F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblWelcome.Location = new Point(307, 21);
+            lblWelcome.Name = "lblWelcome";
+            lblWelcome.Size = new Size(1036, 41);
+            lblWelcome.TabIndex = 69;
+            lblWelcome.Text = "Good Day, User(i code ra nato ang unsa na user i butang kay mu display)";
+            lblWelcome.Click += label1_Click;
             // 
             // pictureBox1
             // 
@@ -236,7 +237,7 @@
             Controls.Add(button2);
             Controls.Add(label14);
             Controls.Add(label13);
-            Controls.Add(label1);
+            Controls.Add(lblWelcome);
             Controls.Add(pictureBox1);
             Controls.Add(label11);
             Controls.Add(button7);
@@ -248,6 +249,7 @@
             Controls.Add(button1);
             Controls.Add(dgvExpensesHistory);
             Name = "SpendingPage";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "SpendingPage";
             ((System.ComponentModel.ISupportInitialize)dgvExpensesHistory).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -264,7 +266,7 @@
         private Label label5;
         private Label label14;
         private Label label13;
-        private Label label1;
+        private Label lblWelcome;
         private PictureBox pictureBox1;
         private Label label11;
         private Button button7;

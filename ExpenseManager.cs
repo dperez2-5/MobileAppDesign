@@ -9,21 +9,12 @@ namespace MobileAppDesign
 {
     public static class ExpenseManager
     {
-        public static BindingList<Expense> Expenses { get; } = new BindingList<Expense>();
+        // A BindingList automatically tells the DataGridView to redraw when an item is added/removed!
+        public static BindingList<Expense> Expenses { get; set; } = new BindingList<Expense>();
 
         public static void AddExpense(Expense expense)
         {
             Expenses.Add(expense);
-        }
-
-        public static void RemoveExpense(Expense expense)
-        {
-            Expenses.Remove(expense);
-        }
-
-        public static void ClearAll()
-        {
-            Expenses.Clear();
         }
     }
 }

@@ -53,7 +53,7 @@
             label1 = new Label();
             label14 = new Label();
             label6 = new Label();
-            label7 = new Label();
+            lblWelcome = new Label();
             pictureBox4 = new PictureBox();
             label9 = new Label();
             button1 = new Button();
@@ -61,7 +61,7 @@
             pictureBox5 = new PictureBox();
             pictureBox6 = new PictureBox();
             button5 = new Button();
-            label8 = new Label();
+            label88 = new Label();
             label10 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -183,7 +183,7 @@
             // 
             // circleProgressBar1
             // 
-            circleProgressBar1.Font = new Font("Swis721 Ex BT", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            circleProgressBar1.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             circleProgressBar1.Location = new Point(1003, 222);
             circleProgressBar1.Margin = new Padding(2);
             circleProgressBar1.Maximum = 100L;
@@ -390,15 +390,16 @@
             label6.TabIndex = 65;
             label6.Text = "PesoWise";
             // 
-            // label7
+            // lblWelcome
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 22F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(306, 22);
-            label7.Name = "label7";
-            label7.Size = new Size(1036, 41);
-            label7.TabIndex = 67;
-            label7.Text = "Good Day, User(i code ra nato ang unsa na user i butang kay mu display)";
+            lblWelcome.AutoSize = true;
+            lblWelcome.Font = new Font("Segoe UI", 22F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblWelcome.Location = new Point(306, 22);
+            lblWelcome.Name = "lblWelcome";
+            lblWelcome.Size = new Size(1036, 41);
+            lblWelcome.TabIndex = 67;
+            lblWelcome.Text = "Good Day, User(i code ra nato ang unsa na user i butang kay mu display)";
+            lblWelcome.Click += label7_Click;
             // 
             // pictureBox4
             // 
@@ -479,15 +480,15 @@
             button5.UseVisualStyleBackColor = false;
             button5.Click += button5_Click_1;
             // 
-            // label8
+            // label88
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Sylfaen", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(335, 155);
-            label8.Name = "label8";
-            label8.Size = new Size(305, 42);
-            label8.TabIndex = 72;
-            label8.Text = "Goal Saving Tracker";
+            label88.AutoSize = true;
+            label88.Font = new Font("Sylfaen", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label88.Location = new Point(335, 155);
+            label88.Name = "label88";
+            label88.Size = new Size(305, 42);
+            label88.TabIndex = 72;
+            label88.Text = "Goal Saving Tracker";
             // 
             // label10
             // 
@@ -508,11 +509,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1370, 749);
             Controls.Add(label10);
-            Controls.Add(label8);
+            Controls.Add(label88);
             Controls.Add(button5);
             Controls.Add(label14);
             Controls.Add(label6);
-            Controls.Add(label7);
+            Controls.Add(lblWelcome);
             Controls.Add(pictureBox4);
             Controls.Add(label9);
             Controls.Add(button1);
@@ -533,7 +534,9 @@
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox3);
             Name = "GoalPage";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "GoalPage";
+            Load += GoalPage_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -571,7 +574,7 @@
         private TextBox txtTargetAmount;
         private Label label14;
         private Label label6;
-        private Label label7;
+        private Label lblWelcome;
         private PictureBox pictureBox4;
         private Label label9;
         private Button button1;
@@ -580,7 +583,7 @@
         private PictureBox pictureBox6;
         private ReaLTaiizor.Controls.CyberButton btnSaveGoal;
         private Button button5;
-        private Label label8;
+        private Label label88;
         private Label label10;
     }
 }

@@ -15,9 +15,6 @@ namespace MobileAppDesign
     public partial class HomePage : Form
     {
         private string username;
-        double totalAllowance = 0;
-        double totalExpenses = 0;
-        double currentBalance = 0;
         private string? user;
 
         public HomePage()
@@ -26,7 +23,7 @@ namespace MobileAppDesign
 
             username = user;
 
-            lblWelcome.Text = "Good Day, " + user + "!";
+            lblWelcome.Text = "Good Day, " + AppData.Username + "!";
             // Categories
             cmbCategory.Items.Add("Food");
             cmbCategory.Items.Add("Transportation");
@@ -35,14 +32,23 @@ namespace MobileAppDesign
             cmbCategory.Items.Add("Others");
 
             // Initial Values
-            txtBalance.Text = "0.00";
-            txtCurrentBalance.Text = "0.00";
-            txtTotalExpenses.Text = "0.00";
+            txtBalance.Text = AppData.TotalAllowance.ToString("0.00");
+            txtCurrentBalance.Text = AppData.CurrentBalance.ToString("0.00");
+            txtTotalExpenses.Text = AppData.TotalExpenses.ToString("0.00");
 
             // Display only
             txtBalance.ReadOnly = true;
             txtCurrentBalance.ReadOnly = true;
             txtTotalExpenses.ReadOnly = true;
+
+            if (string.IsNullOrWhiteSpace(GoalPage.GoalName))
+            {
+                lblGoalName.Text = "No active goal";
+            }
+            else
+            {
+                lblGoalName.Text = GoalPage.GoalName;
+            }
 
             // Input textbox
             txtAddAllowance.Clear();
@@ -106,12 +112,12 @@ namespace MobileAppDesign
             }
 
             // Update values
-            totalAllowance += amount;
-            currentBalance += amount;
+            AppData.TotalAllowance += amount;
+            AppData.CurrentBalance += amount;
 
             // Display
-            txtBalance.Text = totalAllowance.ToString("0.00");
-            txtCurrentBalance.Text = currentBalance.ToString("0.00");
+            txtBalance.Text = AppData.TotalAllowance.ToString("0.00");
+            txtCurrentBalance.Text = AppData.CurrentBalance.ToString("0.00");
 
             // Reset
             txtAddAllowance.Clear();
@@ -147,19 +153,19 @@ namespace MobileAppDesign
                 return;
             }
 
-            if (amount > currentBalance)
+            if (amount > AppData.CurrentBalance)
             {
                 MessageBox.Show("Insufficient balance.");
                 return;
             }
 
             // Update totals
-            totalExpenses += amount;
-            currentBalance -= amount;
+            AppData.TotalExpenses += amount;
+            AppData.CurrentBalance -= amount;
 
             // Display
-            txtTotalExpenses.Text = totalExpenses.ToString("0.00");
-            txtCurrentBalance.Text = currentBalance.ToString("0.00");
+            txtTotalExpenses.Text = AppData.TotalExpenses.ToString("0.00");
+            txtCurrentBalance.Text = AppData.CurrentBalance.ToString("0.00");
 
             // Add to shared expense list (NEW)
             ExpenseManager.AddExpense(new Expense
@@ -223,6 +229,11 @@ namespace MobileAppDesign
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }
