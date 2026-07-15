@@ -44,10 +44,21 @@ namespace MobileAppDesign
             if (string.IsNullOrWhiteSpace(GoalPage.GoalName))
             {
                 lblGoalName.Text = "No active goal";
+                txtinspiration.Text = "";
             }
             else
             {
                 lblGoalName.Text = GoalPage.GoalName;
+                if (!string.IsNullOrWhiteSpace(GoalPage.InspirationQuote))
+                {
+                    // Adding quotation marks around the text for styling!
+                    txtinspiration.Text = "\"" + GoalPage.InspirationQuote + "\"";
+                }
+                else
+                {
+                    txtinspiration.Text = ""; // Leave it blank if they didn't type a quote
+                }
+
             }
 
             // Input textbox
@@ -127,59 +138,75 @@ namespace MobileAppDesign
 
         private void btnAddExpense_Click(object sender, EventArgs e)
         {
-            if (cmbCategory.SelectedIndex == -1)
+            double expenseAmount = 0;
+            double savingsAmount = 0;
+
+            // Check what the user actually typed in
+            bool isLoggingExpense = double.TryParse(txtAmount.Text, out expenseAmount) && expenseAmount > 0;
+            bool isLoggingSavings = double.TryParse(txtSavings.Text, out savingsAmount) && savingsAmount > 0;
+
+            if (!isLoggingExpense && !isLoggingSavings)
             {
-                MessageBox.Show("Please select a category.");
+                MessageBox.Show("Please enter an expense amount or a savings amount.");
                 return;
             }
 
-            if (string.IsNullOrWhiteSpace(txtDescription.Text))
+            // Check if they have enough money to do both
+            if ((expenseAmount + savingsAmount) > AppData.CurrentBalance)
             {
-                MessageBox.Show("Please enter a description.");
+                MessageBox.Show("Insufficient balance! You don't have enough to cover this.");
                 return;
             }
 
-            double amount;
-
-            if (!double.TryParse(txtAmount.Text, out amount))
+            // --- 1. PROCESS EXPENSE ---
+            if (isLoggingExpense)
             {
-                MessageBox.Show("Please enter a valid amount.");
-                return;
+                if (cmbCategory.SelectedIndex == -1 || string.IsNullOrWhiteSpace(txtDescription.Text))
+                {
+                    MessageBox.Show("Please select a category and description for your expense.");
+                    return;
+                }
+
+                AppData.TotalExpenses += expenseAmount;
+                AppData.CurrentBalance -= expenseAmount;
+
+                ExpenseManager.AddExpense(new Expense
+                {
+                    Date = DateTime.Now,
+                    Category = cmbCategory.Text,
+                    Description = txtDescription.Text,
+                    Amount = expenseAmount
+                });
             }
 
-            if (amount <= 0)
+            // --- 2. PROCESS SAVINGS ---
+            if (isLoggingSavings)
             {
-                MessageBox.Show("Amount must be greater than zero.");
-                return;
+                // Make sure they actually set a goal first!
+                if (GoalPage.TargetAmount <= 0)
+                {
+                    MessageBox.Show("Please set up a Goal on the Goals page before saving money.");
+                    return;
+                }
+
+                // Deduct from wallet, add to goal
+                AppData.CurrentBalance -= savingsAmount;
+                GoalPage.SavedAmount += savingsAmount;
+
+                // Update the circular progress bar
+                UpdateGoalProgress();
+                MessageBox.Show($"Successfully saved {savingsAmount:0.00} towards your goal!");
             }
 
-            if (amount > AppData.CurrentBalance)
-            {
-                MessageBox.Show("Insufficient balance.");
-                return;
-            }
-
-            // Update totals
-            AppData.TotalExpenses += amount;
-            AppData.CurrentBalance -= amount;
-
-            // Display
+            // --- 3. UPDATE UI AND RESET ---
             txtTotalExpenses.Text = AppData.TotalExpenses.ToString("0.00");
             txtCurrentBalance.Text = AppData.CurrentBalance.ToString("0.00");
 
-            // Add to shared expense list (NEW)
-            ExpenseManager.AddExpense(new Expense
-            {
-                Date = DateTime.Now,
-                Category = cmbCategory.Text,
-                Description = txtDescription.Text,
-                Amount = amount
-            });
-            // Reset fields
+            // Clear fields
             cmbCategory.SelectedIndex = -1;
             txtDescription.Clear();
             txtAmount.Clear();
-
+            txtSavings.Clear(); // Don't forget to clear the new savings box!
             txtDescription.Focus();
         }
 
@@ -202,23 +229,58 @@ namespace MobileAppDesign
         }
         private void UpdateGoalProgress()
         {
+            // 1. If no goal is set, zero everything out
             if (GoalPage.TargetAmount <= 0)
             {
                 circleProgressBar1.Value = 0;
                 circleProgressBar1.Text = "0%";
+                lblgoalprogress.Text = "₱0.00 / ₱0.00";
+
+                // Default text for the duration label
+                lblDuration.Text = "No active goal";
                 return;
             }
 
+            // 2. Calculate and update the circular progress bar
             int percent = (int)((GoalPage.SavedAmount / GoalPage.TargetAmount) * 100);
 
-            if (percent > 100)
-                percent = 100;
-
-            if (percent < 0)
-                percent = 0;
+            if (percent > 100) percent = 100;
+            if (percent < 0) percent = 0;
 
             circleProgressBar1.Value = percent;
             circleProgressBar1.Text = percent + "%";
+
+            // 3. Format and display the absolute text progress
+            lblgoalprogress.Text = $"₱{GoalPage.SavedAmount:N2} / ₱{GoalPage.TargetAmount:N0}";
+
+            // ----------------------------------------------------
+            // 4. CALCULATE AND DISPLAY DURATION
+            // ----------------------------------------------------
+
+            // Subtract current time from the target date to get the remaining time
+            TimeSpan timeRemaining = GoalPage.TargetDate - DateTime.Now;
+
+            // Check if the deadline has already passed
+            if (timeRemaining.TotalSeconds <= 0)
+            {
+                lblDuration.Text = "Deadline reached!";
+            }
+            else
+            {
+                // Extract the whole days and remaining hours
+                int days = timeRemaining.Days;
+                int hours = timeRemaining.Hours;
+
+                if (days > 0)
+                {
+                    lblDuration.Text = $"{days} Days, {hours} Hrs left";
+                }
+                else
+                {
+                    // If less than 24 hours are left, just show the hours
+                    lblDuration.Text = $"{hours} Hrs left";
+                }
+            }
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -233,7 +295,17 @@ namespace MobileAppDesign
 
         private void label1_Click(object sender, EventArgs e)
         {
-           
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

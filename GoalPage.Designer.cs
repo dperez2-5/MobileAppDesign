@@ -42,13 +42,13 @@
             circleProgressBar1 = new ReaLTaiizor.Controls.CircleProgressBar();
             cyberTextBox1 = new ReaLTaiizor.Controls.CyberTextBox();
             groupBox1 = new GroupBox();
+            txtinspiration = new TextBox();
+            label3 = new Label();
             btnSaveGoal = new ReaLTaiizor.Controls.CyberButton();
             dtpTargetDate = new DateTimePicker();
-            txtSavedAmount = new TextBox();
             txtTargetAmount = new TextBox();
             txtGoal = new TextBox();
             label4 = new Label();
-            label3 = new Label();
             label2 = new Label();
             label1 = new Label();
             label14 = new Label();
@@ -231,22 +231,43 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(txtinspiration);
+            groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(btnSaveGoal);
             groupBox1.Controls.Add(dtpTargetDate);
-            groupBox1.Controls.Add(txtSavedAmount);
             groupBox1.Controls.Add(txtTargetAmount);
             groupBox1.Controls.Add(txtGoal);
             groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
             groupBox1.Location = new Point(473, 222);
             groupBox1.Margin = new Padding(2);
             groupBox1.Name = "groupBox1";
             groupBox1.Padding = new Padding(2);
-            groupBox1.Size = new Size(452, 355);
+            groupBox1.Size = new Size(452, 283);
             groupBox1.TabIndex = 58;
             groupBox1.TabStop = false;
+            groupBox1.Enter += groupBox1_Enter;
+            // 
+            // txtinspiration
+            // 
+            txtinspiration.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtinspiration.Location = new Point(251, 152);
+            txtinspiration.Margin = new Padding(2);
+            txtinspiration.Name = "txtinspiration";
+            txtinspiration.Size = new Size(162, 26);
+            txtinspiration.TabIndex = 11;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(69, 152);
+            label3.Margin = new Padding(2, 0, 2, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(83, 20);
+            label3.TabIndex = 10;
+            label3.Text = "Inspiration";
             // 
             // btnSaveGoal
             // 
@@ -274,7 +295,7 @@
             btnSaveGoal.Lighting = false;
             btnSaveGoal.LinearGradient_Background = false;
             btnSaveGoal.LinearGradientPen = false;
-            btnSaveGoal.Location = new Point(294, 283);
+            btnSaveGoal.Location = new Point(294, 220);
             btnSaveGoal.Name = "btnSaveGoal";
             btnSaveGoal.PenWidth = 15;
             btnSaveGoal.Rounding = true;
@@ -291,20 +312,11 @@
             // 
             // dtpTargetDate
             // 
-            dtpTargetDate.Location = new Point(202, 230);
+            dtpTargetDate.Location = new Point(202, 192);
             dtpTargetDate.Margin = new Padding(2);
             dtpTargetDate.Name = "dtpTargetDate";
             dtpTargetDate.Size = new Size(211, 23);
             dtpTargetDate.TabIndex = 7;
-            // 
-            // txtSavedAmount
-            // 
-            txtSavedAmount.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtSavedAmount.Location = new Point(251, 169);
-            txtSavedAmount.Margin = new Padding(2);
-            txtSavedAmount.Name = "txtSavedAmount";
-            txtSavedAmount.Size = new Size(162, 26);
-            txtSavedAmount.TabIndex = 6;
             // 
             // txtTargetAmount
             // 
@@ -335,22 +347,11 @@
             label4.TabIndex = 3;
             label4.Text = "Target Amount:";
             // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(69, 175);
-            label3.Margin = new Padding(2, 0, 2, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(118, 20);
-            label3.TabIndex = 2;
-            label3.Text = "Saved Amount:";
-            // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(69, 232);
+            label2.Location = new Point(69, 195);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
             label2.Size = new Size(98, 20);
@@ -566,11 +567,9 @@
         private GroupBox groupBox1;
         private TextBox txtGoal;
         private Label label4;
-        private Label label3;
         private Label label2;
         private Label label1;
         private DateTimePicker dtpTargetDate;
-        private TextBox txtSavedAmount;
         private TextBox txtTargetAmount;
         private Label label14;
         private Label label6;
@@ -585,5 +584,7 @@
         private Button button5;
         private Label label88;
         private Label label10;
+        private TextBox txtinspiration;
+        private Label label3;
     }
 }

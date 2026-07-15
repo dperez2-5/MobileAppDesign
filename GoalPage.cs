@@ -16,6 +16,7 @@ namespace MobileAppDesign
         public static double TargetAmount = 0;
         public static double SavedAmount = 0;
         public static System.DateTime TargetDate = System.DateTime.Today;
+        public static string InspirationQuote = "";
 
         public GoalPage()
         {
@@ -31,7 +32,6 @@ namespace MobileAppDesign
         private void btnSaveGoal_Click(object sender, EventArgs e)
         {
             double target;
-            double saved;
 
             if (txtGoal.Text == "")
             {
@@ -39,34 +39,25 @@ namespace MobileAppDesign
                 return;
             }
 
-            if (!double.TryParse(txtTargetAmount.Text, out target))
+            if (!double.TryParse(txtTargetAmount.Text, out target) || target <= 0)
             {
                 MessageBox.Show("Invalid target amount.");
                 return;
             }
 
-            if (!double.TryParse(txtSavedAmount.Text, out saved))
-            {
-                MessageBox.Show("Invalid saved amount.");
-                return;
-            }
-
+            // Assign values
             GoalPage.GoalName = txtGoal.Text;
-
             GoalPage.TargetAmount = target;
 
-            GoalPage.SavedAmount = saved;
-
+            // ARCHITECTURE FIX: A new goal always starts with 0 saved!
+            GoalPage.SavedAmount = 0;
             GoalPage.TargetDate = dtpTargetDate.Value;
+            GoalPage.InspirationQuote = txtinspiration.Text;
 
-            int percent = (int)((saved / target) * 100);
-
-            if (percent > 100)
-                percent = 100;
-
-            circleProgressBar1.Value = percent;
-
-            circleProgressBar1.Text = percent + "%";
+            // Reset progress bar to 0%
+            circleProgressBar1.Value = 0;
+            circleProgressBar1.Text = "0%";
+            GoalPage.TargetDate = dtpTargetDate.Value;
 
             MessageBox.Show("Goal Saved!");
         }
@@ -93,6 +84,11 @@ namespace MobileAppDesign
         }
 
         private void GoalPage_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }

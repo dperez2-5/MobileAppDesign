@@ -54,6 +54,8 @@
             pictureBox7 = new PictureBox();
             dateTimePicker2 = new DateTimePicker();
             groupBox1 = new GroupBox();
+            lblSavings = new Label();
+            txtSavings = new TextBox();
             btnAddExpense = new Button();
             txtAmount = new TextBox();
             txtDescription = new TextBox();
@@ -67,6 +69,9 @@
             circleProgressBar1 = new ReaLTaiizor.Controls.CircleProgressBar();
             label3 = new Label();
             groupBox4 = new GroupBox();
+            txtinspiration = new Label();
+            lblDuration = new Label();
+            lblgoalprogress = new Label();
             lblGoalName = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -343,6 +348,8 @@
             // groupBox1
             // 
             groupBox1.BackColor = Color.Lavender;
+            groupBox1.Controls.Add(lblSavings);
+            groupBox1.Controls.Add(txtSavings);
             groupBox1.Controls.Add(btnAddExpense);
             groupBox1.Controls.Add(txtAmount);
             groupBox1.Controls.Add(txtDescription);
@@ -353,18 +360,35 @@
             groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(label4);
             groupBox1.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            groupBox1.Location = new Point(467, 324);
+            groupBox1.Location = new Point(346, 324);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(326, 317);
             groupBox1.TabIndex = 41;
             groupBox1.TabStop = false;
             groupBox1.Text = "📝 ADD NEW EXPENSE";
+            groupBox1.Enter += groupBox1_Enter;
+            // 
+            // lblSavings
+            // 
+            lblSavings.AutoSize = true;
+            lblSavings.Location = new Point(35, 210);
+            lblSavings.Name = "lblSavings";
+            lblSavings.Size = new Size(60, 18);
+            lblSavings.TabIndex = 45;
+            lblSavings.Text = "Savings";
+            // 
+            // txtSavings
+            // 
+            txtSavings.Location = new Point(146, 208);
+            txtSavings.Name = "txtSavings";
+            txtSavings.Size = new Size(149, 24);
+            txtSavings.TabIndex = 44;
             // 
             // btnAddExpense
             // 
-            btnAddExpense.Location = new Point(104, 255);
+            btnAddExpense.Location = new Point(146, 261);
             btnAddExpense.Name = "btnAddExpense";
-            btnAddExpense.Size = new Size(122, 26);
+            btnAddExpense.Size = new Size(149, 26);
             btnAddExpense.TabIndex = 42;
             btnAddExpense.Text = "➕Add Expense";
             btnAddExpense.UseVisualStyleBackColor = true;
@@ -372,16 +396,16 @@
             // 
             // txtAmount
             // 
-            txtAmount.Location = new Point(146, 209);
+            txtAmount.Location = new Point(146, 178);
             txtAmount.Name = "txtAmount";
-            txtAmount.Size = new Size(122, 24);
+            txtAmount.Size = new Size(149, 24);
             txtAmount.TabIndex = 43;
             // 
             // txtDescription
             // 
-            txtDescription.Location = new Point(146, 157);
+            txtDescription.Location = new Point(146, 139);
             txtDescription.Name = "txtDescription";
-            txtDescription.Size = new Size(122, 24);
+            txtDescription.Size = new Size(149, 24);
             txtDescription.TabIndex = 42;
             // 
             // cmbCategory
@@ -390,7 +414,7 @@
             cmbCategory.Items.AddRange(new object[] { "Food", "Transportation", "School Expense", "Bills (House)", "Others" });
             cmbCategory.Location = new Point(146, 107);
             cmbCategory.Name = "cmbCategory";
-            cmbCategory.Size = new Size(122, 26);
+            cmbCategory.Size = new Size(149, 26);
             cmbCategory.TabIndex = 41;
             // 
             // label7
@@ -401,11 +425,12 @@
             label7.Size = new Size(90, 18);
             label7.TabIndex = 3;
             label7.Text = "📖Category:";
+            label7.Click += label7_Click;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(24, 163);
+            label6.Location = new Point(24, 145);
             label6.Name = "label6";
             label6.Size = new Size(105, 18);
             label6.TabIndex = 2;
@@ -414,7 +439,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(33, 215);
+            label5.Location = new Point(33, 181);
             label5.Name = "label5";
             label5.Size = new Size(81, 18);
             label5.TabIndex = 1;
@@ -455,7 +480,7 @@
             // circleProgressBar1
             // 
             circleProgressBar1.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            circleProgressBar1.Location = new Point(103, 54);
+            circleProgressBar1.Location = new Point(149, 40);
             circleProgressBar1.Maximum = 100L;
             circleProgressBar1.MinimumSize = new Size(100, 100);
             circleProgressBar1.Name = "circleProgressBar1";
@@ -482,20 +507,54 @@
             // groupBox4
             // 
             groupBox4.BackColor = Color.LightCyan;
+            groupBox4.Controls.Add(txtinspiration);
+            groupBox4.Controls.Add(lblDuration);
+            groupBox4.Controls.Add(lblgoalprogress);
             groupBox4.Controls.Add(lblGoalName);
             groupBox4.Controls.Add(label3);
             groupBox4.Controls.Add(circleProgressBar1);
-            groupBox4.Location = new Point(878, 324);
+            groupBox4.Location = new Point(771, 324);
             groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(447, 317);
+            groupBox4.Size = new Size(587, 317);
             groupBox4.TabIndex = 34;
             groupBox4.TabStop = false;
+            // 
+            // txtinspiration
+            // 
+            txtinspiration.AutoSize = true;
+            txtinspiration.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtinspiration.Location = new Point(441, 46);
+            txtinspiration.Name = "txtinspiration";
+            txtinspiration.Size = new Size(127, 25);
+            txtinspiration.TabIndex = 49;
+            txtinspiration.Text = "txtinspiration";
+            // 
+            // lblDuration
+            // 
+            lblDuration.AutoSize = true;
+            lblDuration.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblDuration.Location = new Point(34, 65);
+            lblDuration.Name = "lblDuration";
+            lblDuration.Size = new Size(109, 25);
+            lblDuration.TabIndex = 48;
+            lblDuration.Text = "lblDuration";
+            // 
+            // lblgoalprogress
+            // 
+            lblgoalprogress.AllowDrop = true;
+            lblgoalprogress.AutoSize = true;
+            lblgoalprogress.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblgoalprogress.Location = new Point(311, 11);
+            lblgoalprogress.Name = "lblgoalprogress";
+            lblgoalprogress.Size = new Size(143, 25);
+            lblgoalprogress.TabIndex = 47;
+            lblgoalprogress.Text = "lblgoalprogress";
             // 
             // lblGoalName
             // 
             lblGoalName.AutoSize = true;
             lblGoalName.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblGoalName.Location = new Point(193, 12);
+            lblGoalName.Location = new Point(140, 12);
             lblGoalName.Name = "lblGoalName";
             lblGoalName.Size = new Size(124, 25);
             lblGoalName.TabIndex = 46;
@@ -593,5 +652,10 @@
         private Label label3;
         private GroupBox groupBox4;
         private Label lblGoalName;
+        private Label lblSavings;
+        private TextBox txtSavings;
+        private Label lblgoalprogress;
+        private Label lblDuration;
+        private Label txtinspiration;
     }
 }
