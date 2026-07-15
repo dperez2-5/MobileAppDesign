@@ -138,7 +138,8 @@
             // 
             // txtBalance
             // 
-            txtBalance.Location = new Point(172, 40);
+            txtBalance.AccessibleRole = AccessibleRole.None;
+            txtBalance.Location = new Point(172, 46);
             txtBalance.Name = "txtBalance";
             txtBalance.ReadOnly = true;
             txtBalance.Size = new Size(130, 23);
@@ -147,7 +148,7 @@
             // 
             // txtCurrentBalance
             // 
-            txtCurrentBalance.Location = new Point(123, 49);
+            txtCurrentBalance.Location = new Point(123, 54);
             txtCurrentBalance.Name = "txtCurrentBalance";
             txtCurrentBalance.Size = new Size(183, 23);
             txtCurrentBalance.TabIndex = 22;
@@ -224,7 +225,6 @@
             pictureBox3.Size = new Size(1201, 313);
             pictureBox3.TabIndex = 31;
             pictureBox3.TabStop = false;
-            pictureBox3.Click += pictureBox3_Click;
             // 
             // groupBox2
             // 
@@ -253,7 +253,7 @@
             pictureBox5.Location = new Point(0, 8);
             pictureBox5.Margin = new Padding(2);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(150, 82);
+            pictureBox5.Size = new Size(150, 97);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 21;
             pictureBox5.TabStop = false;
@@ -366,7 +366,6 @@
             groupBox1.TabIndex = 41;
             groupBox1.TabStop = false;
             groupBox1.Text = "📝 ADD NEW EXPENSE";
-            groupBox1.Enter += groupBox1_Enter;
             // 
             // lblSavings
             // 
@@ -411,7 +410,6 @@
             // cmbCategory
             // 
             cmbCategory.FormattingEnabled = true;
-            cmbCategory.Items.AddRange(new object[] { "Food", "Transportation", "School Expense", "Bills (House)", "Others" });
             cmbCategory.Location = new Point(146, 107);
             cmbCategory.Name = "cmbCategory";
             cmbCategory.Size = new Size(149, 26);
@@ -425,7 +423,6 @@
             label7.Size = new Size(90, 18);
             label7.TabIndex = 3;
             label7.Text = "📖Category:";
-            label7.Click += label7_Click;
             // 
             // label6
             // 
@@ -441,7 +438,7 @@
             label5.AutoSize = true;
             label5.Location = new Point(33, 181);
             label5.Name = "label5";
-            label5.Size = new Size(81, 18);
+            label5.Size = new Size(78, 18);
             label5.TabIndex = 1;
             label5.Text = "💰Amount:";
             // 
@@ -450,7 +447,7 @@
             label4.AutoSize = true;
             label4.Location = new Point(24, 46);
             label4.Name = "label4";
-            label4.Size = new Size(61, 18);
+            label4.Size = new Size(59, 18);
             label4.TabIndex = 0;
             label4.Text = "🗓️Date:";
             // 
@@ -465,7 +462,6 @@
             label2.Size = new Size(322, 16);
             label2.TabIndex = 44;
             label2.Text = "Let's make today a smart money day!";
-            label2.Click += label2_Click;
             // 
             // label14
             // 
@@ -473,14 +469,14 @@
             label14.Location = new Point(92, 132);
             label14.Margin = new Padding(2, 0, 2, 0);
             label14.Name = "label14";
-            label14.Size = new Size(103, 15);
+            label14.Size = new Size(102, 15);
             label14.TabIndex = 45;
             label14.Text = "Allowance Tracker";
             // 
             // circleProgressBar1
             // 
             circleProgressBar1.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            circleProgressBar1.Location = new Point(149, 40);
+            circleProgressBar1.Location = new Point(202, 40);
             circleProgressBar1.Maximum = 100L;
             circleProgressBar1.MinimumSize = new Size(100, 100);
             circleProgressBar1.Name = "circleProgressBar1";
@@ -559,7 +555,6 @@
             lblGoalName.Size = new Size(124, 25);
             lblGoalName.TabIndex = 46;
             lblGoalName.Text = "lblGoalName";
-            lblGoalName.Click += label1_Click;
             // 
             // HomePage
             // 
