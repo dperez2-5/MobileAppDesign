@@ -288,5 +288,20 @@ namespace MobileAppDesign
         {
 
         }
+
+        private void txtinspiration_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

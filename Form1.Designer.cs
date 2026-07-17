@@ -56,22 +56,27 @@
             // 
             // textusername
             // 
-            textusername.BackColor = Color.LightSteelBlue;
-            textusername.Location = new Point(1064, 366);
+            textusername.BackColor = Color.FromArgb(113, 100, 81);
+            textusername.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textusername.ForeColor = Color.White;
+            textusername.Location = new Point(1004, 354);
+            textusername.Multiline = true;
             textusername.Name = "textusername";
             textusername.PlaceholderText = "username";
-            textusername.Size = new Size(268, 23);
+            textusername.Size = new Size(268, 37);
             textusername.TabIndex = 1;
             textusername.TextAlign = HorizontalAlignment.Center;
+            textusername.TextChanged += textusername_TextChanged;
             // 
             // button1
             // 
-            button1.BackColor = SystemColors.ActiveCaption;
+            button1.BackColor = Color.FromArgb(113, 100, 81);
             button1.BackgroundImageLayout = ImageLayout.None;
-            button1.ForeColor = SystemColors.ActiveCaptionText;
-            button1.Location = new Point(1064, 419);
+            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(1060, 411);
             button1.Name = "button1";
-            button1.Size = new Size(268, 42);
+            button1.Size = new Size(172, 36);
             button1.TabIndex = 2;
             button1.Text = "Login to PesoWise";
             button1.UseVisualStyleBackColor = false;
@@ -79,41 +84,46 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(973, -62);
+            pictureBox1.BackColor = Color.FromArgb(47, 57, 67);
+            pictureBox1.Location = new Point(898, -3);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(524, 921);
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = Color.White;
+            label1.BackColor = Color.FromArgb(47, 57, 67);
             label1.Font = new Font("Segoe UI Black", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(1046, 235);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(978, 227);
             label1.Name = "label1";
             label1.Size = new Size(190, 40);
             label1.TabIndex = 4;
             label1.Text = "Get Started!";
+            label1.Click += label1_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.BackColor = Color.White;
-            label2.Font = new Font("Segoe UI Historic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(1046, 275);
+            label2.BackColor = Color.FromArgb(47, 57, 67);
+            label2.Font = new Font("Century Gothic", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(978, 285);
             label2.Name = "label2";
-            label2.Size = new Size(259, 42);
+            label2.Size = new Size(294, 38);
             label2.TabIndex = 5;
             label2.Text = "Join thousands of students manage \r\ntheir money wisely.";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.BackColor = Color.White;
+            label3.BackColor = Color.FromArgb(47, 57, 67);
             label3.Font = new Font("Segoe UI Historic", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(1095, 477);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(1043, 477);
             label3.Name = "label3";
             label3.Size = new Size(210, 13);
             label3.TabIndex = 6;
@@ -122,10 +132,11 @@
             // linkLabel2
             // 
             linkLabel2.AutoSize = true;
-            linkLabel2.BackColor = Color.White;
+            linkLabel2.BackColor = Color.FromArgb(47, 57, 67);
+            linkLabel2.DisabledLinkColor = Color.White;
             linkLabel2.Font = new Font("Segoe UI Historic", 8.25F);
-            linkLabel2.LinkColor = Color.Black;
-            linkLabel2.Location = new Point(1212, 490);
+            linkLabel2.LinkColor = Color.White;
+            linkLabel2.Location = new Point(1171, 490);
             linkLabel2.Name = "linkLabel2";
             linkLabel2.Size = new Size(73, 13);
             linkLabel2.TabIndex = 8;
@@ -135,9 +146,10 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.BackColor = Color.White;
+            label4.BackColor = Color.FromArgb(47, 57, 67);
             label4.Font = new Font("Segoe UI Historic", 8.25F);
-            label4.Location = new Point(1189, 490);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(1147, 490);
             label4.Name = "label4";
             label4.Size = new Size(27, 13);
             label4.TabIndex = 9;
@@ -147,6 +159,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI Black", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.ForeColor = Color.White;
             label5.Location = new Point(84, 146);
             label5.Name = "label5";
             label5.Size = new Size(675, 258);
@@ -156,58 +169,66 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.Font = new Font("Century Gothic", 11.25F, FontStyle.Italic);
+            label6.ForeColor = Color.White;
             label6.Location = new Point(107, 419);
             label6.Name = "label6";
-            label6.Size = new Size(508, 42);
+            label6.Size = new Size(535, 36);
             label6.TabIndex = 11;
             label6.Text = "The best companion for students to track spending, build savings habits,\r\n and achieve financial independence at early age.";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.Font = new Font("Engravers MT", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.ForeColor = Color.White;
             label7.Location = new Point(148, 514);
             label7.Name = "label7";
-            label7.Size = new Size(161, 30);
+            label7.Size = new Size(278, 25);
             label7.TabIndex = 12;
             label7.Text = "Smart Tracking";
             // 
             // label8
             // 
             label8.AutoSize = true;
+            label8.Font = new Font("Century Gothic", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            label8.ForeColor = Color.White;
             label8.Location = new Point(155, 553);
             label8.Name = "label8";
-            label8.Size = new Size(411, 15);
+            label8.Size = new Size(474, 16);
             label8.TabIndex = 13;
             label8.Text = "Categorize every peso and see exactly where your allowance goes each week.";
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.Font = new Font("Engravers MT", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.ForeColor = Color.White;
             label9.Location = new Point(148, 626);
             label9.Name = "label9";
-            label9.Size = new Size(144, 30);
+            label9.Size = new Size(237, 25);
             label9.TabIndex = 14;
             label9.Text = "Goal Focused";
             // 
             // label10
             // 
             label10.AutoSize = true;
+            label10.Font = new Font("Century Gothic", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            label10.ForeColor = Color.White;
             label10.Location = new Point(155, 665);
             label10.Name = "label10";
-            label10.Size = new Size(460, 15);
+            label10.Size = new Size(517, 16);
             label10.TabIndex = 15;
             label10.Text = "Set savings targets for gadgets, leisure, or emergencies and watch your progress grow.";
             // 
             // label11
             // 
             label11.AutoSize = true;
-            label11.Font = new Font("Berlin Sans FB", 30F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.Font = new Font("Engravers MT", 30F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.ForeColor = Color.White;
             label11.Location = new Point(412, 68);
             label11.Name = "label11";
-            label11.Size = new Size(194, 50);
+            label11.Size = new Size(296, 47);
             label11.TabIndex = 16;
             label11.Text = "PesoWise";
             // 
@@ -247,10 +268,11 @@
             // linkLabel1
             // 
             linkLabel1.AutoSize = true;
-            linkLabel1.BackColor = Color.White;
+            linkLabel1.BackColor = Color.FromArgb(47, 57, 67);
             linkLabel1.Font = new Font("Segoe UI Historic", 8.25F);
-            linkLabel1.LinkColor = Color.Black;
-            linkLabel1.Location = new Point(1105, 490);
+            linkLabel1.ForeColor = Color.White;
+            linkLabel1.LinkColor = Color.White;
+            linkLabel1.Location = new Point(1060, 490);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(88, 13);
             linkLabel1.TabIndex = 7;
@@ -262,7 +284,7 @@
             AcceptButton = button1;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.LightSteelBlue;
+            BackColor = Color.FromArgb(59, 71, 83);
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(1366, 745);
             Controls.Add(pictureBox4);
