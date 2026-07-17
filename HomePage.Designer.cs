@@ -116,11 +116,11 @@
             // lblAllowance
             // 
             lblAllowance.AutoSize = true;
-            lblAllowance.Font = new Font("Goudy Old Style", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblAllowance.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblAllowance.ForeColor = Color.White;
             lblAllowance.Location = new Point(137, 17);
             lblAllowance.Name = "lblAllowance";
-            lblAllowance.Size = new Size(154, 23);
+            lblAllowance.Size = new Size(181, 24);
             lblAllowance.TabIndex = 17;
             lblAllowance.Text = "Weekly Allowance";
             // 
@@ -148,11 +148,11 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Font = new Font("Goudy Old Style", 14.25F, FontStyle.Bold);
+            label10.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold);
             label10.ForeColor = Color.White;
             label10.Location = new Point(123, 18);
             label10.Name = "label10";
-            label10.Size = new Size(138, 23);
+            label10.Size = new Size(160, 24);
             label10.TabIndex = 21;
             label10.Text = "Current Balance";
             label10.Click += label10_Click;
@@ -334,7 +334,7 @@
             groupBox1.Controls.Add(dateTimePicker2);
             groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(label4);
-            groupBox1.Font = new Font("Goudy Old Style", 14.25F, FontStyle.Bold);
+            groupBox1.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold);
             groupBox1.ForeColor = Color.White;
             groupBox1.Location = new Point(346, 324);
             groupBox1.Name = "groupBox1";
@@ -348,7 +348,7 @@
             lblSavings.AutoSize = true;
             lblSavings.Location = new Point(35, 210);
             lblSavings.Name = "lblSavings";
-            lblSavings.Size = new Size(65, 23);
+            lblSavings.Size = new Size(83, 24);
             lblSavings.TabIndex = 45;
             lblSavings.Text = "Savings";
             // 
@@ -357,7 +357,7 @@
             txtSavings.BackColor = Color.FromArgb(47, 57, 67);
             txtSavings.Location = new Point(146, 208);
             txtSavings.Name = "txtSavings";
-            txtSavings.Size = new Size(149, 30);
+            txtSavings.Size = new Size(149, 29);
             txtSavings.TabIndex = 44;
             // 
             // btnAddExpense
@@ -376,7 +376,7 @@
             txtAmount.BackColor = Color.FromArgb(47, 57, 67);
             txtAmount.Location = new Point(146, 178);
             txtAmount.Name = "txtAmount";
-            txtAmount.Size = new Size(149, 30);
+            txtAmount.Size = new Size(149, 29);
             txtAmount.TabIndex = 43;
             // 
             // txtDescription
@@ -384,7 +384,7 @@
             txtDescription.BackColor = Color.FromArgb(47, 57, 67);
             txtDescription.Location = new Point(146, 139);
             txtDescription.Name = "txtDescription";
-            txtDescription.Size = new Size(149, 30);
+            txtDescription.Size = new Size(149, 29);
             txtDescription.TabIndex = 42;
             // 
             // cmbCategory
@@ -394,7 +394,7 @@
             cmbCategory.FormattingEnabled = true;
             cmbCategory.Location = new Point(146, 107);
             cmbCategory.Name = "cmbCategory";
-            cmbCategory.Size = new Size(149, 31);
+            cmbCategory.Size = new Size(149, 32);
             cmbCategory.TabIndex = 41;
             // 
             // label7
@@ -402,7 +402,7 @@
             label7.AutoSize = true;
             label7.Location = new Point(24, 112);
             label7.Name = "label7";
-            label7.Size = new Size(105, 23);
+            label7.Size = new Size(121, 24);
             label7.TabIndex = 3;
             label7.Text = "📖Category:";
             // 
@@ -411,7 +411,7 @@
             label6.AutoSize = true;
             label6.Location = new Point(24, 145);
             label6.Name = "label6";
-            label6.Size = new Size(127, 23);
+            label6.Size = new Size(143, 24);
             label6.TabIndex = 2;
             label6.Text = "✏️Description:";
             // 
@@ -420,7 +420,7 @@
             label5.AutoSize = true;
             label5.Location = new Point(33, 181);
             label5.Name = "label5";
-            label5.Size = new Size(103, 23);
+            label5.Size = new Size(110, 24);
             label5.TabIndex = 1;
             label5.Text = "💰Amount:";
             // 
@@ -429,7 +429,7 @@
             label4.AutoSize = true;
             label4.Location = new Point(24, 46);
             label4.Name = "label4";
-            label4.Size = new Size(73, 23);
+            label4.Size = new Size(80, 24);
             label4.TabIndex = 0;
             label4.Text = "🗓️Date:";
             // 
@@ -437,18 +437,18 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.FromArgb(59, 71, 83);
-            label2.Font = new Font("Rockwell", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
             label2.Location = new Point(1031, 90);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(277, 18);
+            label2.Size = new Size(270, 20);
             label2.TabIndex = 44;
             label2.Text = "Let's make today a smart money day!";
             // 
             // circleProgressBar1
             // 
-            circleProgressBar1.Font = new Font("Engravers MT", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            circleProgressBar1.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             circleProgressBar1.ForeColor = Color.White;
             circleProgressBar1.Location = new Point(202, 40);
             circleProgressBar1.Maximum = 100L;
@@ -467,11 +467,11 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Goudy Old Style", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.White;
             label3.Location = new Point(5, 8);
             label3.Name = "label3";
-            label3.Size = new Size(107, 28);
+            label3.Size = new Size(109, 29);
             label3.TabIndex = 0;
             label3.Text = "🎯GOAL";
             // 
@@ -493,11 +493,11 @@
             // txtinspiration
             // 
             txtinspiration.AutoSize = true;
-            txtinspiration.Font = new Font("Goudy Old Style", 14.25F, FontStyle.Bold);
+            txtinspiration.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold);
             txtinspiration.ForeColor = Color.White;
-            txtinspiration.Location = new Point(87, 115);
+            txtinspiration.Location = new Point(49, 115);
             txtinspiration.Name = "txtinspiration";
-            txtinspiration.Size = new Size(115, 23);
+            txtinspiration.Size = new Size(127, 24);
             txtinspiration.TabIndex = 49;
             txtinspiration.Text = "txtinspiration";
             txtinspiration.Click += txtinspiration_Click;
@@ -505,11 +505,11 @@
             // lblDuration
             // 
             lblDuration.AutoSize = true;
-            lblDuration.Font = new Font("Goudy Old Style", 14.25F, FontStyle.Bold);
+            lblDuration.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold);
             lblDuration.ForeColor = Color.White;
             lblDuration.Location = new Point(426, 55);
             lblDuration.Name = "lblDuration";
-            lblDuration.Size = new Size(101, 23);
+            lblDuration.Size = new Size(110, 24);
             lblDuration.TabIndex = 48;
             lblDuration.Text = "lblDuration";
             // 
@@ -517,22 +517,22 @@
             // 
             lblgoalprogress.AllowDrop = true;
             lblgoalprogress.AutoSize = true;
-            lblgoalprogress.Font = new Font("Goudy Old Style", 14.25F, FontStyle.Bold);
+            lblgoalprogress.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold);
             lblgoalprogress.ForeColor = Color.White;
-            lblgoalprogress.Location = new Point(87, 73);
+            lblgoalprogress.Location = new Point(42, 68);
             lblgoalprogress.Name = "lblgoalprogress";
-            lblgoalprogress.Size = new Size(123, 23);
+            lblgoalprogress.Size = new Size(154, 24);
             lblgoalprogress.TabIndex = 47;
             lblgoalprogress.Text = "lblgoalprogress";
             // 
             // lblGoalName
             // 
             lblGoalName.AutoSize = true;
-            lblGoalName.Font = new Font("Goudy Old Style", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblGoalName.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblGoalName.ForeColor = Color.White;
             lblGoalName.Location = new Point(140, 12);
             lblGoalName.Name = "lblGoalName";
-            lblGoalName.Size = new Size(127, 25);
+            lblGoalName.Size = new Size(146, 25);
             lblGoalName.TabIndex = 46;
             lblGoalName.Text = "lblGoalName";
             // 

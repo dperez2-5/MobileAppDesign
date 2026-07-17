@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             dgvExpensesHistory = new DataGridView();
-            button1 = new Button();
-            button3 = new Button();
             label5 = new Label();
             lblWelcome = new Label();
             pictureBox3 = new PictureBox();
@@ -61,44 +59,16 @@
             dgvExpensesHistory.TabIndex = 42;
             dgvExpensesHistory.CellContentClick += dataGridView1_CellContentClick;
             // 
-            // button1
-            // 
-            button1.BackColor = Color.FromArgb(64, 64, 64);
-            button1.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(1187, 594);
-            button1.Margin = new Padding(2);
-            button1.Name = "button1";
-            button1.Size = new Size(125, 34);
-            button1.TabIndex = 46;
-            button1.Text = "Clear All";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
-            // 
-            // button3
-            // 
-            button3.BackColor = Color.FromArgb(59, 71, 83);
-            button3.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(1187, 544);
-            button3.Margin = new Padding(2);
-            button3.Name = "button3";
-            button3.Size = new Size(125, 33);
-            button3.TabIndex = 47;
-            button3.Text = "Delete Selected";
-            button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click;
-            // 
             // label5
             // 
             label5.AutoSize = true;
             label5.BackColor = Color.FromArgb(47, 57, 67);
-            label5.Font = new Font("Goudy Old Style", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.White;
             label5.Location = new Point(346, 159);
             label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new Size(211, 28);
+            label5.Size = new Size(240, 29);
             label5.TabIndex = 60;
             label5.Text = "💵Spending History";
             // 
@@ -106,14 +76,13 @@
             // 
             lblWelcome.AutoSize = true;
             lblWelcome.BackColor = Color.FromArgb(59, 71, 83);
-            lblWelcome.Font = new Font("Goudy Old Style", 22F, FontStyle.Bold);
+            lblWelcome.Font = new Font("Microsoft Sans Serif", 22F, FontStyle.Bold);
             lblWelcome.ForeColor = Color.White;
             lblWelcome.Location = new Point(1082, 29);
             lblWelcome.Name = "lblWelcome";
-            lblWelcome.Size = new Size(230, 34);
+            lblWelcome.Size = new Size(260, 36);
             lblWelcome.TabIndex = 69;
             lblWelcome.Text = "Good Day, User! ";
-            lblWelcome.Click += label1_Click;
             // 
             // pictureBox3
             // 
@@ -182,7 +151,6 @@
             button7.TabIndex = 77;
             button7.Text = "💳 SPENDING";
             button7.UseVisualStyleBackColor = false;
-            button7.Click += button7_Click;
             // 
             // button6
             // 
@@ -195,6 +163,7 @@
             button6.TabIndex = 76;
             button6.Text = "🎯GOALS";
             button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click_1;
             // 
             // button2
             // 
@@ -238,8 +207,6 @@
             Controls.Add(lblWelcome);
             Controls.Add(pictureBox3);
             Controls.Add(label5);
-            Controls.Add(button3);
-            Controls.Add(button1);
             Controls.Add(dgvExpensesHistory);
             Name = "SpendingPage";
             StartPosition = FormStartPosition.CenterScreen;
@@ -254,8 +221,6 @@
 
         #endregion
         private DataGridView dgvExpensesHistory;
-        private Button button1;
-        private Button button3;
         private Label label5;
         private Label lblWelcome;
         private PictureBox pictureBox3;
