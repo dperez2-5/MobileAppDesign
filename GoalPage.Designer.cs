@@ -136,7 +136,6 @@
             groupBox1.Size = new Size(552, 347);
             groupBox1.TabIndex = 58;
             groupBox1.TabStop = false;
-
             // 
             // txtinspiration
             // 
@@ -243,7 +242,6 @@
             label4.Size = new Size(140, 24);
             label4.TabIndex = 3;
             label4.Text = "Target Amount:";
-
             // 
             // label2
             // 
@@ -268,7 +266,6 @@
             label1.Size = new Size(121, 24);
             label1.TabIndex = 0;
             label1.Text = "Current Goal:";
-
             // 
             // pictureBox6
             // 
@@ -398,6 +395,7 @@
             lblWelcome.Size = new Size(260, 36);
             lblWelcome.TabIndex = 89;
             lblWelcome.Text = "Good Day, User! ";
+            lblWelcome.Click += lblWelcome_Click;
             // 
             // GoalPage
             // 
@@ -423,7 +421,6 @@
             Name = "GoalPage";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "GoalPage";
-
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();

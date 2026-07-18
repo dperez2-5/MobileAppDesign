@@ -23,7 +23,7 @@ namespace MobileAppDesign
 
             username = user;
 
-            lblWelcome.Text = "Good Day, " + AppData.Username + "!";
+            lblWelcome1.Text = "Good Day, " + AppData.Username + "!";
             // Categories
             cmbCategory.Items.Add("Food");
             cmbCategory.Items.Add("Transportation");
@@ -300,6 +300,11 @@ namespace MobileAppDesign
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
 
         }

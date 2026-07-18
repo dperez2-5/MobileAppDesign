@@ -38,7 +38,6 @@
             pictureBox2 = new PictureBox();
             label11 = new Label();
             lblWelcome = new Label();
-            pictureBox3 = new PictureBox();
             groupBox2 = new GroupBox();
             txtAddAllowance = new TextBox();
             pictureBox5 = new PictureBox();
@@ -72,8 +71,9 @@
             label14 = new Label();
             pictureBox1 = new PictureBox();
             button7 = new Button();
+            pictureBox3 = new PictureBox();
+            lblWelcome1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             groupBox3.SuspendLayout();
@@ -83,6 +83,7 @@
             groupBox1.SuspendLayout();
             groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // button2
@@ -187,16 +188,6 @@
             lblWelcome.Name = "lblWelcome";
             lblWelcome.Size = new Size(0, 41);
             lblWelcome.TabIndex = 29;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.BackColor = Color.FromArgb(59, 71, 83);
-            pictureBox3.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox3.Location = new Point(229, -173);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(1201, 310);
-            pictureBox3.TabIndex = 31;
-            pictureBox3.TabStop = false;
             // 
             // groupBox2
             // 
@@ -439,7 +430,7 @@
             label2.BackColor = Color.FromArgb(59, 71, 83);
             label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(1031, 90);
+            label2.Location = new Point(1018, 75);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
             label2.Size = new Size(270, 20);
@@ -571,6 +562,29 @@
             button7.UseVisualStyleBackColor = false;
             button7.Click += button7_Click;
             // 
+            // pictureBox3
+            // 
+            pictureBox3.BackColor = Color.FromArgb(59, 71, 83);
+            pictureBox3.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox3.Location = new Point(229, -173);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(1201, 310);
+            pictureBox3.TabIndex = 31;
+            pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
+            // 
+            // lblWelcome1
+            // 
+            lblWelcome1.AutoSize = true;
+            lblWelcome1.BackColor = Color.FromArgb(59, 71, 83);
+            lblWelcome1.Font = new Font("Microsoft Sans Serif", 22F, FontStyle.Bold);
+            lblWelcome1.ForeColor = Color.White;
+            lblWelcome1.Location = new Point(1066, 25);
+            lblWelcome1.Name = "lblWelcome1";
+            lblWelcome1.Size = new Size(242, 36);
+            lblWelcome1.TabIndex = 47;
+            lblWelcome1.Text = "Good day, user!";
+            // 
             // HomePage
             // 
             AcceptButton = button2;
@@ -579,6 +593,7 @@
             BackColor = Color.FromArgb(47, 57, 67);
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(1370, 749);
+            Controls.Add(lblWelcome1);
             Controls.Add(pictureBox1);
             Controls.Add(label14);
             Controls.Add(label2);
@@ -599,7 +614,6 @@
             Text = "0";
             Load += HomePage_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
@@ -614,6 +628,7 @@
             groupBox4.ResumeLayout(false);
             groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -638,7 +653,6 @@
         private PictureBox pictureBox2;
         private Label label11;
         private Label lblWelcome;
-        private PictureBox pictureBox3;
         private GroupBox groupBox2;
         private GroupBox groupBox3;
         private GroupBox groupBox5;
@@ -666,5 +680,7 @@
         private Label label14;
         private PictureBox pictureBox1;
         private Button button7;
+        private PictureBox pictureBox3;
+        private Label lblWelcome1;
     }
 }
