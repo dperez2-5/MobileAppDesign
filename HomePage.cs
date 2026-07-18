@@ -14,14 +14,12 @@ namespace MobileAppDesign
 
     public partial class HomePage : Form
     {
-        private string username;
-        private string? user;
-
+      
         public HomePage()
         {
             InitializeComponent();
 
-            username = user;
+           
 
             lblWelcome1.Text = "Good Day, " + AppData.Username + "!";
             // Categories
