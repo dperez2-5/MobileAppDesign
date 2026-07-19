@@ -206,6 +206,7 @@
             // txtAddAllowance
             // 
             txtAddAllowance.BackColor = Color.FromArgb(47, 56, 65);
+            txtAddAllowance.ForeColor = Color.White;
             txtAddAllowance.Location = new Point(118, 77);
             txtAddAllowance.Name = "txtAddAllowance";
             txtAddAllowance.Size = new Size(105, 23);
