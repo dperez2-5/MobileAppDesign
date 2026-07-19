@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualBasic.ApplicationServices;
+using Microsoft.VisualBasic.ApplicationServices;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -120,6 +120,9 @@ namespace MobileAppDesign
             AppData.TotalAllowance += amount;
             AppData.CurrentBalance += amount;
 
+            // Save state permanently
+            PersistenceManager.Save();
+
             // Display
             txtBalance.Text = AppData.TotalAllowance.ToString("0.00");
             txtCurrentBalance.Text = AppData.CurrentBalance.ToString("0.00");
@@ -195,6 +198,9 @@ namespace MobileAppDesign
             // --- 3. UPDATE UI AND RESET ---
             txtTotalExpenses.Text = AppData.TotalExpenses.ToString("0.00");
             txtCurrentBalance.Text = AppData.CurrentBalance.ToString("0.00");
+
+            // Save state permanently
+            PersistenceManager.Save();
 
             // Clear fields
             cmbCategory.SelectedIndex = -1;
