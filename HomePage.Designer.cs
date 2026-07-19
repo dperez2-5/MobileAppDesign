@@ -100,7 +100,7 @@
             button2.TabIndex = 1;
             button2.Text = "🏠HOME";
             button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
+
             // 
             // button6
             // 
@@ -180,7 +180,7 @@
             label11.Size = new Size(97, 21);
             label11.TabIndex = 25;
             label11.Text = "Main Menu";
-            label11.Click += label11_Click;
+
             // 
             // lblWelcome
             // 
@@ -217,7 +217,7 @@
             // 
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
             pictureBox5.Location = new Point(0, 15);
-            pictureBox5.Margin = new Padding(2, 2, 2, 2);
+            pictureBox5.Margin = new Padding(2);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(124, 85);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
@@ -251,7 +251,7 @@
             // 
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
             pictureBox6.Location = new Point(0, 15);
-            pictureBox6.Margin = new Padding(2, 2, 2, 2);
+            pictureBox6.Margin = new Padding(2);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(126, 85);
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
@@ -296,13 +296,13 @@
             // 
             pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
             pictureBox7.Location = new Point(5, 20);
-            pictureBox7.Margin = new Padding(2, 2, 2, 2);
+            pictureBox7.Margin = new Padding(2);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(128, 78);
             pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox7.TabIndex = 38;
             pictureBox7.TabStop = false;
-            pictureBox7.Click += pictureBox7_Click;
+
             // 
             // dateTimePicker2
             // 
@@ -347,7 +347,7 @@
             label1.Size = new Size(132, 24);
             label1.TabIndex = 46;
             label1.Text = "Goal Savings";
-            label1.Click += label1_Click;
+
             // 
             // lblSavings
             // 
@@ -456,7 +456,7 @@
             // 
             circleProgressBar1.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             circleProgressBar1.ForeColor = Color.White;
-            circleProgressBar1.Location = new Point(202, 40);
+            circleProgressBar1.Location = new Point(276, 14);
             circleProgressBar1.Maximum = 100L;
             circleProgressBar1.MinimumSize = new Size(100, 100);
             circleProgressBar1.Name = "circleProgressBar1";
@@ -492,7 +492,7 @@
             groupBox4.Controls.Add(circleProgressBar1);
             groupBox4.Location = new Point(718, 296);
             groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(583, 353);
+            groupBox4.Size = new Size(614, 394);
             groupBox4.TabIndex = 34;
             groupBox4.TabStop = false;
             // 
@@ -501,19 +501,19 @@
             txtinspiration.AutoSize = true;
             txtinspiration.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold);
             txtinspiration.ForeColor = Color.White;
-            txtinspiration.Location = new Point(27, 99);
+            txtinspiration.Location = new Point(27, 92);
             txtinspiration.Name = "txtinspiration";
             txtinspiration.Size = new Size(127, 24);
             txtinspiration.TabIndex = 49;
             txtinspiration.Text = "txtinspiration";
-            txtinspiration.Click += txtinspiration_Click;
+
             // 
             // lblDuration
             // 
             lblDuration.AutoSize = true;
             lblDuration.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold);
             lblDuration.ForeColor = Color.White;
-            lblDuration.Location = new Point(450, 46);
+            lblDuration.Location = new Point(27, 329);
             lblDuration.Name = "lblDuration";
             lblDuration.Size = new Size(110, 24);
             lblDuration.TabIndex = 48;
@@ -525,7 +525,7 @@
             lblgoalprogress.AutoSize = true;
             lblgoalprogress.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold);
             lblgoalprogress.ForeColor = Color.White;
-            lblgoalprogress.Location = new Point(27, 68);
+            lblgoalprogress.Location = new Point(27, 290);
             lblgoalprogress.Name = "lblgoalprogress";
             lblgoalprogress.Size = new Size(154, 24);
             lblgoalprogress.TabIndex = 47;
@@ -536,12 +536,12 @@
             lblGoalName.AutoSize = true;
             lblGoalName.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblGoalName.ForeColor = Color.White;
-            lblGoalName.Location = new Point(266, 10);
+            lblGoalName.Location = new Point(27, 52);
             lblGoalName.Name = "lblGoalName";
             lblGoalName.Size = new Size(146, 25);
             lblGoalName.TabIndex = 46;
             lblGoalName.Text = "lblGoalName";
-            lblGoalName.Click += lblGoalName_Click;
+
             // 
             // label14
             // 
@@ -555,7 +555,7 @@
             label14.Size = new Size(148, 18);
             label14.TabIndex = 45;
             label14.Text = "Allowance Tracker";
-            label14.Click += label14_Click;
+
             // 
             // pictureBox1
             // 
@@ -589,7 +589,6 @@
             pictureBox3.Size = new Size(1201, 310);
             pictureBox3.TabIndex = 31;
             pictureBox3.TabStop = false;
-            pictureBox3.Click += pictureBox3_Click;
             // 
             // lblWelcome1
             // 
@@ -630,7 +629,7 @@
             Name = "HomePage";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "0";
-            Load += HomePage_Load;
+
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
