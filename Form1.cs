@@ -18,6 +18,7 @@ namespace MobileAppDesign
                 return;
             }
             AppData.Username = textusername.Text;
+            PersistenceManager.Save();
             HomePage home = new HomePage();
             home.Show();
             this.Hide();
@@ -25,7 +26,10 @@ namespace MobileAppDesign
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            if (!string.IsNullOrWhiteSpace(AppData.Username) && AppData.Username != "User")
+            {
+                textusername.Text = AppData.Username;
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)

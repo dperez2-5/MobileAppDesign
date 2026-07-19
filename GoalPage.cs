@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -58,6 +58,9 @@ namespace MobileAppDesign
             circleProgressBar1.Value = 0;
             circleProgressBar1.Text = "0%";
             GoalPage.TargetDate = dtpTargetDate.Value;
+
+            // Save state permanently
+            PersistenceManager.Save();
 
             MessageBox.Show("Goal Saved!");
         }
