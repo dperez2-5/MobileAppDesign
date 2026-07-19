@@ -100,7 +100,6 @@
             button2.TabIndex = 1;
             button2.Text = "🏠HOME";
             button2.UseVisualStyleBackColor = false;
-
             // 
             // button6
             // 
@@ -180,7 +179,6 @@
             label11.Size = new Size(97, 21);
             label11.TabIndex = 25;
             label11.Text = "Main Menu";
-
             // 
             // lblWelcome
             // 
@@ -295,14 +293,13 @@
             // pictureBox7
             // 
             pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(5, 20);
+            pictureBox7.Location = new Point(0, 15);
             pictureBox7.Margin = new Padding(2);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(128, 78);
+            pictureBox7.Size = new Size(128, 85);
             pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox7.TabIndex = 38;
             pictureBox7.TabStop = false;
-
             // 
             // dateTimePicker2
             // 
@@ -332,9 +329,9 @@
             groupBox1.Controls.Add(label4);
             groupBox1.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold);
             groupBox1.ForeColor = Color.White;
-            groupBox1.Location = new Point(319, 306);
+            groupBox1.Location = new Point(319, 296);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(358, 343);
+            groupBox1.Size = new Size(358, 394);
             groupBox1.TabIndex = 41;
             groupBox1.TabStop = false;
             groupBox1.Text = "📝 ADD NEW EXPENSE";
@@ -342,17 +339,16 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(34, 217);
+            label1.Location = new Point(24, 224);
             label1.Name = "label1";
             label1.Size = new Size(132, 24);
             label1.TabIndex = 46;
             label1.Text = "Goal Savings";
-
             // 
             // lblSavings
             // 
             lblSavings.AutoSize = true;
-            lblSavings.Location = new Point(35, 248);
+            lblSavings.Location = new Point(67, 256);
             lblSavings.Name = "lblSavings";
             lblSavings.Size = new Size(89, 24);
             lblSavings.TabIndex = 45;
@@ -361,7 +357,8 @@
             // txtSavings
             // 
             txtSavings.BackColor = Color.FromArgb(47, 57, 67);
-            txtSavings.Location = new Point(185, 245);
+            txtSavings.ForeColor = Color.White;
+            txtSavings.Location = new Point(185, 253);
             txtSavings.Name = "txtSavings";
             txtSavings.Size = new Size(149, 29);
             txtSavings.TabIndex = 44;
@@ -369,7 +366,7 @@
             // btnAddExpense
             // 
             btnAddExpense.ForeColor = Color.FromArgb(47, 57, 67);
-            btnAddExpense.Location = new Point(185, 280);
+            btnAddExpense.Location = new Point(185, 314);
             btnAddExpense.Name = "btnAddExpense";
             btnAddExpense.Size = new Size(149, 31);
             btnAddExpense.TabIndex = 42;
@@ -380,6 +377,7 @@
             // txtAmount
             // 
             txtAmount.BackColor = Color.FromArgb(47, 57, 67);
+            txtAmount.ForeColor = Color.White;
             txtAmount.Location = new Point(185, 167);
             txtAmount.Name = "txtAmount";
             txtAmount.Size = new Size(149, 29);
@@ -388,6 +386,7 @@
             // txtDescription
             // 
             txtDescription.BackColor = Color.FromArgb(47, 57, 67);
+            txtDescription.ForeColor = Color.White;
             txtDescription.Location = new Point(185, 129);
             txtDescription.Name = "txtDescription";
             txtDescription.Size = new Size(149, 29);
@@ -506,7 +505,6 @@
             txtinspiration.Size = new Size(127, 24);
             txtinspiration.TabIndex = 49;
             txtinspiration.Text = "txtinspiration";
-
             // 
             // lblDuration
             // 
@@ -541,7 +539,6 @@
             lblGoalName.Size = new Size(146, 25);
             lblGoalName.TabIndex = 46;
             lblGoalName.Text = "lblGoalName";
-
             // 
             // label14
             // 
@@ -555,7 +552,6 @@
             label14.Size = new Size(148, 18);
             label14.TabIndex = 45;
             label14.Text = "Allowance Tracker";
-
             // 
             // pictureBox1
             // 
@@ -629,7 +625,6 @@
             Name = "HomePage";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "0";
-
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
