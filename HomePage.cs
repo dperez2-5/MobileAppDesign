@@ -14,12 +14,12 @@ namespace MobileAppDesign
 
     public partial class HomePage : Form
     {
-      
+
         public HomePage()
         {
             InitializeComponent();
 
-           
+
 
             lblWelcome1.Text = "Good Day, " + AppData.Username + "!";
             // Categories
@@ -303,6 +303,21 @@ namespace MobileAppDesign
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblGoalName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
         {
 
         }
