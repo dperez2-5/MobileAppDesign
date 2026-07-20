@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,5 +13,6 @@ namespace MobileAppDesign
         public static double TotalAllowance { get; set; } = 0;
         public static double TotalExpenses { get; set; } = 0;
         public static double CurrentBalance { get; set; } = 0;
+        public static DateTime LastResetDate { get; set; } = DateTime.MinValue;
     }
 }
