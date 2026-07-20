@@ -121,7 +121,7 @@
             lblAllowance.AutoSize = true;
             lblAllowance.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblAllowance.ForeColor = Color.White;
-            lblAllowance.Location = new Point(196, 28);
+            lblAllowance.Location = new Point(184, 29);
             lblAllowance.Margin = new Padding(4, 0, 4, 0);
             lblAllowance.Name = "lblAllowance";
             lblAllowance.Size = new Size(268, 33);
