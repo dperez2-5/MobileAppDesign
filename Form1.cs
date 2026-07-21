@@ -17,8 +17,11 @@ namespace MobileAppDesign
                 textusername.Focus();
                 return;
             }
-            AppData.Username = textusername.Text;
-            PersistenceManager.Save();
+            AppData.Username = textusername.Text.Trim();
+            
+            // Load the specific data profile for this user
+            PersistenceManager.LoadForUser(AppData.Username);
+
             HomePage home = new HomePage();
             home.Show();
             this.Hide();
@@ -26,9 +29,10 @@ namespace MobileAppDesign
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(AppData.Username) && AppData.Username != "User")
+            string lastUser = PersistenceManager.LoadLastUsername();
+            if (!string.IsNullOrWhiteSpace(lastUser))
             {
-                textusername.Text = AppData.Username;
+                textusername.Text = lastUser;
             }
         }
 
