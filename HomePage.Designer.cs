@@ -50,6 +50,7 @@
             pictureBox7 = new PictureBox();
             dateTimePicker2 = new DateTimePicker();
             groupBox1 = new GroupBox();
+            label8 = new Label();
             label1 = new Label();
             lblSavings = new Label();
             txtSavings = new TextBox();
@@ -94,10 +95,9 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(43, 323);
-            button2.Margin = new Padding(4, 5, 4, 5);
+            button2.Location = new Point(30, 194);
             button2.Name = "button2";
-            button2.Size = new Size(307, 58);
+            button2.Size = new Size(215, 35);
             button2.TabIndex = 1;
             button2.Text = "🏠HOME";
             button2.UseVisualStyleBackColor = false;
@@ -106,11 +106,10 @@
             // 
             button6.BackColor = Color.FromArgb(59, 71, 83);
             button6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button6.ForeColor = Color.FromArgb(113, 100, 81);
-            button6.Location = new Point(43, 493);
-            button6.Margin = new Padding(4, 5, 4, 5);
+            button6.ForeColor = Color.White;
+            button6.Location = new Point(30, 296);
             button6.Name = "button6";
-            button6.Size = new Size(307, 58);
+            button6.Size = new Size(215, 35);
             button6.TabIndex = 10;
             button6.Text = "🎯GOALS";
             button6.UseVisualStyleBackColor = false;
@@ -121,10 +120,9 @@
             lblAllowance.AutoSize = true;
             lblAllowance.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblAllowance.ForeColor = Color.White;
-            lblAllowance.Location = new Point(184, 29);
-            lblAllowance.Margin = new Padding(4, 0, 4, 0);
+            lblAllowance.Location = new Point(129, 24);
             lblAllowance.Name = "lblAllowance";
-            lblAllowance.Size = new Size(268, 33);
+            lblAllowance.Size = new Size(181, 24);
             lblAllowance.TabIndex = 17;
             lblAllowance.Text = "Weekly Allowance";
             // 
@@ -133,11 +131,10 @@
             txtBalance.AccessibleRole = AccessibleRole.None;
             txtBalance.BackColor = Color.FromArgb(47, 56, 65);
             txtBalance.ForeColor = Color.White;
-            txtBalance.Location = new Point(246, 77);
-            txtBalance.Margin = new Padding(4, 5, 4, 5);
+            txtBalance.Location = new Point(155, 63);
             txtBalance.Name = "txtBalance";
             txtBalance.ReadOnly = true;
-            txtBalance.Size = new Size(184, 31);
+            txtBalance.Size = new Size(139, 23);
             txtBalance.TabIndex = 18;
             txtBalance.Text = "0";
             // 
@@ -145,10 +142,9 @@
             // 
             txtCurrentBalance.BackColor = Color.FromArgb(47, 56, 65);
             txtCurrentBalance.ForeColor = Color.White;
-            txtCurrentBalance.Location = new Point(187, 90);
-            txtCurrentBalance.Margin = new Padding(4, 5, 4, 5);
+            txtCurrentBalance.Location = new Point(155, 63);
             txtCurrentBalance.Name = "txtCurrentBalance";
-            txtCurrentBalance.Size = new Size(260, 31);
+            txtCurrentBalance.Size = new Size(139, 23);
             txtCurrentBalance.TabIndex = 22;
             // 
             // label10
@@ -156,10 +152,9 @@
             label10.AutoSize = true;
             label10.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold);
             label10.ForeColor = Color.White;
-            label10.Location = new Point(176, 30);
-            label10.Margin = new Padding(4, 0, 4, 0);
+            label10.Location = new Point(145, 24);
             label10.Name = "label10";
-            label10.Size = new Size(240, 33);
+            label10.Size = new Size(160, 24);
             label10.TabIndex = 21;
             label10.Text = "Current Balance";
             label10.Click += label10_Click;
@@ -167,11 +162,10 @@
             // pictureBox2
             // 
             pictureBox2.BackColor = Color.FromArgb(59, 71, 83);
-            pictureBox2.Location = new Point(0, -22);
-            pictureBox2.Margin = new Padding(4, 5, 4, 5);
+            pictureBox2.Location = new Point(0, -13);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Padding = new Padding(14, 15, 14, 15);
-            pictureBox2.Size = new Size(423, 1500);
+            pictureBox2.Padding = new Padding(10, 9, 10, 9);
+            pictureBox2.Size = new Size(296, 900);
             pictureBox2.TabIndex = 24;
             pictureBox2.TabStop = false;
             // 
@@ -181,10 +175,9 @@
             label11.BackColor = Color.FromArgb(59, 71, 83);
             label11.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label11.ForeColor = Color.White;
-            label11.Location = new Point(144, 278);
-            label11.Margin = new Padding(4, 0, 4, 0);
+            label11.Location = new Point(101, 167);
             label11.Name = "label11";
-            label11.Size = new Size(145, 32);
+            label11.Size = new Size(97, 21);
             label11.TabIndex = 25;
             label11.Text = "Main Menu";
             // 
@@ -192,10 +185,9 @@
             // 
             lblWelcome.AutoSize = true;
             lblWelcome.Font = new Font("Segoe UI", 22F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblWelcome.Location = new Point(441, 33);
-            lblWelcome.Margin = new Padding(4, 0, 4, 0);
+            lblWelcome.Location = new Point(309, 20);
             lblWelcome.Name = "lblWelcome";
-            lblWelcome.Size = new Size(0, 60);
+            lblWelcome.Size = new Size(0, 41);
             lblWelcome.TabIndex = 29;
             // 
             // groupBox2
@@ -206,11 +198,9 @@
             groupBox2.Controls.Add(lblAllowance);
             groupBox2.Controls.Add(pictureBox5);
             groupBox2.Controls.Add(btnAddAllowance);
-            groupBox2.Location = new Point(456, 278);
-            groupBox2.Margin = new Padding(4, 5, 4, 5);
+            groupBox2.Location = new Point(319, 143);
             groupBox2.Name = "groupBox2";
-            groupBox2.Padding = new Padding(4, 5, 4, 5);
-            groupBox2.Size = new Size(457, 175);
+            groupBox2.Size = new Size(320, 137);
             groupBox2.TabIndex = 32;
             groupBox2.TabStop = false;
             // 
@@ -218,31 +208,30 @@
             // 
             txtAddAllowance.BackColor = Color.FromArgb(47, 56, 65);
             txtAddAllowance.ForeColor = Color.White;
-            txtAddAllowance.Location = new Point(169, 128);
-            txtAddAllowance.Margin = new Padding(4, 5, 4, 5);
+            txtAddAllowance.Location = new Point(129, 92);
             txtAddAllowance.Name = "txtAddAllowance";
-            txtAddAllowance.Size = new Size(148, 31);
+            txtAddAllowance.Size = new Size(100, 23);
             txtAddAllowance.TabIndex = 20;
             // 
             // pictureBox5
             // 
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(0, 25);
+            pictureBox5.Location = new Point(0, 15);
+            pictureBox5.Margin = new Padding(2);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(177, 142);
-            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox5.Size = new Size(126, 109);
+            pictureBox5.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox5.TabIndex = 21;
             pictureBox5.TabStop = false;
             // 
             // btnAddAllowance
             // 
-            btnAddAllowance.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnAddAllowance.Location = new Point(324, 125);
-            btnAddAllowance.Margin = new Padding(4, 5, 4, 5);
+            btnAddAllowance.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAddAllowance.Location = new Point(235, 94);
             btnAddAllowance.Name = "btnAddAllowance";
-            btnAddAllowance.Size = new Size(107, 35);
+            btnAddAllowance.Size = new Size(75, 21);
             btnAddAllowance.TabIndex = 19;
-            btnAddAllowance.Text = "add allowance";
+            btnAddAllowance.Text = "➕Add";
             btnAddAllowance.UseVisualStyleBackColor = true;
             btnAddAllowance.Click += button1_Click_1;
             // 
@@ -252,20 +241,19 @@
             groupBox3.Controls.Add(txtCurrentBalance);
             groupBox3.Controls.Add(label10);
             groupBox3.Controls.Add(pictureBox6);
-            groupBox3.Location = new Point(956, 278);
-            groupBox3.Margin = new Padding(4, 5, 4, 5);
+            groupBox3.Location = new Point(669, 143);
             groupBox3.Name = "groupBox3";
-            groupBox3.Padding = new Padding(4, 5, 4, 5);
-            groupBox3.Size = new Size(457, 175);
+            groupBox3.Size = new Size(320, 137);
             groupBox3.TabIndex = 33;
             groupBox3.TabStop = false;
             // 
             // pictureBox6
             // 
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(0, 25);
+            pictureBox6.Location = new Point(0, 15);
+            pictureBox6.Margin = new Padding(2);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(180, 142);
+            pictureBox6.Size = new Size(126, 109);
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox6.TabIndex = 23;
             pictureBox6.TabStop = false;
@@ -276,23 +264,20 @@
             groupBox5.Controls.Add(label9);
             groupBox5.Controls.Add(txtTotalExpenses);
             groupBox5.Controls.Add(pictureBox7);
-            groupBox5.Location = new Point(1454, 278);
-            groupBox5.Margin = new Padding(4, 5, 4, 5);
+            groupBox5.Location = new Point(1018, 143);
             groupBox5.Name = "groupBox5";
-            groupBox5.Padding = new Padding(4, 5, 4, 5);
-            groupBox5.Size = new Size(457, 175);
+            groupBox5.Size = new Size(320, 137);
             groupBox5.TabIndex = 35;
             groupBox5.TabStop = false;
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label9.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label9.ForeColor = Color.White;
-            label9.Location = new Point(203, 30);
-            label9.Margin = new Padding(4, 0, 4, 0);
+            label9.Location = new Point(145, 24);
             label9.Name = "label9";
-            label9.Size = new Size(216, 33);
+            label9.Size = new Size(155, 24);
             label9.TabIndex = 36;
             label9.Text = "Total Expenses";
             // 
@@ -300,20 +285,20 @@
             // 
             txtTotalExpenses.BackColor = Color.FromArgb(47, 56, 65);
             txtTotalExpenses.ForeColor = Color.White;
-            txtTotalExpenses.Location = new Point(203, 90);
-            txtTotalExpenses.Margin = new Padding(4, 5, 4, 5);
+            txtTotalExpenses.Location = new Point(149, 63);
             txtTotalExpenses.Name = "txtTotalExpenses";
             txtTotalExpenses.ReadOnly = true;
-            txtTotalExpenses.Size = new Size(244, 31);
+            txtTotalExpenses.Size = new Size(139, 23);
             txtTotalExpenses.TabIndex = 37;
             txtTotalExpenses.Text = "0.00";
             // 
             // pictureBox7
             // 
             pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(0, 25);
+            pictureBox7.Location = new Point(0, 15);
+            pictureBox7.Margin = new Padding(2);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(183, 142);
+            pictureBox7.Size = new Size(128, 109);
             pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox7.TabIndex = 38;
             pictureBox7.TabStop = false;
@@ -324,15 +309,15 @@
             dateTimePicker2.CalendarTitleBackColor = Color.FromArgb(47, 57, 67);
             dateTimePicker2.CalendarTrailingForeColor = Color.FromArgb(47, 57, 67);
             dateTimePicker2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dateTimePicker2.Location = new Point(166, 77);
-            dateTimePicker2.Margin = new Padding(4, 5, 4, 5);
+            dateTimePicker2.Location = new Point(185, 66);
             dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(310, 28);
+            dateTimePicker2.Size = new Size(202, 21);
             dateTimePicker2.TabIndex = 40;
             // 
             // groupBox1
             // 
             groupBox1.BackColor = Color.FromArgb(47, 57, 67);
+            groupBox1.Controls.Add(label8);
             groupBox1.Controls.Add(label1);
             groupBox1.Controls.Add(lblSavings);
             groupBox1.Controls.Add(txtSavings);
@@ -347,32 +332,38 @@
             groupBox1.Controls.Add(label4);
             groupBox1.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold);
             groupBox1.ForeColor = Color.White;
-            groupBox1.Location = new Point(456, 493);
-            groupBox1.Margin = new Padding(4, 5, 4, 5);
+            groupBox1.Location = new Point(309, 296);
             groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(4, 5, 4, 5);
-            groupBox1.Size = new Size(511, 657);
+            groupBox1.Size = new Size(403, 417);
             groupBox1.TabIndex = 41;
             groupBox1.TabStop = false;
-            groupBox1.Text = "📝 ADD NEW EXPENSE";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.ForeColor = Color.White;
+            label8.Location = new Point(82, 19);
+            label8.Name = "label8";
+            label8.Size = new Size(238, 24);
+            label8.TabIndex = 50;
+            label8.Text = "📝 ADD NEW EXPENSE";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(34, 373);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(128, 259);
             label1.Name = "label1";
-            label1.Size = new Size(210, 33);
+            label1.Size = new Size(142, 24);
             label1.TabIndex = 46;
             label1.Text = "Goal Expense";
             // 
             // lblSavings
             // 
             lblSavings.AutoSize = true;
-            lblSavings.Location = new Point(96, 427);
-            lblSavings.Margin = new Padding(4, 0, 4, 0);
+            lblSavings.Location = new Point(25, 325);
             lblSavings.Name = "lblSavings";
-            lblSavings.Size = new Size(135, 33);
+            lblSavings.Size = new Size(89, 24);
             lblSavings.TabIndex = 45;
             lblSavings.Text = "Savings:";
             // 
@@ -380,19 +371,17 @@
             // 
             txtSavings.BackColor = Color.FromArgb(47, 57, 67);
             txtSavings.ForeColor = Color.White;
-            txtSavings.Location = new Point(264, 422);
-            txtSavings.Margin = new Padding(4, 5, 4, 5);
+            txtSavings.Location = new Point(185, 322);
             txtSavings.Name = "txtSavings";
-            txtSavings.Size = new Size(211, 40);
+            txtSavings.Size = new Size(202, 29);
             txtSavings.TabIndex = 44;
             // 
             // btnAddExpense
             // 
             btnAddExpense.ForeColor = Color.FromArgb(47, 57, 67);
-            btnAddExpense.Location = new Point(264, 523);
-            btnAddExpense.Margin = new Padding(4, 5, 4, 5);
+            btnAddExpense.Location = new Point(238, 360);
             btnAddExpense.Name = "btnAddExpense";
-            btnAddExpense.Size = new Size(213, 52);
+            btnAddExpense.Size = new Size(149, 31);
             btnAddExpense.TabIndex = 42;
             btnAddExpense.Text = "➕Add Expense";
             btnAddExpense.UseVisualStyleBackColor = true;
@@ -402,20 +391,18 @@
             // 
             txtAmount.BackColor = Color.FromArgb(47, 57, 67);
             txtAmount.ForeColor = Color.White;
-            txtAmount.Location = new Point(264, 278);
-            txtAmount.Margin = new Padding(4, 5, 4, 5);
+            txtAmount.Location = new Point(185, 203);
             txtAmount.Name = "txtAmount";
-            txtAmount.Size = new Size(211, 40);
+            txtAmount.Size = new Size(202, 29);
             txtAmount.TabIndex = 43;
             // 
             // txtDescription
             // 
             txtDescription.BackColor = Color.FromArgb(47, 57, 67);
             txtDescription.ForeColor = Color.White;
-            txtDescription.Location = new Point(264, 215);
-            txtDescription.Margin = new Padding(4, 5, 4, 5);
+            txtDescription.Location = new Point(185, 155);
             txtDescription.Name = "txtDescription";
-            txtDescription.Size = new Size(211, 40);
+            txtDescription.Size = new Size(202, 29);
             txtDescription.TabIndex = 42;
             // 
             // cmbCategory
@@ -423,49 +410,44 @@
             cmbCategory.BackColor = Color.FromArgb(47, 57, 67);
             cmbCategory.ForeColor = Color.White;
             cmbCategory.FormattingEnabled = true;
-            cmbCategory.Location = new Point(264, 137);
-            cmbCategory.Margin = new Padding(4, 5, 4, 5);
+            cmbCategory.Location = new Point(185, 107);
             cmbCategory.Name = "cmbCategory";
-            cmbCategory.Size = new Size(211, 41);
+            cmbCategory.Size = new Size(202, 32);
             cmbCategory.TabIndex = 41;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(34, 150);
-            label7.Margin = new Padding(4, 0, 4, 0);
+            label7.Location = new Point(25, 110);
             label7.Name = "label7";
-            label7.Size = new Size(184, 33);
+            label7.Size = new Size(121, 24);
             label7.TabIndex = 3;
             label7.Text = "📖Category:";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(34, 222);
-            label6.Margin = new Padding(4, 0, 4, 0);
+            label6.Location = new Point(25, 158);
             label6.Name = "label6";
-            label6.Size = new Size(216, 33);
+            label6.Size = new Size(143, 24);
             label6.TabIndex = 2;
             label6.Text = "✏️Description:";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(30, 283);
-            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.Location = new Point(25, 206);
             label5.Name = "label5";
-            label5.Size = new Size(164, 33);
+            label5.Size = new Size(110, 24);
             label5.TabIndex = 1;
             label5.Text = "💰Amount:";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(34, 77);
-            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Location = new Point(25, 66);
             label4.Name = "label4";
-            label4.Size = new Size(123, 33);
+            label4.Size = new Size(80, 24);
             label4.TabIndex = 0;
             label4.Text = "🗓️Date:";
             // 
@@ -475,9 +457,10 @@
             label2.BackColor = Color.FromArgb(59, 71, 83);
             label2.Font = new Font("SimSun-ExtB", 12F, FontStyle.Bold | FontStyle.Italic);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(1454, 167);
+            label2.Location = new Point(1018, 100);
+            label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(465, 24);
+            label2.Size = new Size(322, 16);
             label2.TabIndex = 44;
             label2.Text = "Let's make today a smart money day!";
             // 
@@ -485,16 +468,15 @@
             // 
             circleProgressBar1.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             circleProgressBar1.ForeColor = Color.White;
-            circleProgressBar1.Location = new Point(394, 23);
-            circleProgressBar1.Margin = new Padding(4, 5, 4, 5);
+            circleProgressBar1.Location = new Point(163, 226);
             circleProgressBar1.Maximum = 100L;
-            circleProgressBar1.MinimumSize = new Size(143, 167);
+            circleProgressBar1.MinimumSize = new Size(100, 100);
             circleProgressBar1.Name = "circleProgressBar1";
             circleProgressBar1.PercentColor = Color.White;
-            circleProgressBar1.ProgressColor1 = Color.MidnightBlue;
-            circleProgressBar1.ProgressColor2 = Color.FromArgb(128, 255, 255);
+            circleProgressBar1.ProgressColor1 = Color.Cyan;
+            circleProgressBar1.ProgressColor2 = Color.Yellow;
             circleProgressBar1.ProgressShape = ReaLTaiizor.Controls.CircleProgressBar._ProgressShape.Round;
-            circleProgressBar1.Size = new Size(512, 512);
+            circleProgressBar1.Size = new Size(311, 311);
             circleProgressBar1.TabIndex = 42;
             circleProgressBar1.Text = "circleProgressBar1";
             circleProgressBar1.Value = 80L;
@@ -505,10 +487,9 @@
             label3.AutoSize = true;
             label3.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(7, 13);
-            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Location = new Point(6, 19);
             label3.Name = "label3";
-            label3.Size = new Size(162, 40);
+            label3.Size = new Size(109, 29);
             label3.TabIndex = 0;
             label3.Text = "🎯GOAL";
             // 
@@ -521,11 +502,9 @@
             groupBox4.Controls.Add(lblGoalName);
             groupBox4.Controls.Add(label3);
             groupBox4.Controls.Add(circleProgressBar1);
-            groupBox4.Location = new Point(1026, 493);
-            groupBox4.Margin = new Padding(4, 5, 4, 5);
+            groupBox4.Location = new Point(718, 296);
             groupBox4.Name = "groupBox4";
-            groupBox4.Padding = new Padding(4, 5, 4, 5);
-            groupBox4.Size = new Size(877, 657);
+            groupBox4.Size = new Size(622, 543);
             groupBox4.TabIndex = 34;
             groupBox4.TabStop = false;
             // 
@@ -534,10 +513,9 @@
             txtinspiration.AutoSize = true;
             txtinspiration.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold);
             txtinspiration.ForeColor = Color.White;
-            txtinspiration.Location = new Point(39, 153);
-            txtinspiration.Margin = new Padding(4, 0, 4, 0);
+            txtinspiration.Location = new Point(248, 82);
             txtinspiration.Name = "txtinspiration";
-            txtinspiration.Size = new Size(194, 33);
+            txtinspiration.Size = new Size(127, 24);
             txtinspiration.TabIndex = 49;
             txtinspiration.Text = "txtinspiration";
             // 
@@ -546,10 +524,9 @@
             lblDuration.AutoSize = true;
             lblDuration.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold);
             lblDuration.ForeColor = Color.White;
-            lblDuration.Location = new Point(39, 548);
-            lblDuration.Margin = new Padding(4, 0, 4, 0);
+            lblDuration.Location = new Point(445, 184);
             lblDuration.Name = "lblDuration";
-            lblDuration.Size = new Size(166, 33);
+            lblDuration.Size = new Size(110, 24);
             lblDuration.TabIndex = 48;
             lblDuration.Text = "lblDuration";
             // 
@@ -559,10 +536,9 @@
             lblgoalprogress.AutoSize = true;
             lblgoalprogress.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold);
             lblgoalprogress.ForeColor = Color.White;
-            lblgoalprogress.Location = new Point(39, 483);
-            lblgoalprogress.Margin = new Padding(4, 0, 4, 0);
+            lblgoalprogress.Location = new Point(27, 184);
             lblgoalprogress.Name = "lblgoalprogress";
-            lblgoalprogress.Size = new Size(229, 33);
+            lblgoalprogress.Size = new Size(154, 24);
             lblgoalprogress.TabIndex = 47;
             lblgoalprogress.Text = "lblgoalprogress";
             // 
@@ -571,10 +547,9 @@
             lblGoalName.AutoSize = true;
             lblGoalName.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblGoalName.ForeColor = Color.White;
-            lblGoalName.Location = new Point(39, 87);
-            lblGoalName.Margin = new Padding(4, 0, 4, 0);
+            lblGoalName.Location = new Point(238, 23);
             lblGoalName.Name = "lblGoalName";
-            lblGoalName.Size = new Size(214, 37);
+            lblGoalName.Size = new Size(146, 25);
             lblGoalName.TabIndex = 46;
             lblGoalName.Text = "lblGoalName";
             // 
@@ -584,19 +559,19 @@
             label14.BackColor = Color.FromArgb(59, 71, 83);
             label14.Font = new Font("Century Gothic", 11.25F, FontStyle.Italic, GraphicsUnit.Point, 0);
             label14.ForeColor = Color.White;
-            label14.Location = new Point(104, 220);
+            label14.Location = new Point(73, 132);
+            label14.Margin = new Padding(2, 0, 2, 0);
             label14.Name = "label14";
-            label14.Size = new Size(224, 26);
+            label14.Size = new Size(148, 18);
             label14.TabIndex = 45;
             label14.Text = "Allowance Tracker";
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(146, 78);
-            pictureBox1.Margin = new Padding(4, 5, 4, 5);
+            pictureBox1.Location = new Point(102, 47);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(137, 122);
+            pictureBox1.Size = new Size(96, 73);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 46;
             pictureBox1.TabStop = false;
@@ -605,11 +580,10 @@
             // 
             button7.BackColor = Color.FromArgb(59, 71, 83);
             button7.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button7.ForeColor = Color.FromArgb(113, 100, 81);
-            button7.Location = new Point(43, 408);
-            button7.Margin = new Padding(4, 5, 4, 5);
+            button7.ForeColor = Color.White;
+            button7.Location = new Point(30, 245);
             button7.Name = "button7";
-            button7.Size = new Size(307, 58);
+            button7.Size = new Size(215, 35);
             button7.TabIndex = 11;
             button7.Text = "💳 SPENDING";
             button7.UseVisualStyleBackColor = false;
@@ -619,10 +593,9 @@
             // 
             pictureBox3.BackColor = Color.FromArgb(59, 71, 83);
             pictureBox3.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox3.Location = new Point(327, -288);
-            pictureBox3.Margin = new Padding(4, 5, 4, 5);
+            pictureBox3.Location = new Point(229, -173);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(1715, 515);
+            pictureBox3.Size = new Size(1201, 310);
             pictureBox3.TabIndex = 31;
             pictureBox3.TabStop = false;
             // 
@@ -632,21 +605,20 @@
             lblWelcome1.BackColor = Color.FromArgb(59, 71, 83);
             lblWelcome1.Font = new Font("Microsoft Sans Serif", 22F, FontStyle.Bold);
             lblWelcome1.ForeColor = Color.White;
-            lblWelcome1.Location = new Point(1461, 78);
-            lblWelcome1.Margin = new Padding(4, 0, 4, 0);
+            lblWelcome1.Location = new Point(1023, 47);
             lblWelcome1.Name = "lblWelcome1";
-            lblWelcome1.Size = new Size(362, 52);
+            lblWelcome1.Size = new Size(251, 36);
             lblWelcome1.TabIndex = 47;
             lblWelcome1.Text = "Good Day, User!";
             // 
             // HomePage
             // 
             AcceptButton = button2;
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(47, 57, 67);
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(1924, 1170);
+            ClientSize = new Size(1384, 861);
             Controls.Add(lblWelcome1);
             Controls.Add(pictureBox1);
             Controls.Add(label14);
@@ -663,7 +635,6 @@
             Controls.Add(button2);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox3);
-            Margin = new Padding(4, 5, 4, 5);
             Name = "HomePage";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "0";
@@ -700,7 +671,6 @@
         private TextBox txtDescription;
         private DateTimePicker dateTimePicker1;
         private ComboBox cmbCategory;
-        private Label label8;
         private Button btnAddAllowance;
         private TextBox txtCurrentBalance;
         private Label label10;
@@ -737,5 +707,6 @@
         private PictureBox pictureBox3;
         private Label lblWelcome1;
         private Label label1;
+        private Label label8;
     }
 }

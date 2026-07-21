@@ -285,7 +285,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(59, 71, 83);
             BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(1344, 700);
+            ClientSize = new Size(1380, 857);
             Controls.Add(pictureBox5);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);

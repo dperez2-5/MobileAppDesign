@@ -53,7 +53,7 @@
             dgvExpensesHistory.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvExpensesHistory.GridColor = Color.FromArgb(47, 57, 67);
             dgvExpensesHistory.Location = new Point(333, 195);
-            dgvExpensesHistory.Margin = new Padding(2, 2, 2, 2);
+            dgvExpensesHistory.Margin = new Padding(2);
             dgvExpensesHistory.Name = "dgvExpensesHistory";
             dgvExpensesHistory.RowHeadersWidth = 62;
             dgvExpensesHistory.Size = new Size(979, 334);
@@ -149,7 +149,7 @@
             // 
             button6.BackColor = Color.FromArgb(59, 71, 83);
             button6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button6.ForeColor = Color.FromArgb(113, 100, 81);
+            button6.ForeColor = Color.White;
             button6.Location = new Point(30, 296);
             button6.Name = "button6";
             button6.Size = new Size(215, 35);
@@ -164,7 +164,7 @@
             button2.BackgroundImageLayout = ImageLayout.Center;
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.FromArgb(113, 100, 81);
+            button2.ForeColor = Color.White;
             button2.Location = new Point(30, 194);
             button2.Name = "button2";
             button2.Size = new Size(215, 35);
@@ -198,7 +198,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(47, 57, 67);
-            ClientSize = new Size(1347, 702);
+            ClientSize = new Size(1384, 861);
             Controls.Add(pictureBox4);
             Controls.Add(label14);
             Controls.Add(label11);
