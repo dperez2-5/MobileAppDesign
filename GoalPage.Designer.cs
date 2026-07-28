@@ -74,7 +74,7 @@
             circleProgressBar1.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Bold);
             circleProgressBar1.ForeColor = Color.White;
             circleProgressBar1.Location = new Point(909, 209);
-            circleProgressBar1.Margin = new Padding(2, 2, 2, 2);
+            circleProgressBar1.Margin = new Padding(2);
             circleProgressBar1.Maximum = 100L;
             circleProgressBar1.MinimumSize = new Size(70, 60);
             circleProgressBar1.Name = "circleProgressBar1";
@@ -99,9 +99,9 @@
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
             groupBox1.Location = new Point(342, 233);
-            groupBox1.Margin = new Padding(2, 2, 2, 2);
+            groupBox1.Margin = new Padding(2);
             groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(2, 2, 2, 2);
+            groupBox1.Padding = new Padding(2);
             groupBox1.Size = new Size(494, 323);
             groupBox1.TabIndex = 58;
             groupBox1.TabStop = false;
@@ -110,8 +110,9 @@
             // 
             txtinspiration.BackColor = Color.FromArgb(47, 57, 67);
             txtinspiration.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtinspiration.Location = new Point(235, 143);
-            txtinspiration.Margin = new Padding(2, 2, 2, 2);
+            txtinspiration.ForeColor = Color.White;
+            txtinspiration.Location = new Point(259, 143);
+            txtinspiration.Margin = new Padding(2);
             txtinspiration.Multiline = true;
             txtinspiration.Name = "txtinspiration";
             txtinspiration.Size = new Size(187, 32);
@@ -122,7 +123,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(111, 154);
+            label3.Location = new Point(79, 143);
             label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
             label3.Size = new Size(100, 24);
@@ -173,7 +174,7 @@
             // dtpTargetDate
             // 
             dtpTargetDate.Location = new Point(235, 194);
-            dtpTargetDate.Margin = new Padding(2, 2, 2, 2);
+            dtpTargetDate.Margin = new Padding(2);
             dtpTargetDate.Name = "dtpTargetDate";
             dtpTargetDate.Size = new Size(211, 23);
             dtpTargetDate.TabIndex = 7;
@@ -182,8 +183,9 @@
             // 
             txtTargetAmount.BackColor = Color.FromArgb(47, 57, 67);
             txtTargetAmount.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtTargetAmount.Location = new Point(235, 96);
-            txtTargetAmount.Margin = new Padding(2, 2, 2, 2);
+            txtTargetAmount.ForeColor = Color.White;
+            txtTargetAmount.Location = new Point(259, 96);
+            txtTargetAmount.Margin = new Padding(2);
             txtTargetAmount.Multiline = true;
             txtTargetAmount.Name = "txtTargetAmount";
             txtTargetAmount.Size = new Size(187, 32);
@@ -193,8 +195,9 @@
             // 
             txtGoal.BackColor = Color.FromArgb(47, 57, 67);
             txtGoal.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtGoal.Location = new Point(235, 44);
-            txtGoal.Margin = new Padding(2, 2, 2, 2);
+            txtGoal.ForeColor = Color.White;
+            txtGoal.Location = new Point(259, 44);
+            txtGoal.Margin = new Padding(2);
             txtGoal.Multiline = true;
             txtGoal.Name = "txtGoal";
             txtGoal.Size = new Size(187, 32);
@@ -205,7 +208,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(79, 107);
+            label4.Location = new Point(79, 96);
             label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
             label4.Size = new Size(140, 24);
@@ -217,7 +220,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(99, 193);
+            label2.Location = new Point(79, 193);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
             label2.Size = new Size(112, 24);
@@ -229,7 +232,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(162, 55);
+            label1.Location = new Point(79, 52);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
             label1.Size = new Size(54, 24);

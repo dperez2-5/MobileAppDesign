@@ -468,7 +468,7 @@
             // 
             circleProgressBar1.Font = new Font("Microsoft Sans Serif", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             circleProgressBar1.ForeColor = Color.White;
-            circleProgressBar1.Location = new Point(163, 226);
+            circleProgressBar1.Location = new Point(255, 183);
             circleProgressBar1.Maximum = 100L;
             circleProgressBar1.MinimumSize = new Size(100, 100);
             circleProgressBar1.Name = "circleProgressBar1";
@@ -476,7 +476,7 @@
             circleProgressBar1.ProgressColor1 = Color.Cyan;
             circleProgressBar1.ProgressColor2 = Color.Yellow;
             circleProgressBar1.ProgressShape = ReaLTaiizor.Controls.CircleProgressBar._ProgressShape.Round;
-            circleProgressBar1.Size = new Size(311, 311);
+            circleProgressBar1.Size = new Size(356, 356);
             circleProgressBar1.TabIndex = 42;
             circleProgressBar1.Text = "circleProgressBar1";
             circleProgressBar1.Value = 80L;
@@ -513,7 +513,7 @@
             txtinspiration.AutoSize = true;
             txtinspiration.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold);
             txtinspiration.ForeColor = Color.White;
-            txtinspiration.Location = new Point(248, 82);
+            txtinspiration.Location = new Point(27, 97);
             txtinspiration.Name = "txtinspiration";
             txtinspiration.Size = new Size(127, 24);
             txtinspiration.TabIndex = 49;
@@ -524,7 +524,7 @@
             lblDuration.AutoSize = true;
             lblDuration.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold);
             lblDuration.ForeColor = Color.White;
-            lblDuration.Location = new Point(445, 184);
+            lblDuration.Location = new Point(27, 194);
             lblDuration.Name = "lblDuration";
             lblDuration.Size = new Size(110, 24);
             lblDuration.TabIndex = 48;
@@ -536,7 +536,7 @@
             lblgoalprogress.AutoSize = true;
             lblgoalprogress.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold);
             lblgoalprogress.ForeColor = Color.White;
-            lblgoalprogress.Location = new Point(27, 184);
+            lblgoalprogress.Location = new Point(27, 170);
             lblgoalprogress.Name = "lblgoalprogress";
             lblgoalprogress.Size = new Size(154, 24);
             lblgoalprogress.TabIndex = 47;
@@ -547,7 +547,7 @@
             lblGoalName.AutoSize = true;
             lblGoalName.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblGoalName.ForeColor = Color.White;
-            lblGoalName.Location = new Point(238, 23);
+            lblGoalName.Location = new Point(27, 62);
             lblGoalName.Name = "lblGoalName";
             lblGoalName.Size = new Size(146, 25);
             lblGoalName.TabIndex = 46;
